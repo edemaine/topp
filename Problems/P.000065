@@ -1,0 +1,65 @@
+* Number: 65
+* Problem: Magic Configurations
+* Statement:
+Let a finite set of points $P$ in the plane be given, with each point
+assigned a positive real weight.
+$P$ is called a \emph{magic configuration}
+if every line determined by two or more points has the same sum of weights,
+i.e., the sum of the weights of the points through which each line passes is
+the same.
+The problem is to prove or disprove that there are only four 
+essentially distinct magic configurations:
+\begin{enumerate}
+\item Points in general position, with (e.g.) every point assigned weight $1$.
+\item All points collinear.
+\item $n-1$ points collinear with weight (e.g.) $1$, and one point not on
+that line with weight $n-2$.
+\item The $7$-point configuration shown in Fig.~\ref{7-pt.config}, or its
+projective equivalents.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Figure Begin
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.6\linewidth]{7-pt.config.eps}
+%\fbox{7-pt.config.eps}
+\caption{Edge midpoints have weight $2$, while all other
+points have weight $1$. All nine lines have sum $4$.}
+\label{7-pt.config}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Figure End
+\end{enumerate}
+* Origin: \cite{m-hmmct-71}
+* Status/Conjectures: Settled positively, 2007:
+\cite{abkpr-tntmm-08}
+* Motivation:
+The terminology ``magic configuration'' comes from the notion of
+\emph{magic squares}, 2D matrices such that every row, column,
+and (optionally) diagonal sums to the same value.
+* Partial and Related Results:
+An \emph{ordinary line} is one that passes through exactly two points.
+Scaling weights of a magic configuration so that the weights on each line
+sum to~$1$,
+the weight of the points on ordinary lines must be $\frac{1}{2}$
+in any magic configuration other than the third example above.
+It is known that, for $n \ge 3$ noncollinear points,
+at least $\frac{6}{13} n$ lines must be ordinary \cite{cs-te6op-93}.
+
+Settled in~\cite{abkpr-tntmm-08}, the journal version
+of a paper that originally appeared in the Proceedings of
+the 2007 Symposium
+on Computational Geometry.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+Originally posed by U. S. R. Murty in \cite{m-hmmct-71}.
+Reposed by Murty at a June 2006 celebration of
+V. Chv\'atal's 60th birthday.
+Two people who heard this posing, X. Chen and P. Taslakian,
+brought the problem to the conference
+\emph{Discrete and Computational Geometry---Twenty Years Later}
+in Snowbird, June 2006.
+In particular, Chen posed the problem at the open-problem session.
+* Categories:
+point sets
+* Entry Revision History:
+J. O'Rourke, 14 Jul. 2006; E. Demaine, 15 Jul. 2006; J. O'Rourke, 16 Jul. 2008.
+---------------------------------------------------------

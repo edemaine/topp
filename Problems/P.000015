@@ -1,0 +1,22 @@
+* Number: 15
+* Problem: Output-sensitive Convex Hull in $\R^d$
+* Statement:
+What is the best output-sensitive convex hull algorithm
+for $n$ points in $\R^d$?
+* Origin: Uncertain, pending investigation.
+* Status/Conjectures: Open.
+* Partial and Related Results:
+The lower bound is $\Omega( n \log f + f )$ for $f$ facets
+(the output size).
+The best upper bound
+to date is $O( n \log f + (nf)^{1-\delta} \log^{O(1)} n )$
+with $\delta = 1/( \lfloor d/2 \rfloor + 1)$~\cite{c-osrch-96},
+which is optimal for sufficiently small $f$.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: convex hulls
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001.
+---------------------------------------------------------

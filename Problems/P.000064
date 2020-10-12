@@ -1,0 +1,51 @@
+---------------------------------------------------------
+* Number: 64
+* Problem: Edge-Unfolding Polycubes 
+* Statement:
+Is there any genus-zero orthogonal polyhedron $P$ built
+by gluing together cubes face-to-face that cannot be
+edge-unfolded, where all cube edges on the surface of $P$
+are considered edges available for cutting?
+These orthogonal polyhedra are sometimes known as \emph{polycubes},
+3D versions of 2D \emph{polyominoes}.
+* Origin: George Hart and Joseph O'Rourke, 2004.
+* Status/Conjectures: Open.
+* Motivation: More general problems seem even more difficult.
+* Partial and Related Results:
+This is a special case of a more general problem, which is equally
+open.
+The goal, as in Problem~\ref{Problem.9}, is to cut the surface
+and unfold without overlap.
+An \emph{edge unfolding} only permits cutting along edges of the
+polyhedron.
+A \emph{grid unfolding}
+adds extra edges to the surface by intersecting
+the polyhedron with planes parallel to coordinate planes
+through every vertex, and so is easier to edge-unfold.
+Easier still is the posed problem:  The orthogonal polyhedron
+is built from cubes, and all cube edges are available for cutting.
+Is there any such polyhedron that cannot be edge-unfolded?
+Such an example would narrow the options, but it may be that
+every orthogonal polyhedron can be grid-unfolded.
+(An easy box-on-box example~\cite{bddloorw-uscop-98} shows
+that without some surface refinement~\cite{do-op04-05}, 
+not all orthogonal polyhedra
+can be edge-unfolded.)
+The posed question is among the most specific whose answer would
+make progress.
+
+Only a few narrow subclasses of orthogonal polyhedra 
+are known to have grid-unfolding algorithms:  
+orthotubes, orthostacks of orthogonally convex slabs,
+and orthogonal terrains.
+See~\cite{o-uop-08}.
+* Related Open Problems: 
+Problem~\ref{Problem.9}: Edge-Unfolding Convex Polyhedra. \\
+Problem~\ref{Problem.42}: Vertex-Unfolding Polyhedra. \\
+Problem~\ref{Problem.43}: General Unfolding of Nonconvex Polyhedra.
+* Reward: <none>
+* Appearances: \cite{do-fucg-06}
+* Categories: folding and unfolding; polyhedra
+* Entry Revision History:
+J. O'Rourke, 14 Jul 2006, 16 Jul 2007.
+---------------------------------------------------------

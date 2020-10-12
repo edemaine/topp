@@ -1,0 +1,27 @@
+* Number: 18
+* Problem: Pushing Disks Together
+* Statement:
+When a collection of
+disks are pushed closer together, so that no distance
+between two center points increases, can the area of
+their union increase?  
+* Origin: Kneser (1955) and Poulsen (1954).
+* Status/Conjectures:
+Solved by K. Bezdek and R. Connelly.
+See
+\htmladdnormallinkfoot{their web page}{http://www.math.cornell.edu/~connelly/kneser.html}.
+(Update as of 3 Aug. 2000.)
+* Partial and Related Results:
+Previously only settled
+in the continuous-motion case
+\cite{bs-pdtcm-98}, for both this and
+the corresponding question for intersection area decrease~\cite{c-aidp-96}.
+But now both solved; see above.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: combinatorial geometry
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001; 3 Aug. 2003.
+---------------------------------------------------------

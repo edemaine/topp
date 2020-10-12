@@ -1,0 +1,31 @@
+* Number: 34
+* Problem: Extending Pseudosegment Arrangements by Subdivision
+* Statement:
+How many intersections among an arrangement of pseudosegments in the plane
+must be added as vertices to allow the pseudosegment arrangment to be
+extended to a pseudoline arrangement?
+
+An \emph{arrangement of pseudosegments} in the plane is a family of
+finite-length planar curves such that every two curves intersect in at
+most one point.  An \emph{arrangement of pseudolines} in the plane is a family
+of planar curves that extend to infinity on both ends such that every two
+curves intersect in at most one point.  Only some pseudosegment arrangements
+can be \emph{extended} to pseudoline arrangements.  However, if we allow
+turning intersection points into vertices of the arrangement, thereby
+subdividing the segments, then it is always possible to make a
+pseudosegment arrangement extendible.  The question is how many such vertices
+must be added in the worst-case in terms of the number $n$ of pseudosegments.
+* Origin: 
+Perhaps~\cite{c-lac-00}, \cite{aacs-lalsp-98}, or Boris Aronov?
+* Status/Conjectures: Open.
+* Partial and Related Results:
+Chan~\cite{c-lac-00} has proved an upper bound of $O(n \log n)$.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+Posed by Boris Aronov during the open problem session at the
+Fall Workshop on Computational Geometry, Brooklyn, NY, Nov. 2--3, 2001.
+* Categories: combinatorial geometry
+* Entry Revision History:
+E. Demaine, 20 Nov. 2001.
+---------------------------------------------------------

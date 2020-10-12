@@ -1,0 +1,39 @@
+* Number: 70
+* Problem: Yao-Yao Graph a Spanner?
+* Statement:
+Is the Yao-Yao Graph
+a $t$-spanner for constant $t$?
+A geometric graph is a \emph{$t$-spanner}
+(or just a \emph{spanner}) if, for every pair of nodes, %$u$ and $v$, 
+the shortest distance between the nodes following
+the edges of the graph is at most $t$ times the Euclidean distance
+between them.
+See below for the definition of the Yao-Yao graph.
+* Origin: \cite{wl-dsbdw-02}(?)
+* Status/Conjectures: Open.
+* Partial and Related Results:
+The Yao graph $Y_k$~\cite{y-cmstk-82} is defined as follows. At each node $u$,
+any $k$ equally-separated rays originated at $u$ define $k$ cones. In
+each cone, choose the shortest edge $uv$ among all edges from $u$,
+if there are any, and add a directed edge $\overrightarrow{uv}$ to $Y_k$.
+It is known that for the undirected $Y_k$, $k=4, k \ge 6$, $Y_k$ a $t$-spanner
+(e.g., see~\cite{bddossw-pi2ay-10}).
+%for $t = 1/[1-2\sin(\pi/k)]$.
+%JOR: This t value no longer holds for all the cases, just the k>6 cases.
+The Yao-Yao graph $YY_k$~\cite{wl-dsbdw-02} starts
+with the directed Yao graph, and reduces the maximum degree
+of nodes as follows.
+At each node $u$, all \emph{incoming} edges from each cone are discarded, 
+except for the shortest one $\overrightarrow{vu}$. 
+And now the result is treated as an undirected graph.
+Many properties of
+$YY_k$ have been established, but whether
+or not $YY_k$ is a $t$-spanner remains open.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances: <none>
+* Categories:
+spanners, geometric graphs
+* Entry Revision History:
+J. O'Rourke, 29 Dec. 2008.
+---------------------------------------------------------

@@ -1,0 +1,34 @@
+* Number: 29
+* Problem: Hamiltonian Tetrahedralizations
+* Statement:
+Can every convex polytope in $\R^3$ be partitioned into tetrahedra
+such that the dual graph has a Hamiltonian path?
+* Origin: \cite{ahms-htfr-96}.
+* Status/Conjectures: Open.
+* Partial and Related Results:
+Every convex polygon has such a \emph{Hamiltonian triangulation},
+but not every nonconvex polygon does~\cite{ahms-htfr-96}.
+The existence of a Hamiltonian path permits faster rendering
+on a graphics screen via pipelining.
+
+Chin, Ding, and Wang~\cite{cdw-htcp-05} have shown that examples
+exist for which the {\em pulling} tetrahedralization of a convex polytope
+is not Hamiltonian.  (A pulling tetrahedralization is obtained by joining
+one vertex (the apex) to all other vertices of the polytope.)  It is open
+if the shelling tetrahedralization may be always Hamiltonian.
+
+%New  Sep 2007
+Escalona et al.~\cite{efu-htsp-07} prove the conjecture up to $n=20$:
+every points set of $n \le 20$ points admits a Hamiltonian Tetrahedralization.
+They also detail an algorithm that finds a Hamiltonian Tetrahedralization
+for $n$ points
+by adding $O(n)$ Steiner points.  The algorithm runs in $O(n^{3/2})$ time.
+
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: triangulations, polyhedra
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001; 13 Dec. 2001; J. Mitchell, 27 Oct. 2005; J. O'Rourke, 30 Sep. 2007.
+---------------------------------------------------------

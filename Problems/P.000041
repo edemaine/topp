@@ -1,0 +1,78 @@
+* Number: 41
+* Problem: Sorting $X+Y$ (Pairwise Sums)
+
+* Statement:
+Given two sets of numbers, each of size $n$, how quickly can the set
+of all pairwise sums be sorted?  In symbols, given two sets $X$ and
+$Y$, our goal is to sort the set $$X+Y = \{x+y \mid x \in X, y \in Y\}.$$
+
+* Origin: 
+The earliest known reference is Fredman \cite{f-hgiit-76}, who
+attributes the problem to Elwyn Berlekamp.
+
+* Status/Conjectures: Open.
+
+* Motivation:
+This is a simple special case of the more general question of
+\emph{sorting with partial information}: How many comparisons are
+required to sort if a partial order on the input set is already known?
+Hern\'andez~Barrera \cite{b-foais-96} and Barequet and Har-Peled
+\cite{bh-pctmh-01} describe several geometric problems that are
+``Sorting-$(X+Y)$-hard''.  Specifically, there is a subquadratic-time
+transformation from sorting $X+Y$ to each of the following problems:
+computing the Minkowski sum of two orthogonal-convex polygons,
+determining whether one monotone polygon can be translated to fit
+inside another, determining whether one convex polygon can be rotated
+to fit inside another, sorting the vertices of a line arrangement, or
+sorting the interpoint distances between $n$ points in $\R^d$.
+(Although Barequet and Har-Peled \cite{bh-pctmh-01} claim only that
+the problems they consider are 3SUM-hard, their proofs immediately
+imply this stronger result.)  Fredman also mentions an immediate
+application to multiplying sparse polynomials \cite{f-hgiit-76}.
+
+* Partial and Related Results:
+The obvious $O(n^2 \log n)$-time algorithm is also the fastest known.
+There are $\Omega(n^2)$ lower bounds for this problem in various
+restrictions of the linear decision tree model of
+computation~\cite{f-hgiit-76, d-lbss-89, e-lblsp-99}.  The main
+problem is whether the logarithmic factor can be removed.
+
+Fredman \cite{f-hgiit-76} proved that if a given partial order on $m$
+elements has $L$ linear extensions, then the set can be sorted in at
+most $\log_2 L + 2m$ comparisons.  For the sorting $X+Y$ problem, we
+have $m = n^2$, the Hasse diagram of the partial order is an $n\times
+n$ diagonal grid, and simple arguments about hyperplane arrangements
+imply that $L = O(n^{8n})$.  Thus, Fredman's algorithm can sort $X+Y$
+using only $8n\log n + 2n^2$ comparisons; unfortunately, the algorithm
+needs exponential time to choose which comparisons to perform!  This
+exponential overhead was reduced to polynomial time by Kahn and
+Kim~\cite{kk-es-95} and then to $O(n^2\log n)$ by Lambert
+\cite{l-ssxoc-92} and Steiger and Streinu \cite{ss-paslp-95}.  These
+results imply that no superquadratic lower bound is possible in the full
+linear decision tree model.
+
+If the input consists of $n$ integers between $-M$ and $M$, an
+algorithm of Seidel based on fast Fourier transforms runs in $O(n +
+M\log M)$ time \cite{e-lblsp-99}.  The $\Omega(n^2)$ lower bounds
+require exponentially large integers.
+
+A closely related problem does have a subquadratic 
+solution:
+find a minimum element of $X+Y$, the so-called
+\emph{min-convolution} problem,
+posed by Jeff Erickson~\cite{do-op05-06}.
+See~\cite{bcdehilt-ncxy-06} for the result and a discussion of connections
+to the sorting problem.
+
+* Related Open Problems:
+The decision version of this problem---does the set $X+Y$ have $n^2$
+unique elements?---is 3SUM-hard \cite{bh-pctmh-01};
+see Problem \ref{Problem.11}.
+
+* Reward: <none>
+* Appearances: <none>
+* Categories: lower bounds
+* Entry Revision History:
+E. Demaine, 6 June 2002; Jeff Erickson, 20 June 2002;
+J. O'Rourke, 20 Aug. 2006.
+---------------------------------------------------------

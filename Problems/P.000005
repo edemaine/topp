@@ -1,0 +1,38 @@
+* Number: 5
+* Problem: Euclidean Minimum Spanning Tree
+* Statement:
+Can the Euclidean
+\emph{minimum spanning tree} (MST) of $n$ points in $\R^d$
+be computed in time close to the lower bound of
+$\Omega(n \log n)$ \cite{gkms-lbrad-96}?
+* Origin: Uncertain, pending investigation.
+* Status/Conjectures: Open.
+* Partial and Related Results:
+Several algorithms have been developed for general graphs with arbitrary
+edge weights.
+Chazelle presented an $O(m \alpha(m,n) \log \alpha(m,n))$-time algorithm
+\cite{c-fdams-97},
+and then an $O(m \alpha(m,n))$-time algorithm \cite{c-mstai-00},
+where $\alpha(m,n)$ is the functional inverse of Ackermann's function,
+and $n$ and $m$ are the number of vertices and edges respectively
+in the graph.
+Pettie and Ramachandran have since given an optimal algorithm for the graph
+setting \cite{pr-omsta-02}, whose running time is an unknown function between
+$\Omega(m)$ and $O(m \alpha(m,n))$.
+In particular, when $m = \Omega(n \log n)$, $\alpha(m,n) = O(1)$ and
+these time bounds are all linear in the number of edges, $m$.
+
+But in the geometric setting, the graph is complete, so a time bound linear
+in the number of edges, $m$, is quadratic in the number of points, $n$.
+And indeed the best upper bounds for the Euclidean
+MST approach quadratic for large $d$, e.g.,~\cite{ck-dmpsa-95}.
+* Related Open Problems:
+This problem is intimately related to the bichromatic closest
+pair problem~\cite{aesw-emstb-91}.
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: minimum spanning tree; shortest paths
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001; E. Demaine, 7 July 2002.
+---------------------------------------------------------

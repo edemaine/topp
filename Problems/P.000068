@@ -1,0 +1,53 @@
+* Number: 68
+* Problem: Rolling a Die over a Labeled Board
+* Statement:
+Label the faces of a unit cube with numbers $1$--$6$ as in a die.
+%(There are actually two standard labelings, with all opposite pairs of face
+% labels summing to~$7$; pick one.)
+Place the cube to sit on an integer lattice grid,
+with one corner at the origin and sides aligned with the axes.
+Completely label every lattice square of a rectangular ``board'' $R$,
+whose corner is at the origin,
+with numbers in
+$\{1,2,3,4,5,6\}$.
+The problem is to roll the cube over its edges so that,
+for each square $s \in B$ labeled $l$,
+the cube lands on $s$ precisely once, and when it does so,
+the top face of the cube has label~$l$.
+
+What is the computational complexity of solving an instance of this problem?
+
+* Origin: Version posed by O'Rourke at the
+2005 \emph{Canadian Conference on Computational Geometry}~\cite{do-op05-06},
+and subsequently substantially developed and embellished in~\cite{bbddefkst-orcp-07}.
+* Status/Conjectures: Open.
+* Motivation:
+This problem was inspired by van Deventer's
+``Rolling block mazes''~\cite{vD-rbm-04}.
+The paper~\cite{bbddefkst-orcp-07} uncovered a rich history to rolling
+cube puzzles going back to the 1960's, which will not be repeated here.
+* Partial and Related Results:
+The original posed problem labeled an arbitrary connected
+set $S$ of squares, rather than a rectangular board $R$;
+the cells outside of $S$ are \emph{free}, and may be visited
+any number of times with any number on the die top.
+That former problem is solved in~\cite{bbddefkst-orcp-07},
+which establishes that, as conjectured, the problem is NP-complete.
+
+The posed problem has no free cells, and in fact the labels are
+all in a rectangular board $R$.  This seems the most interesting
+specific variant, for it is left possible in~\cite{bbddefkst-orcp-07}
+that, if there is a solution for $R$, it is ``uniquely rollable.''
+They establish that there are boards with labeled and
+\emph{blocked} (i.e., forbidden) cells for which rollable
+Hamiltonian cycles are not unique, but they leave open fully labeled boards.
+The uniquely-rollable conjecture is settled for all boards
+with side lengths at most 8.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances: \cite{do-op05-06}; see above.
+* Categories:
+combinatorial geometry
+* Entry Revision History:
+J. O'Rourke, 17 Jul 2007; 2 Feb 2012.
+---------------------------------------------------------

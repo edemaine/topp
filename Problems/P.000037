@@ -1,0 +1,53 @@
+* Number: 37
+* Problem: Counting Polyominoes
+* Statement:
+How many polyominoes on $n$ squares are there?
+A \emph{polyomino} is a connected interior-disjoint union of axis-aligned unit
+squares joined edge-to-edge, in other words, an edge-connected union of
+cells in the planar square lattice.
+The \emph{order} of a polyomino is the number of unit squares forming it.
+The problem asks for the number of polyominoes of order $n$.
+The key constraint here is that polyominoes must be edge-connected.
+There are three variations on the problem, depending on whether two polyominoes
+are considered equivalent by factoring out just translations
+(fixed polyominoes), rotations and translations (chiral polyominoes),
+or reflections, rotations, and translations (free polyominoes).
+* Origin: To quote Klarner~\cite{k-p-97}:
+``Polyominoes have a long history, going back to the start of the 20th
+century, but they were popularized in the present era initially
+by Solomon Golomb, then by Martin Gardner in his \emph{Scientific American}
+columns.''
+* Status/Conjectures: Open.
+* Motivation: <none>
+* Partial and Related Results:
+Asymptotically,
+results of Klarner et al.~\cite[Thm.~12.3.1]{k-p-97} show
+that the number of fixed $n$-ominoes (factoring out just translations),
+denoted $t(n)$, satisfies
+$$\lim_{n \to \infty} [t(n)]^{1/n} = \lambda$$
+(roughly, $t(n)$ is around $n^\lambda$)
+for ``Klarner's constant" $\lambda$,
+with $4.0025 < \lambda < 4.5685$,
+but the precise value of $\lambda$ remains open.
+The lower bound of $>4$ is established in~\cite{brs-lambda4-15},
+and the upper bound in~\cite{bb-ubp-15}.
+
+The exact counts have been computed for small $n$.
+See~\cite{s-oeis-A000105} for the number of fixed $n$-ominoes for $n \leq 28$
+and for related references.  
+The current record is $n=56$ by Jensen~\cite{j-cp-03}.
+See also~\cite{e-gj-poa} for related links.
+* Related Open Problems:
+There are many related problems involving 
+polyominoes with restricted geometric shapes (e.g., \cite{s-oeis-A204804}),
+polyiamonds (edge-to-edge unions
+of unit equilateral triangles), polyhexes (edge-to-edge unions of unit
+regular hexagons), polyabolos (edge-to-edge unions of unit right isosceles
+triangles), polycubes (face-to-face unions of unit cubes), etc.
+All of these problems are also open.
+* Reward: <none>
+* Appearances: \cite{k-p-97}
+* Categories: combinatorial geometry
+* Entry Revision History:
+E. Demaine \& J. O'Rourke, 30Nov2001; E. Demaine, 28Aug2002; G. Barequet, 4Dec2015.
+---------------------------------------------------------

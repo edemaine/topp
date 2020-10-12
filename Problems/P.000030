@@ -1,0 +1,33 @@
+* Number: 30
+* Problem: Thrackles
+* Statement: 
+What is the maximum number of edges in a thrackle?
+A \emph{thrackle} is a planar drawing of a graph of $n$ vertices
+by edges
+which are smooth curves between vertices,
+with the condition
+that each pair of edges intersect at exactly one point, and have distinct
+tangents there.
+Another phrasing is that nonincident edges cross exactly once,
+and no incident edges share an interior point.
+* Origin: Conway, late 1960's.
+* Status/Conjectures: Open.
+Conway's conjecture is that the number edges cannot exceed $n$.
+* Partial and Related Results:
+The upper bound was lowered from $O(n^{3/2})$ to $2n-3$ in~\cite{lps-ctc-95},
+and further lowered to $(3/2)(n-1)$ in~\cite{cn-bgt-00}.
+The conjecture has long been known to be true for straight-line
+thrackles.
+The conjecture was extended in~\cite{cn-bgt-00}
+to the claim that a thrackle on $n$ vertices embedded on a surface
+of genus $g$ has at most $n + 2g$ edges.
+See~\cite[Sec.~9.5]{bmp-rpdg-05} for a recent discussion and further references.
+* Related Open Problems: <none>
+* Reward: Conway offers a reward of \$1,000 for a resolution.
+* Appearances:
+\cite{mo-cgc42-01, w-tp-thrackle}
+* Categories: graphs; combinatorial geometry; graph drawing; geometric graphs
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001; 13 Dec. 2001; 18 Feb. 2002 (thanks to David Eppstein).
+E. Demaine, 28 May 2002 (thanks to Stephan Wehner); J. O'Rourke, 22 Sep. 2005.
+---------------------------------------------------------

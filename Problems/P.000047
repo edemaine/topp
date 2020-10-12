@@ -1,0 +1,39 @@
+* Number: 47
+* Problem: Hinged Dissections
+* Statement:
+Does every pair of equal-area polygons have
+a hinged dissection?
+A \emph{dissection} of one polygon $A$ to another $B$ is a partition of $A$
+into a finite number of pieces that may be reassembled to form $B$.
+A \emph{hinged dissection} is a dissection where the pieces are hinged
+at vertices and the reassembling is achieved by rotating the pieces
+about their hinges in the plane of the polygons.
+* Origin: \cite{ddeff-hdpp-03}, \cite[p.~3]{f-hdst-02}.
+* Status/Conjectures:  Now settled: Hinged dissections exist~\cite{aacddk-hde-08}.  Update to this entry soon.
+* Partial and Related Results:
+There are two main partial results.
+First, any two \emph{polyominoes} of the same area
+have a hinged dissection~\cite{ddeff-hdpp-03}.
+A polyomino is a polygon formed by joining unit squares at their
+edges; see~\cite{k-p-97} and Problem~\ref{Problem.37}.
+The polyomino result generalizes to hinged dissections
+of all edge-to-corresponding-edge gluings
+of congruent copies of any polygon.
+Second, 
+any asymmetric polygon has a hinged dissection 
+to its mirror image~\cite{e-hkmd-01}.
+Both of these results interpret the problem as
+ignoring possible intersections between
+the pieces as they hinge,
+following what Frederickson calls the ``wobbly-hinged'' model.
+This freedom may not be necessary, although this seems not to
+be established in the literature.
+
+Many specific examples of hinged dissections can be found in \cite{f-hdst-02}.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances: \cite{o-cgc44-02}.
+* Categories: polygons
+* Entry Revision History:
+J. O'Rourke, 25 Mar 2003; J. O'Rourke, 23 Jan 2009.
+---------------------------------------------------------

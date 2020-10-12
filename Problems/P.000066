@@ -1,0 +1,29 @@
+* Number: 66
+* Problem: Reflexivity of Point Sets
+* Statement:
+Let $\rho(S)$ be the fewest number of reflex vertices
+in a polygonization of a 2D point set $S$,
+i.e., the fewest reflexivities of any simple polygon whose
+vertex set is $S$.
+Let $\rho(n)$ be the maximum of $\rho(S)$ over all
+sets $S$ with $n$ points.
+What is $\rho(n)$?
+* Origin: \cite{afhmnss-orps-03}
+* Status/Conjectures: Open.
+* Partial and Related Results:
+In~\cite{afhmnss-orps-03} the authors prove
+that
+$\lfloor n/4 \rfloor \le \rho(n)  \le \lceil n/2 \rceil$
+and conjecture that $\rho(n) = \lfloor n/4 \rfloor$.
+The upper bound was recently improved
+to $\frac{5}{12} n + O(1) \approx 0.4167 n$
+in~\cite{aak-iubrp-08}.
+* Related Open Problems: 
+Problem~\ref{Problem.16}: Simple Polygonalizations.
+* Reward: <none>
+* Appearances: <none>
+* Categories:
+polygons; point sets.
+* Entry Revision History:
+J. O'Rourke, 3 Aug. 2006; 16 Jul 2008.
+---------------------------------------------------------

@@ -1,0 +1,29 @@
+* Number: 3
+* Problem: Voronoi Diagram of Lines in 3D
+* Statement:
+What is the combinatorial complexity of the Voronoi diagram
+of a set of lines (or line segments) in three dimensions?
+* Origin: Uncertain, pending investigation.
+* Status/Conjectures: Open.
+Conjectured to be nearly quadradic.
+* Partial and Related Results:
+There is a gap between
+a lower bound of $\Omega(n^2)$ and an upper bound that is
+essentially cubic~\cite{s-atubl-94} for the Euclidean case
+(and yet is
+quadratic for polyhedral metrics~\cite{bsty-vdhdc-98}).
+A recent advance shows that
+the ``level sets'' of the Voronoi diagram of lines, given by the union of
+a set of cylinders,
+indeed has near-quadratic complexity~\cite{as-pckum-00}.
+* Related Open Problems:
+This problem is closely related to Problem~\ref{Problem.2},
+because points moving in the plane with constant velocity yield
+straight-line trajectories in space-time. 
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: Voronoi diagrams
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001; 13 Dec. 2001.
+---------------------------------------------------------

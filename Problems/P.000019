@@ -1,0 +1,22 @@
+* Number: 19
+* Problem: Vertical Decompositions in $\R^d$
+* Statement:
+What is the complexity of the \emph{vertical decomposition}
+of $n$ surfaces in $\R^d$, $d \ge 5$?
+* Origin: Uncertain, pending investigation.
+* Status/Conjectures: Open.
+* Partial and Related Results:
+The lower bound of $\Omega(n^d)$ was nearly
+achieved up to $d=3$~\cite[p.~271]{as-dssga-00},
+but a gap remained for $d \ge 4$.
+A recent result~\cite{k-atubv-01}
+covers $d=4$ and achieves $O(n^{2d-4+\e})$ for general $d$,
+leaving a gap for $d \ge 5$.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: combinatorial geometry
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001.
+---------------------------------------------------------

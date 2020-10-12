@@ -1,0 +1,47 @@
+* Number: 49
+* Problem: Planar Euclidean Maximum TSP
+* Statement:
+What is the complexity of finding a tour of maximum Euclidean length
+for a planar point set? 
+* Origin: \cite{b-tarts-96} showed that there is a PTAS for the problem. 
+No earlier mention is known.
+* Status/Conjectures: Open.
+* Motivation: How does the complexity of a natural problem depend
+on the geometry of distances?
+* Partial and Related Results:
+\cite{bjww-ptamp-98} showed that a maximum length tour
+can be found in polynomial time for polyhedral
+metrics in spaces of finite dimension, i.e., for
+metrics for which the unit ball is a convex body with $f$ facets.
+The resulting complexity is $O(n^{f-2}\log n)$.
+
+\cite{f-shmtspgd-99} showed that the maximum TSP can be solved
+in time $O(n)$ for rectilinear distances in the plane,
+but is NP-hard for Euclidean distances in three-dimensional space,
+or on the surface of a sphere. Conjectures the case of planar Euclidean
+distances to be NP-hard.
+
+More recent details and related problems can be found in~\cite{afjtww-gmtsp-03}.
+
+* Related Open Problems: 
+The problem is not even known to be in NP.
+A polynomial algorithm would require some understanding of
+problem 33 (sum of square roots), at least for
+classes of instances arising from the computation of tour length.
+
+Also related is the Planar Euclidean maximum scatter TSP:
+What is the complexity of finding a tour for a planar point set in $\Re^d$,
+such that the Euclidean length of the shortest edge is maximized?
+Stated in~\cite{acmsy-mst-97}, shown NP-hard in dimensions $d\geq 3$
+in~\cite{f-shmtspgd-99}, open for $d=2$.
+Also, no bounds on approximation are known in a geometric context;
+the best known aproximation algorithm from \cite{acmsy-mst-97}
+achieves an approximation factor of 2, but does not use geometry.
+
+* Reward: <none>
+* Appearances: \cite{f-shmts-98}, \cite{afjtww-gmtsp-03}
+* Categories:
+traveling salesman; optimization; point sets
+* Entry Revision History:
+S.P. Fekete, 1 Aug. 2003.
+---------------------------------------------------------

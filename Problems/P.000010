@@ -1,0 +1,24 @@
+* Number: 10
+* Problem: Simple Linear-Time Polygon Triangulation
+* Statement:
+Is there a deterministic, linear-time polygon triangulation
+algorithm significantly simpler than that of Chazelle~\cite{c-tsplt-91a}?
+* Origin: Implicit since Chazelle's 1990 linear-time algorithm.
+* Status/Conjectures: Open.
+* Partial and Related Results:
+Simple randomized algorithms that are close to linear-time
+are known~\cite{s-sfira-91},
+and a recent randomized linear-time
+algorithm~\cite{agr-lttsp-00} avoids much of the intricacies
+of Chazelle's algorithm.
+* Related Open Problems:
+Relatedly, is there a simple linear-time algorithm for
+computing a shortest path in a simple polygon, without
+first applying a more complicated triangulation algorithm?
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: triangulations
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001; 28 Aug. 2001.
+---------------------------------------------------------

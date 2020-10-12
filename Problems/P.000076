@@ -1,0 +1,34 @@
+* Number: 76
+* Problem: Equiprojective Polyhedra
+* Statement:
+Identify or construct all $k$-equiprojective polyhedra.
+A polyhedron $P$ is \emph{$k$-equiprojective} if its orthogonal
+projection to a plane is a $k$-gon in every direction not parallel
+to a face of $P$.
+Thus a cube is 6-equiprojective.
+* Origin: 
+Geoffrey Shephard in
+\cite{s-tpcp2-68}.
+* Status/Conjectures: Open.
+* Motivation: <none>
+* Partial and Related Results:
+A characterization is detailed in~\cite{hl-ep-08}:
+``A polyhedron is equiprojective iff its set of edge-face pairs
+can be partitioned into compensating pairs.''
+For term definitions, see the original paper.
+Building on this work, a recent paper
+\cite{hhlnqr-snep-10}
+establishes that any equiprojective polyhedron has at least
+one pair of parallel faces,
+that there is no 3- or 4-equiprojective polyhedron,
+and the triangular prism is the only 5-equiprojective polyhedron.
+* Related Open Problems: A generalization of
+the problem was posted on MathOverflow, 11Feb11:
+\cite{MathOverflow.55124}
+* Reward: <none>
+* Appearances: Also in \cite{cfg-upg-90}, Problem B10.
+* Categories:
+polyhedra
+* Entry Revision History:
+J. O'Rourke, 31 Dec. 2010; 11 Feb 2011.
+---------------------------------------------------------

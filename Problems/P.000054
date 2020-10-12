@@ -1,0 +1,48 @@
+* Number: 54
+* Problem: Traveling Salesman Problem in Solid Grid Graphs
+* Statement:
+What is the complexity of finding a shortest tour in a solid
+planar grid graph?
+A \emph{planar grid graph} is a graph whose vertices are any set
+of points on the planar integer lattice and whose edges connect every
+pair of vertices at unit distance.
+Distances between nodes correspond to induced shortest-path distances in the
+graph, which corresponds to ``Manhattan'' distances.
+A grid graph is \emph{solid} if it
+does not have any holes, i.e., its complement in the planar integer lattice
+is connected.
+* Origin:
+\cite{ips-hpgg-82} show that the problem is NP-complete in general
+planar grid graphs. 
+* Status/Conjectures: Open.
+* Motivation: 
+* Partial and Related Results:
+\cite{ul-hcsgg-97} show that Hamiltonicity of a solid grid graph
+can be decided in polynomial time.
+Thus we can decide whether there is a tour of length equal to the
+number of vertices.
+In contrast, deciding Hamiltonicity is NP-hard in general planar grid graphs
+\cite{ips-hpgg-82}.
+
+\cite{abdfms-octtc-01} observe that finding the shortest tour
+is polynomially solvable when restricted to \emph{thin} grid graphs,
+i.e., grid graphs that do not contain an induced $2 \times 2$ square.
+This problem asks about replacing the thin restriction with the
+solid restriction.
+ 
+* Related Open Problems: 
+Minimum-Turn Cycle Cover in Planar Grid Graphs
+(Problem~\ref{Problem.53})
+%What is the complexity of finding a minimum-turn tour for a 
+%given grid graph without holes? (Problem 50)
+
+* Reward: <none>
+* Appearances:
+Mentioned in \cite{abdfms-octtc-01}.
+% ED checked that it does not appear in \cite{ul-hcsgg-97}.
+* Categories:
+traveling salesman; optimization; point sets; graphs
+* Entry Revision History:
+S. P. Fekete, 20 Dec. 2003;
+E. Demaine, 16 May 2004.
+---------------------------------------------------------

@@ -1,0 +1,21 @@
+* Number: 22
+* Problem: Minimum-Link Path in 2D
+* Statement:
+Can a minimum-link path among polygonal obstacles
+be found in subquadratic time?
+* Origin: Mitchell [?].
+* Status/Conjectures: Open.
+* Partial and Related Results:
+The best algorithm known requires essentially
+quadratic time in
+the worst case~\cite{mrw-mlpop-92}.  
+* Related Open Problems:
+What is the complexity of
+computing minimum-link paths in three dimensions?
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: shortest paths
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001.
+---------------------------------------------------------

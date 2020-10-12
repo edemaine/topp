@@ -1,0 +1,71 @@
+* Number: 73
+* Problem: Congruent Partitions of Polygons
+* Statement:
+Partition a given polygon $P$ into $n$ mutually congruent pieces
+so that the area of $P$ not covered by the union of the pieces is as small
+as possible.
+A partition which leaves out the least area is an \emph{optimal} congruent partition
+for that $n$. 
+If a congruent partition is a perfect cover, leaving no area uncovered,
+then it is called a \emph{perfect congruent partition}.
+%If the optimal congruent partition is not unique,
+%it would be useful to find one in which the pieces have the fewest number of edges. 
+Two polygons are \emph{congruent} if one can be made to 
+coincide with the other by translation, rotation, or reflection (flipping over).
+%(Sometimes this is called \emph{mirror-congruence}.)
+
+* Origin: Posed by R. Nandakumar, May 2009.
+* Status/Conjectures: Please see below.
+* Motivation: <none>
+* Partial and Related Results:
+
+A new introduction to the problem is now available: \cite{n-cppsi-10}.
+
+\begin{enumerate}
+\item
+It is known that there exist quadrilaterals with no perfect congruent partition
+for any $n$:
+\url{http://domino.research.ibm.com/Comm/wwwr_ponder.nsf/challenges/December2003.html}.
+%It is unknown if the same holds true in 3D.
+
+%\item 
+%An approximation for $n=2$ is offered in~\cite{n-cmcpc-10}.
+
+%\item
+%It seems likely, although not certain, that if $P$ is convex, 
+%the simplest piece that gives an optimal congruent partition for some $n$ need not be convex.
+
+%\item
+%If, instead of a set of $n$ mutually congruent pieces, we only seek a partition into 
+%$n$ mutually identical \emph{sets of pieces} (with each set required to have some finite number of pieces), it can be seen that for $n=2$ or any power of 2, \emph{any} polygon can be partitioned \emph{with no left over} into $n$ mutually identical sets of triangles. For other values of $n$, even such partitioning into identical sets of polygons may not be in general possible.
+
+%* Further questions:
+
+\item
+Deciding 
+whether $P$ has a perfect congruent partition
+appears little explored for $n>2$.
+The case of $n=2$ is solved in~\cite{efir-pptmc-08}
+with an $O(n^3)$ algorithm.
+
+\item
+If congruence is 
+restricted to translation and rotation only, to what extent
+does the problem change?
+
+\item
+Can the left-over area be upper-bounded as a function of $P$ and $n$?
+An attempt 
+for $n=2$ is offered in~\cite{n-cmcpc-10}.
+
+
+\end{enumerate}
+
+* Related Open Problems: Problem~\ref{Problem.67}
+* Reward: <none>
+* Appearances: <none>
+* Categories:
+polygons, partitioning, dissections
+* Entry Revision History:
+R. Nandakumar, 13 May 2009; J. O'Rourke, 8 July 2009; 5 Jan. 2011.
+---------------------------------------------------------

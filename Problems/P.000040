@@ -1,0 +1,40 @@
+* Number: 40
+* Problem: The Number of Pointed Pseudotriangulations
+* Statement:
+For a planar point set $S$, is the number of pointed pseudotriangulations
+always at least the number of triangulations?
+
+A \emph{pseudotriangle} is a planar polygon with exactly
+three convex vertices.  Each pair of convex vertices is connected
+by a reflex chain, which may be just one segment.  
+(Thus, a triangle is a pseudotriangle.)
+A \emph{pseudotriangulation} of a set $S$ of $n$ points in the plane
+is a partition of the convex hull of $S$ into pseudotriangles
+using $S$ as a vertex set.
+A minimum pseudotriangulation,
+or \emph{pointed pseudotriangulation},
+has the fewest possible number of
+edges for a given set $S$ of points.
+
+See~\cite{s-capnc-00, kkmsst-tdbpt-01, o-cgc43-02}
+for examples, explanation of the term ``pointed,'' and further details.
+* Origin: \cite{rrss-ctpw-01}.
+* Status/Conjectures: Open.  Conjectured to be true,
+with equality only when the points of $S$ are in convex position.
+* Partial and Related Results:
+The conjecture has been established for all sets of 
+at most $10$ points: $\le 9$ by~\cite{bkps-ceptg-01},
+and $10$ by Oswin Aichholzer [personal communication, 28 Mar. 2002].
+Aichholzer et al.~\cite{aaks-cmp-02} establish that the number of pointed
+pseudotriangulations on $n$ points is minimized when the points are in
+convex position.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+Posed by Jack Snoeyink at the CCCG 2001 open-problem session
+\cite{do-opc2001-02}.
+* Categories: triangulations; combinatorial geometry
+* Entry Revision History:
+J. O'Rourke, 20 Mar. 2002; 28 Mar. 2002;
+E. Demaine, 7 Aug. 2002; 31 Aug. 2002.
+---------------------------------------------------------

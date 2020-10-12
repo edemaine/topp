@@ -1,0 +1,37 @@
+* Number: 38
+* Problem: Compatible Triangulations
+* Statement:
+Is it true that every two sets of $n$ planar points 
+in general position with the
+same number points on their convex hulls have
+compatible triangulations?
+Two triangulations are \emph{compatible} if they have the same
+combinatorial structure, i.e., if their face lattices are
+isomorphic.  For compatible triangulations $T_1$ and $T_2$
+of point sets $S_1$ and $S_2$, there is a bijection
+$\phi$ between the points such that $ijk$ 
+is a triangle of $T_1$ empty of points of $S_1$ iff
+$\phi(i) \phi(j) \phi(k)$
+is a triangle of $T_2$ empty of points of $S_2$.
+* Origin: \cite{aak-ctps-01} and~\cite{aahk-tct-02}.
+* Status/Conjectures: Open.
+Conjectured in \cite{aahk-tct-02} to be true.
+* Motivation:
+Morphing.
+* Partial and Related Results:
+The answer to the question posed is sometimes {\sc no}
+for points not in general position.
+If the bijection between the points is given and fixed, then
+compatible triangulations do not always exist~\cite{s-jttm-87}.
+When the bijection is not given, the conjecture is
+proven only for point sets with at most three points interior
+to the hull~\cite{aahk-tct-02}.
+Compatible triangulations can always be achieved by the
+addition of at most a linear number of Steiner points.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances: <none>
+* Categories: triangulations
+* Entry Revision History:
+J. O'Rourke, 1 Jan. 2002.
+---------------------------------------------------------

@@ -1,0 +1,51 @@
+* Number: 35
+* Problem: Freeze-Tag: Optimal Strategies for Awakening a Swarm of Robots
+* Statement:
+An optimization problem that naturally arises in the study of
+``swarm robotics'' is to wake up a set of ``asleep'' robots, starting
+ with only one ``awake'' robot.
+One robot can only awaken another when they are in the same location.
+As soon as a robot is awake, it may
+assist in waking up other robots.  The goal is to compute an optimal
+  {\em awakening schedule} such that all robots are awake by
+  time $t^*$, for the smallest possible value of $t^*$ (the optimal
+{\em makespan}).
+The $n$ robots are initially at $n$ points of a metric space.
+The problem is equivalent to finding a spanning tree with maximum out-degree
+two that minimizes the radius from a fixed source.
+
+Is it NP-hard to determine an optimal awakening schedule for robots in
+the Euclidean (or $L_1$) plane?  In more general metric spaces, can
+one obtain an approximation algorithm with better than $O(\log n)$
+performance ratio?
+
+* Origin: \cite{abfms-ftphwusr-01}
+* Status/Conjectures:
+\cite{abfms-ftphwusr-01} conjecture that the freeze-tag problem
+is NP-hard in the
+Euclidean (or $L_1$) plane.  (They show it to be NP-complete in
+star metrics.)
+* Motivation:
+What is the most efficient way to "turn on" a large swarm of
+robots or to distribute to them a secret or a token that 
+requires close proximity in order to pass from one to another?
+* Partial and Related Results:
+There are a variety of related results
+given in \cite{abfms-ftphwusr-01}.  They show that the problem is NP-hard
+for "star metrics" (each asleep robot is at a leaf of a star graph whose
+spokes have various lengths).  
+For geometric instances ($L_p$ metrics) in fixed dimension,
+they give an efficient PTAS.  For general metric spaces,
+they give an $O(\log n)$-approximation algorithm.  They also
+give improved approximation methods for other special cases (star
+graphs, ultrametrics)
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances: 
+Posed in \cite{abfms-ftphwusr-01},
+and by Joseph Mitchell during the open problem session at the
+Fall Workshop on Computational Geometry, Brooklyn, NY, Nov. 2--3, 2001.
+* Categories: optimization; scheduling; robotics
+* Entry Revision History:
+E. Demaine, 20 Nov. 2001; J. Mitchell, 21 Nov. 2001.
+-----------------------------------------------------------

@@ -1,0 +1,45 @@
+* Number: 53
+* Problem: Minimum-Turn Cycle Cover in Planar Grid Graphs
+* Statement:
+What is the complexity of finding a cycle-cover of a planar grid graph
+that has the fewest possible $90^\circ$ turns?
+(An $180^\circ$ U-turn counts as two turns.)
+A \emph{planar grid graph} is a graph whose vertices are any set
+of points on the planar integer lattice and whose edges connect every
+pair of vertices at unit distance.
+* Origin: Aggarwal et al.~\cite{ackms-amtsp-97} show that the
+more general problem of finding a cycle cover for a planar
+set of points that minimizes total turn angle is NP-hard.
+Arkin et al.~\cite{abdfms-octtc-01} consider the problem
+in grid graphs, but are only able to give approximations.
+* Status/Conjectures: Open.
+* Motivation: Minimizing turns is a natural geometric measure;
+understanding its algorithmic behavior is of general interest.
+* Partial and Related Results:
+\cite{abdfms-octtc-01} show that the problem is polynomially solvable
+when restricted to \emph{thin} grid graphs, i.e., grid graphs that do not
+contain an induced $2 \times 2$ square.
+For this special case, the problem behaves somewhat similarly to a
+Chinese Postman Problem.
+The problem of finding a minimum-turn tour is known to be NP-complete,
+even for this special case.
+
+More recent details and related problems can be found in the 
+version~\cite{abdfms-octtc-03}.
+
+* Related Open Problems: 
+Minimum-turn cycle cover in a ``solid'' (genus-zero) grid graph:
+What is the complexity of finding a minimum-turn tour for a 
+given planar grid graph without holes?
+
+TSP in a solid grid graph:
+What is the complexity of finding a minimum-length tour for a 
+given planar grid graph without holes? (Problem~\ref{Problem.54})
+
+* Reward: <none>
+* Appearances: \cite{abdfms-octtc-01}. 
+* Categories:
+traveling salesman; optimization; point sets; graphs
+* Entry Revision History:
+S. P. Fekete, 12 Dec. 2003.
+---------------------------------------------------------

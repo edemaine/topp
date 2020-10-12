@@ -1,0 +1,40 @@
+---------------------------------------------------------
+* Number: 74
+* Problem: Slicing Axes-Parallel Rectangles
+* Statement: 
+Let us say that two rectangles in the place are
+independent if both their $x$- and $y$-axis projections are disjoint.  A
+set of rectangles is then independent if the rectangles are pairwise
+independent.  Suppose that a collection of axes-parallel rectangles
+contains no independent set of size $m$ or greater.  What is the minimal
+number, $f(m)$, of horizontal and vertical lines needed to slice every
+rectangle in the collection?
+* Origin: Vincent Vatter, Jun 2009.
+* Status/Conjectures: 
+It was known that $f(m)$ exists and is at most exponential.
+An advance was made
+in 2010 by
+Werner and Lenz, 
+who established a quadratic upper bound, $O(m^2)$,
+in~\cite{wl-pbrsn-10}.
+They also uncovered a long history of the problem under
+other names, e.g., "$d$-separated interval piercing."
+In fact, the result was already established by Tardos and Karolyi
+earlier.  See the cited paper for more details.
+
+But, as pointed out by Pablo Sober\'on,
+apparently an earlier result~\cite[Thm.~1.4]{k-tdi-97},
+established $f(m) \le 2 m$.
+This largely solves the problem.
+
+* Motivation: <none>
+* Partial and Related Results: The problem arises in the study of
+permutation classes, see~\cite{v-spc-08}, where
+it was proved that $f(m)$ exists and is at most exponential.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances: <none>
+* Categories: combinatorial geometry
+* Entry Revision History:
+V. Vatter, 24 June 2009; J.O'Rourke, 16 Mar. 2012; P. Sober\'on, 3 May 2012.
+---------------------------------------------------------

@@ -1,0 +1,34 @@
+* Number: 42
+* Problem: Vertex-Unfolding Polyhedra
+* Statement:
+Consider a polyhedron with simply connected facets (no holes on a facet)
+and without boundary (every edge is incident to exactly two facets).
+Can the polyhedron be cut along potentially all of its edges,
+but leaving certain faces connected at vertices,
+and unfolded into one piece in the plane without overlap?
+Such an unfolding is called a \emph{vertex-unfolding},
+to distinguish from widely studied
+\emph{edge-unfoldings} (see Problem~\ref{Problem.9}) and
+\emph{general unfoldings}.
+An important subproblem here is whether all convex polyhedra have
+vertex-unfoldings;
+a negative answer would also resolve Problem \ref{Problem.9}.
+* Origin: \cite{deeho-vusm-02}
+* Status/Conjectures: Open.
+* Motivation: <none>
+* Partial and Related Results:
+All simplicial polyhedra have vertex-unfoldings \cite{deeho-vusm-02}.
+These vertex-unfoldings have a special structure called a ``facet path''
+which does not exist in general, even for convex polyhedra
+\cite{deeho-vusm-02}.
+* Related Open Problems:
+Problem~\ref{Problem.9}: Edge-Unfolding Convex Polyhedra. \\
+Problem~\ref{Problem.43}: General Unfolding of Nonconvex Polyhedra.
+* Reward: <none>
+* Appearances:
+Originally posed in \cite{deeho-vusm-02}.
+Posed by E. Demaine at the CCCG 2001 open-problem session \cite{do-opc2001-02}.
+* Categories: folding and unfolding; polyhedra
+* Entry Revision History:
+E. Demaine, 7 Aug. 2002; 31 Aug. 2002.
+---------------------------------------------------------

@@ -1,0 +1,21 @@
+* Number: 26
+* Problem: Surface Reconstruction
+* Statement:
+Given a sufficiently dense sample of
+points on a surface (technically, an $\e$-sample),
+reconstruct a surface homeomorphic to the original.
+* Origin: Amenta and Bern [?]
+* Status/Conjectures: Open.
+* Partial and Related Results:
+This has recently been accomplished for
+smooth surfaces~\cite{acdl-sahsr-00},
+but remains open for surfaces
+with sharp edges and corners.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: reconstruction; point sets
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001.
+---------------------------------------------------------

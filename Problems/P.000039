@@ -1,0 +1,43 @@
+* Number: 39
+* Problem: Distances among Point Sets in $\R^2$ and $\R^3$
+* Statement:
+For a point set $P$ in $\R^d$, let 
+$f_d(P)$ be the number of unit-distance point pairs:
+$$f_d(P) = \left| \{ (u,v) \mid u, v \in P , \, \|u-v\| = 1 \} \right| \; ;$$
+and let $f_d(n)$ be the maximum over all sets of $n$ points:
+$$f_d(n) = \max_{|P| = n} f_d(P) \; .$$ 
+Further, let $g_d(P)$ denote the number of distinct
+distances induced by a set of points $P$:
+$$g_d(P) = \left| \{ \|u-v\| \mid u, v \in P \} \right| \; ;$$
+and let $g_d(n)$ be the minimum over all sets of $n$ points: 
+$$g_d(n) = \min_{|P|=n} g_d(P) \; .$$ 
+
+Give upper and lower bounds on $f_d(n)$ and $g_d(n)$,
+particularly for $d=2$ and $d=3$.
+* Origin: Paul Erd\H{o}s~\cite{e-sdnp-46}.
+* Status/Conjectures:
+Open.
+* Motivation: <none>
+* Partial and Related Results:
+$f_2(n) = O(n^{4/3})~$~\cite{s-cnhep-97,cegsw-ccbac-90,sst-udep-84},
+and
+$f_2(n) = \Omega(n^{1+c/\log\log n})$~\cite{e-sdnp-46}.
+$f_3(n) = O(n^{5/3})$ and
+$f_3(n) = \Omega(n^{4/3} \log \log n)$~\cite{e-sdnpe-60}.  
+For $g_2(n)$, the best result is that 
+$g_2(n) = \Omega(n^{6/7})$~\cite{st-ddp-01}. Erd\H{o}s conjectured that the
+correct answer here is $n/\sqrt{\log n}$; this bound is achieved on the grid. 
+
+* Related Open Problems: <none>
+* Reward: 
+Erd\H{o}s offered \$500 to settle whether 
+$f_2(n) < c n^{1+\epsilon}$ for some $c>0$ and for each $\epsilon>0$,
+and \$500 to settle whether
+$g_2(n) = [1+o(1)] cn/\sqrt{\log n}$.
+% T1G on http://www.math.niu.edu/~rusin/known-math/93_back/prizes.erd
+% Quotes on awards from CFG.
+* Appearances: \cite[pp.~150-1]{cfg-upg-90}.
+* Categories: combinatorial geometry
+* Entry Revision History:
+S. Venkatasubramanian, 12 Feb. 2002.
+---------------------------------------------------------

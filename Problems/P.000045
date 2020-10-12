@@ -1,0 +1,46 @@
+* Number: 45
+* Problem: Smallest Universal Set of Points for Planar Graphs
+* Statement:
+How many points must be placed in the plane to support planar drawing of
+all planar graphs on $n$ vertices?  More precisely, call a set of points
+\emph{universal} if every planar graph on $n$ vertices can be drawn with
+straight-line edges and without crossings by placing the vertices on a subset
+of the points.  What is the smallest universal set of points as a function
+of~$n$?  In particular, is it $O(n)$?
+* Origin:
+Attributed to Mohar by J\'anos Pach (23 Nov. 2002).
+See also \cite{ck-lbsus-89} for some of the history.
+%Rosenstiehl and Tarjan \cite{rt-rplbo-86} asked whether polynomial-size
+%universal sets exist.
+* Status/Conjectures: Open.
+Between $\Theta(n)$ and $\Theta(n^2)$.
+* Motivation: <none>
+* Partial and Related Results:
+By definition, a universal set of points must have size at least~$n$.
+Chrobak and Karloff \cite{ck-lbsus-89} proved the stronger result that
+any universal set of points must have at least $1.098n$ points.
+
+On the other side, it is well-known that there are universal sets of
+points of size $O(n^2)$.
+In particular, every planar graph can be drawn on the
+$O(n) \times O(n)$ square grid \cite{fpp-hdpgg-90, s-epgg-90}.
+However, any universal set of points forming a grid
+must have size at least $n/3 \times n/3$ \cite{ck-lbsus-89}.
+
+Stephen Kobourov asks for the smallest value of $n$ for which a universal
+point set of size $n$ does not exist.
+He has checked by exhaustive search that there is a universal point set of size
+$n$ for all $n \leq 14$.
+
+It is now known that there is a universal set of $n$ points if
+one bend per edge is permitted~\cite{ellw-usnpo-10}.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+Posed by Stephen Koborouv during an open-problem session at the DIMACS Workshop
+on Computational Geometry (12th Annual Fall Workshop on Computational
+Geometry), Nov. 2002.
+* Categories: graphs; point sets; graph drawing
+* Entry Revision History:
+E. Demaine, 23 Nov. 2002; 20 Sep. 2003 (thanks to Sergio Cabello); J. O'Rourke, 29 Mar 2010 (thanks to Michael Hoffmann).
+---------------------------------------------------------

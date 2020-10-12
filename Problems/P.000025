@@ -1,0 +1,26 @@
+* Number: 25
+* Problem: Polyhedral Surface Approximation
+* Statement:
+How efficiently can one compute a polyhedral surface
+that is an $\e$-approximation of a given triangulated surface in
+$\R^3$?
+* Origin: Mitchell [?]
+* Status/Conjectures: Open.
+* Partial and Related Results:
+It is NP-hard to obtain the minimum-facet surface
+separating two nested convex polytopes~\cite{dg-ocop3-97a},
+but
+polynomial-time approximation algorithms are known
+(\cite{bg-aoscf-95,ms-sapo-95,as-sagp-98})
+for this case, and for separating two terrain surfaces,
+achieving factors within $O(1)$ or $O(\log n)$ of optimal.
+However, no polynomial-time approximation results
+are known for general surfaces.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: simplification
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001.
+---------------------------------------------------------

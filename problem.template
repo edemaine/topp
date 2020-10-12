@@ -1,0 +1,90 @@
+This is a template for an open problem database entry ("problem file") for
+The Open Problems Project, currently at
+	<http://cs.smith.edu/~orourke/TOPP/>. 
+It is simply an ASCII file, with various fields starting a new line with a *
+preceding the field name.  The template gives a rough definition of the
+contents of each field.  The field contents can be written in LaTeX.  
+Delete the explanatory text and insert your own; or leave blank as appropriate.
+Nearly all fields are optional; use `<none>' for an empty field.
+When in doubt, leave a note for the editors, who will edit the problem before
+posting it.  After the template is one sample, for Problem 1.  See the web page
+for the correspondence between the "problem file" and the displayed version.
+
+---------------------------------------------------------
+TEMPLATE
+---------------------------------------------------------
+* Number: To be filled in by the editors.
+* Problem: Concise and informative name of problem.  
+Each major word capitalized.
+* Statement:
+Clear statement of the problem, 
+defining most(?) unusual technical terms.
+* Origin: Uncertain, pending investigation.
+That's the default.  Fill in more if you know it.
+* Status/Conjectures: Open.
+Again that's the default.
+* Motivation: <none>
+A new field, added Nov. 2001. Infrequently used.
+Leave out entirely if not needed.
+* Partial and Related Results:
+A paragraph or two about related results.
+Use \cite{key} where key is from the geom.bib Computational 
+Geometry community bibliography.  If you don't have access to
+this, or your reference is not there, provide the reference
+information in bib format and I'll add it to my copy of
+geom.bib.
+* Related Open Problems: <none>
+That's the default.  Can reference other problems
+like this: Problem~\ref{Problem.23}.
+* Reward: <none>
+That's the default.
+* Appearances: <none>
+Where else has the problem appeared as an open problem,
+e.g., in some other list.  Default is <none>, which could
+mean "I don't know."
+* Categories:
+List of categories on the line, separated by semicolons.
+There is no approved list of categories.  We will let these
+evolve and cluster naturally.  Try to think of at least one category.
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001;  Name, Date; Name, Date.
+---------------------------------------------------------
+NB: This final line of dashes is needed to separate one problem from the next!
+
+Follow the file with bibliographic entries not in geom.bib,
+preferably in bibtex format, or notes for the moderators.
+
+
+
+---------------------------------------------------------
+EXAMPLE
+---------------------------------------------------------
+* Number: 1
+* Problem: Minimum Weight Triangulation
+* Statement: 
+Can a mininimum weight triangulation of a planar point set
+be found in polynomial time?
+The \emph{weight} of a triangulation is its total edge length.
+* Origin: Perhaps E. L. Lloyd, 1977: \cite{l-tspp-77},
+cited in Garey and Johnson~\cite{gj-cigtn-79}.
+* Status/Conjectures: Open.
+This problem is one
+of the few from Garey and Johnson~\cite[p.~288]{gj-cigtn-79} whose
+complexity status remains unknown.
+* Partial and Related Results:
+The best approximation algorithms achieve a (large) constant times
+the optimal length~\cite{lk-qgtam-96};
+good heuristics are known~\cite{dmm-naefm-95}.
+If Steiner points are allowed, again constant-factor
+approximations are known~\cite{e-amwst-94,cl-qrsam-98},
+but it is open to decide even if a minimum-weight Steiner triangulation
+exists (the minimum might be approached only
+in the limit).
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: triangulations
+* Entry Revision History:
+J. O'Rourke, 31 Jul. 2001.
+---------------------------------------------------------

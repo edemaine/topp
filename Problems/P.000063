@@ -1,0 +1,44 @@
+* Number: 63
+* Problem: Dynamic Planar Nearest Neighbors
+* Statement:
+Is there a data structure maintaining a set of $n$ points in the plane
+subject to
+insertions, deletions, and nearest-neighbor queries in $O(\log n)$ time?
+A \emph{nearest-neighbor query} asks to find a point among the set
+that is nearest (in Euclidean distance) to a given a point in the plane.
+This problem reduces to maintaining the convex hull of a set of $n$ points
+in 3D subject to insertions, deletions, and extreme-point queries.
+* Origin: Uncertain, pending investigation.
+* Status/Conjectures: Open.
+* Motivation:
+This problem is the natural generalization of (1D) search trees to 2D.
+Standard balanced search tree data structures can maintain $n$ points
+on the real line
+subject to insertion, deletion, and predecessor and successor queries
+(and thus nearest-neighbor queries) in $O(\log n)$ time per operation.
+(More sophisticated data structures even attain $O(1)$ time per update.)
+* Partial and Related Results:
+For 14 years, the authority on this problem was Agarwal and Matou\v{s}ek's
+FOCS'92 paper \cite{am-dhsrr-95} which describes two data structures:
+one suports updates in $O(n^\epsilon)$ amortized time and
+queries in $O(\log n)$ worst-case time,
+while the other suports updates in $O(\log^2 n)$ amortized time
+queries in $O(n^\epsilon)$ worst-case time,
+for any $\epsilon > 0$.
+The nearest-neighbor problem is a decomposable search problem,
+so when deletions are forbidden, the general techniques of Bentley and Saxe
+\cite{bs-dsp1s-80} yield an $O(\log^2 n)$ amortized bound for updates
+and queries.
+In 2006, Chan \cite{c-dds3c-06} obtained the first polylogarithimc data
+structure for 3D convex hulls and therefore 2D nearest neighbors.
+His data structure supports insertions in $O(\log^3 n)$ expected
+amortized time, deletions in $O(\log^6 n)$ expected amortized time,
+and extreme-point or nearest-neighbor queries in $O(\log^2 n)$
+worst-case time.
+* Related Open Problems: Problem~\ref{Problem.12}.
+* Reward: <none>
+* Appearances: <none>
+* Categories: convex hulls; data structures; Voronoi diagrams
+* Entry Revision History:
+E. Demaine, 24 Jan. 2006.
+---------------------------------------------------------

@@ -1,0 +1,32 @@
+* Number: 56
+* Problem: Packing Unit Squares in a Simple Polygon
+* Statement:
+What is the complexity of deciding whether a given number of
+axis-parallel unit squares can be packed into a simple polygon (without holes)?
+* Origin: Unknown.
+* Status/Conjectures: Open.
+* Motivation: Natural packing problem.
+* Partial and Related Results:
+The problem is known to be NP-hard for
+polygons with holes~\cite{fpt-opcpa-81}, even
+if the polygon is an orthogonal polygon with
+all coordinates being multiples of $1/2$.
+Recently this version of the problem was shown to be
+in NP \cite{deio-p2usg-09}, making it NP-complete.
+
+The problem is the decision version for two optimization
+problems of very different behavior.
+There is a PTAS for packing the maximum number of squares of fixed
+size~\cite{hm-ascpp-85}.  Maximizing the size of squares such that a
+fixed number of squares can be packed has a lower bound on approximation
+of $14/13$, and there is a $3/2$-approximation~\cite{bf-agdp-01}.
+* Related Open Problems: 
+What is the complexity of pallet loading? (Problem~\ref{Problem.55})
+* Reward: <none>
+* Appearances: \cite{bf-agdp-01} conjecture the problem to 
+be polynomially solvable.
+* Categories:
+packing; optimization
+* Entry Revision History:
+S. P. Fekete, 16 Jan. 2004; E. Demaine, 3 July 2009. 
+---------------------------------------------------------

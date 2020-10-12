@@ -1,0 +1,22 @@
+* Number: 2
+* Problem: Voronoi Diagram of Moving Points
+* Statement:
+What is the maximum number of combinatorial changes
+possible in a Euclidean Voronoi diagram of a set of $n$ points each moving
+along a line at unit speed in two dimensions?
+* Origin: Unknown (to JOR).  Perhaps Michael Atallah?
+* Status/Conjectures: 
+Long conjectured to be nearly quadratic. Solved now:
+\cite{r-okdt-15}.
+Natan Rubin proved an upper bound of $O(n^{2+\epsilon})$,
+and a quadratic lower bound is known.
+* Partial and Related Results:
+See~\cite{r-okdt-15} for a review of earlier work, now superceded.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: Voronoi diagrams, Delaunay triangulations
+* Entry Revision History:
+J. O'Rourke, 1 Aug. 2001; 19Sep2017.
+---------------------------------------------------------

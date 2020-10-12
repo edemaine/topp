@@ -1,0 +1,33 @@
+* Number: 1
+* Problem: Minimum Weight Triangulation
+* Statement: 
+Can a mininimum weight triangulation of a planar point set
+be found in polynomial time?
+The \emph{weight} of a triangulation is its total edge length.
+* Origin: Perhaps E. L. Lloyd, 1977: \cite{l-tspp-77},
+cited in Garey and Johnson~\cite{gj-cigtn-79}.
+* Status/Conjectures: Just solved by 
+Wolfgang Mulzer and G\"unter Rote, January 2006!
+\url{http://arxiv.org/abs/cs.CG/0601002}.
+Entry to be updated later...
+
+This problem is one
+of the few from Garey and Johnson~\cite[p.~288]{gj-cigtn-79} whose
+complexity status remains unknown.
+* Partial and Related Results:
+The best approximation algorithms achieve a (large) constant times
+the optimal length~\cite{lk-qgtam-96};
+good heuristics are known~\cite{dmm-naefm-95}.
+If Steiner points are allowed, again constant-factor
+approximations are known~\cite{e-amwst-94,cl-qrsam-98},
+but it is open to decide even if a minimum-weight Steiner triangulation
+exists (the minimum might be approached only
+in the limit).
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: triangulations
+* Entry Revision History:
+J. O'Rourke, 31 Jul. 2001; J. O'Rourke, 3 Jan. 2006.
+---------------------------------------------------------

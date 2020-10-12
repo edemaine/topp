@@ -1,0 +1,42 @@
+* Number: 57
+* Problem: Chromatic Number of the Plane
+* Statement:
+How many colors are needed to paint the plane so that no two points 
+a unit distance apart are painted the same color? 
+If the same question is asked of the line, the answer is $2$: 
+Coloring $[0,1)$ red, $[1,2)$ blue, etc., 
+ensures that no two unit-separated points have the same color.
+One can view the question as asking for the
+chromatic number $\chi(\mathbb{E}^2)$
+of the infinite 
+\emph{unit-distance graph} $G$,
+with every point in the plane a vertex, and an edge between two vertices
+if they are separated by a unit distance.  
+* Origin: 
+Hadwider and Edward Nelson, 1944.
+* Status/Conjectures: Open.
+Erd\H{o}s and de Bruijn showed~\cite{ed-cpigp-51} that
+the chromatic number of the plane is attained for some finite subgraph of $G$.
+This result led to narrowing the answer to %$4$, $5$, $6$, or $7$.
+$4 \le \chi(\mathbb{E}^2) \le 7$.
+For example, the lower bound of $4$ is established by the ``Moser graph.''
+
+The knowledge gap for the
+chromatic number of (3D) space is even wider than for the plane:
+it is only known to 
+satisfy $6 \le \chi(\mathbb{E}^3) \le 15$.
+See~\cite{g-urt-04, g-Geo} for further results and references.
+
+There is now some evidence that the chromatic number of the
+plane may depend on the axioms of set theory.
+This was first seen possible in examples constructed by 
+Saharon Shelah and Alexander Soifer.  Now Payne~\cite{p-udgac-09}
+has constructed unit-distance graphs with the same property.
+* Motivation: <none>
+* Related Open Problems: Problem~\ref{Problem.58}.
+* Reward: Ron Graham offers \$1000 for a solution.
+* Appearances: \cite{o-cgc46-04}
+* Categories: combinatorial geometry
+* Entry Revision History:
+J. O'Rourke, 15 Aug. 2004; 6 July 2009.
+---------------------------------------------------------

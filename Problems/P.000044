@@ -1,0 +1,31 @@
+* Number: 44
+* Problem: 3-Colorability of Arrangements of Great Circles
+* Statement:
+Is every zonohedron face $3$-colorable when viewed as a planar map?
+An equivalent question, under a different guise, is the following:
+is the arrangement graph of great circles on the sphere always
+vertex $3$-colorable?
+(The \emph{arrangement graph} has a vertex for each intersection point,
+and an edge for each arc directly connecting two intersection points.)
+Assume that no three circles meet at a point,
+so that this arrangement graph is $4$-regular.
+* Origin: The zonohedron-face version is due to Stan Wagon,
+deriving from the work in~\cite{sw-rpt3c-00}.
+The origin of the arrangement guise of the problem is~\cite{fhns-hcag-00}.
+* Status/Conjectures: Open.
+* Motivation: <none>
+* Partial and Related Results:
+Arrangement graphs of circles in the plane, or general circles on the sphere,
+can require four colors~\cite{k-4c4vp-90}.
+The key property in this problem is that the circles must be great.
+All arrangement graphs of up to $11$ great circles have been verified
+to be $3$-colorable by Oswin Aichholzer (August, 2002).
+See~\cite{w-mrfch-02} for more details.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+Posed by Stan Wagon at the CCCG 2002 open-problem session.
+% xxx \cite{do-opc2002-03} once written
+* Categories: arrangements; coloring; polyhedra
+* Entry Revision History:
+E. Demaine \& J. O'Rourke, 28 Aug. 2002.

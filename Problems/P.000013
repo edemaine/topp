@@ -1,0 +1,19 @@
+* Number: 13
+* Problem: Point Location in 3D Subdivision
+* Statement:
+Is there an $O(n)$-space data structure that supports
+$O(\log n)$-time point-location queries
+in a three-dimensional subdivision of $n$ faces?
+* Origin: Uncertain, pending investigation.
+* Status/Conjectures: Open.
+* Partial and Related Results:
+Currently $O(n \log n)$ space and $O(\log^2 n)$ queries
+are achievable~\cite{s-pl-97}.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: data structures
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001.
+---------------------------------------------------------

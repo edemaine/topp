@@ -1,0 +1,32 @@
+* Number: 75
+* Problem: Edge-Coloring Geometric Graphs
+* Statement:
+For a set of $n$ points in the plane in general position,
+draw a straight segment between every pair of points.
+What is the minimum number of colors that
+suffice to color the edges such that no two edges that
+cross have the same color?
+(With the general position assumption, all crossings are
+proper crossings.)
+* Origin: Ferran Hurtado: \cite{adhnu-ocnsg-05}.
+* Status/Conjectures: Open.
+* Partial and Related Results:
+Each color class determines a plane subgraph of the complete graph.
+Because one can arrange for $n/2$ pairwise crossing edges,
+$n/2$ is a lower bound.
+The best upper bound is in~\cite{bhrw-pcggp-06}:
+$n - \sqrt{n/12}$.
+It has been conjectured that $(1-\epsilon) n$ is an upper
+bound for some $\epsilon > 0$.
+%Is this David's conjecture, or Ferran's?
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+This description relies on that in the \emph{Open Problem Garden},
+written by David Wood.  His posting lists several related
+variants.
+* Categories:
+geometric graphs
+* Entry Revision History:
+J. O'Rourke, 1 Apr. 2010.
+---------------------------------------------------------

@@ -1,0 +1,51 @@
+* Number: 61
+* Problem: Lines Tangent to Four Unit Balls
+* Statement:
+Given a set of $n$ unit-radius balls in
+$\R^3$, 
+what is the number of
+lines that are tangent to four of the balls in the set,
+and miss all the others?
+(The balls are not necessarily disjoint.)
+* Origin: \cite{aaks-laub3-05}.
+* Status/Conjectures: Open, conjectured to be $\Omega(n^3)$.
+* Motivation: 
+The number of lines tangent to four unit balls dominates
+the combinatorial complexity of the space of lines
+that avoid all the balls. 
+And this complexity is related to questions in visibility
+and in optimization.
+* Partial and Related Results:
+In~\cite{aaks-laub3-05} it is established that
+the number is $O(n^{3 + \epsilon})$ for any $\epsilon > 0$.
+The best lower bound is $\Omega(n^2)$, which can be achieved,
+for example, as follows.
+
+Place $n/4$ balls separated along a horizontal line $L_1$,
+and another $n/4$ along a parallel line $L_2$ below,
+with each of the lower balls directly
+below an upper ball with their centers $1$ unit apart.
+Thus each pair of balls overlap, their surfaces intersecting
+in a circle.
+Arrange a second set of $n/4$ pairs of intersecting balls
+along lines $L_3$ and $L_4$, far from $L_1/L_2$
+and with all four lines parallel, and such
+that all circles of sphere intersections are coplanar.
+Now it is easy to see that a line tangent to two circles of
+intersection, one from the $L_1/L_2$ group, one from the
+$L_3/L_4$ group, is tangent to four balls.
+And there are $\Omega(n^2)$ such lines.
+(The same bound can be achieved with disjoint balls with a similar
+arrangement, but the analysis is slight more complex.)
+
+The problem is also interesting if all balls are
+disjoint; it is not clear if disjointness affects the
+answer asymptotically.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances: \cite{aaks-laub3-05}.
+* Categories:
+combinatorial geometry
+* Entry Revision History:
+J. O'Rourke, 25 Aug. 2005.
+---------------------------------------------------------

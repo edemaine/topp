@@ -1,0 +1,41 @@
+* Number: 27
+* Problem: Hexahedral Meshing
+* Statement:
+Can the interior of every simply connected polyhedron whose surface is meshed
+by an even number of quadrilaterals be partitioned into
+a hexahedral mesh compatible with the surface meshing?~\cite{be-ecct-99}
+* Origin: Uncertain.
+Scott Mitchell in~\cite{m-cqmsw-96}?
+* Status/Conjectures: Partially closed, Fall 2006.
+* Partial and Related Results:
+It was known that a topological hexahedral mesh
+exists~\cite{m-cqmsw-96,e-lchmg-96},
+with, in general, curved boundaries, but despite the availability of software
+that extends quadrilateral surface meshes to hexahedral volume meshes,
+it is not known if a "geometric" hexahedral mesh can
+be achieved, with all cells having planar faces.
+
+A new result~\cite{cs-cachm-06} settles the practical aspects
+of the problem, but leaves one question unresolved.
+This paper provides an explicit algorithm that extends a quadrilateral 
+surface mesh
+to a hexahedral mesh, where all the hexahedra have straight segment
+edges.  
+In a sense, these hexahedra are intermediate between the 
+topological and geometric meshes mentioned above.
+The faces are not necessarily planar, but this is not a
+crucial aspect in applications, such a fluid dynamics simulations.
+
+The question of whether a hexahedral mesh with planar faces
+exists remains open.
+* Related Open Problems: See~\cite{be-fcm-01} 
+for extension of the flipping operation
+described in Problem~\ref{Problem.28} to quadrilateral
+and hexahedral meshes.
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: meshing
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001; 18 Feb. 2002 (thanks to D. Eppstein); J. O'Rourke, 24 Oct. 2006.
+---------------------------------------------------------

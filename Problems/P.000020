@@ -1,0 +1,45 @@
+* Number: 20
+* Problem: Minimum Stabbing Spanning Tree
+* Statement:
+What is the complexity of computing
+a spanning tree of a planar point set $P$ having minimum stabbing number?
+The \emph{stabbing number} of a tree $T$ is the maximum number of
+edges of $T$ intersected by a line.
+* Origin: Uncertain, pending investigation.
+* Status/Conjectures:
+Solved, October 2003: the problem is NP-complete.
+Significant advance on approximability in 2009.
+* Partial and Related Results:
+Fekete, L\"ubbecke, and Meijer \cite{flm-msnmt-04}
+proved strong NP-completeness of minimizing the stabbing number or
+axis-parallel stabbing number or crossing number or axis-parallel crossing
+number in a perfect matching or spanning tree.
+They also establish inapproximability by less than a 6/5 factor
+of minimizing the axis-parallel stabbing number in a perfect matching.
+They also prove strong NP-completeness of minimizing the axis-parallel
+crossing number in a triangulation.
+
+The complexity of minimizing the stabbing number or crossing number in
+a triangulation remains open.
+Furthermore, it remains open whether any of these problems have constant-factor
+approximations.  See \cite{flm-msnmt-04} for some ideas.
+
+In the worst case, any set of $n$ points in the plane has a
+spanning tree of stabbing number 
+$O(\sqrt n)$~\cite{a-rsoas-92,c-tbsns-88,w-ggssn-93}
+and this bound is tight.
+An $O(\sqrt n)$-approximation follows from this result.
+
+There has been an advance on approximations~\cite{h-astlc-09}:
+Har-Peled designed an algorithm that computes a spanning
+tree of $n$ points $P$ in $\R^d$ whose crossing number
+is $O(\min( t \log n, n^{1-1/d}))$, 
+where $t$ the minimum crossing number of any spanning tree of $P$.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: stabbing
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001; E. Demaine, 16 Jan. 2004; J. O'Rourke, 26 Aug 2009.
+---------------------------------------------------------

@@ -1,0 +1,40 @@
+* Number: 52
+* Problem: Queue-Number of Planar Graphs
+* Statement: Does every planar graph have $O(1)$ queue-number? A
+\emph{queue layout} of a graph consists of a linear order of the
+vertices and a partition of the edges into non-nested \emph{queues}. 
+Edge $xy$ is \emph{nested} inside edge $vw$ if
+$v<x<y<w$ in the linear order. The \emph{queue-number} of a graph
+$G$ is the minimum number of queues in a queue layout of $G$. This
+question amounts to asking whether every planar graph has a
+vertex ordering with a constant number of pairwise nested edges
+(called a rainbow).
+
+* Origin: Heath, Leighton, and Rosenberg~\cite{hlr-cqsm-92,hr-lgq-92}.
+* Status/Conjectures: Open.
+* Partial and Related Results:
+\begin{enumerate}
+\item \cite{hlr-cqsm-92,hr-lgq-92}: Every tree has queue-number $\leq1$.
+\item \cite{hlr-cqsm-92,hr-lgq-92}: Every outerplanar graph has
+      queue-number $\leq2$.
+\item \cite{dw-tpkt-03}: Every graph with bounded treewidth has bounded
+      queue-number.
+\item \cite{w-qltw-02}: Planar graphs have $O(1)$ queue-number if and
+      only if every $n$-vertex planar graph has a $O(1) \times O(1)
+      \times O(n)$ grid drawing.
+\item \cite{dw-nrgl-03}: Planar graphs have $O(1)$ queue-number if and
+      only if Hamiltonian bipartite planar graphs have $O(1)$
+      bipartite thickness. 
+      The \emph{bipartite thickness} of a bipartite graph $G$ is the
+      minimum $k$ such that $G$ can be drawn with the vertices on each
+      side of the bipartition along a line, with the two lines parallel,
+      and with each edge assigned to one of $k$ ``layers'' so that no two
+      edges in the same layer cross (when drawn as straight line segments).
+\end{enumerate}
+
+* Related Open Problems: Problem~\ref{Problem.51}.
+* Reward: <none>
+* Appearances: Above references.
+* Categories: graph drawing
+* Entry Revision History: D. Wood, 7 Dec. 2003.
+---------------------------------------------------------

@@ -1,0 +1,40 @@
+* Number: 71
+* Problem: Stretch-Factor for Points in Convex Position
+* Statement:
+For points $S$ in convex position
+(i.e., every point is on the hull of~$S$),
+is the Delaunay triangulation of $S$ a
+$(\pi/2)$-spanner?
+A geometric graph is a \emph{$t$-spanner}
+(or just a \emph{spanner}) if, for every pair of nodes, %$u$ and $v$, 
+the shortest distance between the nodes following
+the edges of the graph is at most $t$ times the Euclidean distance
+between them.
+The constant $t$ is the \emph{stretch factor} or \emph{dilation}.
+* Origin: Prosenjit Bose~\cite{do-op07-08}.
+* Status/Conjectures: Now closed: false.  [This entry awaiting updating.]
+* Partial and Related Results:
+Chew conjectured that the Delaunay triangulation
+is a $t$-spanner~\cite{c-tapga-89} for some constant~$t$.
+Dobkin et al.~\cite{dfs-dgaag-90} established this
+for $t = \pi (1+\sqrt{5})/2 \approx 5.08$.
+The value of $t$ was improved to $2 \pi / (3 \cos (\pi/6)) \approx 2.42$
+by Keil and Gutwin~\cite{kg-cgwac-92},
+and further strengthened in~\cite{bm-ort-04}.
+Chew showed that $t$ is $\pi/2 \approx 1.57$ for points on
+a circle, providing a lower bound.
+``It is widely believed that, for every set of points
+in $\R^2$, the Delaunay triangulation is a 
+$(\pi/2)$-spanner''~\cite[p.~470]{ns-gsn-07}.
+
+This history suggests the special case posed above.
+
+There is a new forthcoming result:~\cite{ckx-oddtp-09}.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances: \cite{do-op07-08}.
+* Categories:
+spanners, Delaunay triangulations
+* Entry Revision History:
+J. O'Rourke, 29 Dec. 2008; 4 July 2009; 1 Apr. 2010.
+---------------------------------------------------------

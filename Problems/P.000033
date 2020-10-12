@@ -1,0 +1,105 @@
+* Number: 33
+* Problem: Sum of Square Roots
+* Statement:
+What is the minimum nonzero difference between two sums of square
+roots of integers? 
+More precisely,
+find tight upper and lower bounds on $r(n,k)$, the minimum positive value of 
+$$\left| \sum_{i=1}^k \sqrt{a_i} - \sum_{i=1}^k \sqrt{b_i} \right|$$
+where $a_i$ and $b_i$ are integers no larger than $n$.
+Bounds should be expressed as a function of $n$ and $k$.
+Examples:
+$$r(20,2) \approx .0002 = 
+	\sqrt{10}+\sqrt{11}-\sqrt{5}-\sqrt{18}$$
+$$r(20,3) \approx .000005 = 
+	\sqrt{5}+\sqrt{6}+\sqrt{18}-\sqrt{4}-\sqrt{12}-\sqrt{12}$$
+* Origin: 
+Posed in~\cite{o-6369-81}. Perhaps older in other formulations.
+* Status/Conjectures: Open, although some weak bounds are known.
+* Motivation:
+Of particular importance is whether $\lg 1/r(n,k)$ is bounded above by
+a polynomial in $k$ and $\lg n$.  If this statement is true, then the
+sign of a sum of square roots of integers can be computed in polynomial time.
+If this statement is false, however, there still may be a polynomial-time
+algorithm to compute the sign.
+
+To quote 
+\htmladdnormallink{David Eppstein}{http://www.ics.uci.edu/~{}eppstein/junkyard/open.html}:
+``A major bottleneck in proving NP-completeness 
+for geometric problems is a mismatch
+between the real-number and Turing machine models of computation:
+one is good for geometric algorithms but bad
+for reductions, and the other vice versa. Specifically, 
+it is not known on Turing machines how to quickly compare a
+sum of distances (square roots of integers) with an integer 
+or other similar sums, so even (decision versions of) easy
+problems such as the minimum spanning tree are not known to be in NP.''
+* Partial and Related Results:
+Exponential upper bounds are known through root-separation bounds
+\cite{bfms-secsb-00, ms-gicsb-00}.  Specifically, 
+\cite{ms-gicsb-00,bfms-secsb-00}
+proves that $-\lg r(n,k) \leq O(2^{2 k} \lg n)$.  (More generally,
+\cite{bfms-secsb-00, ms-gicsb-00} give finite algorithms to
+compute the sign of algebraic expressions such as sums of square roots,
+which are implemented and used in
+\htmladdnormallinkfoot{LEDA}{http://www.algorithmic-solutions.com/enleda.htm}
+and \htmladdnormallinkfoot{CORE}{http://www.cs.nyu.edu/exact/core/} for
+exact geometric computation.)
+
+John A. Anderson (\url{johnaa333@netzero.net}) has an unpublished proof
+(Aug 2003) of a similar bound:
+$$
+r(n,k) \; \ge \; [4  k^2  n]^{1/2 - 2^{2k-2}} \;.
+$$
+%Note that, specializing to $k=2$ yields
+%$$
+%r(n,k) \; \ge \; [16  n]^{1/2 - 2^2}  = \Omega( 1/n^{7/2} ) \;.
+%$$
+Cheng et al.~\cite{cmsc-bssrl-09} establish an upper bound on $-\lg r(n,k)$
+of $2^{O(n/\lg n)}\lg n$,
+%~\cite{c-cssrs-06},
+which improves on the above bound $O(2^{2k\lg n})$
+whenever $n \le c k \lg k$ for some $c$.
+
+At the other extreme,
+Qian and Wang \cite{qw-nubdb-04,qw-nubdb-05} show an upper bound on $r(n,k)$
+of $O(n^{-2k+\frac{3}{2}})$.
+%Marc Glisse corrects that it is NOT tight for k=2.
+%, and show that this is tight
+%for many choices of $(n,k)$ (e.g., $r(n,2)=\Theta(n^{-\frac{7}{2}})$).
+This upper bound on $r(n,k)$ implies a lower bound on $\lg 1/r(n,k)$,
+that is, on how many bits we need to compute from the
+square roots to determine the sign of the difference.
+In particular, it settles (positively) a question posed here by Erik Demaine
+(Nov. 2001): can the number of bits required to distinguish the difference
+from zero ever exceed the total number of bits in the input integers?
+%More precisely, are there integers
+%$a_1, \dots, a_j, b_1, \dots, b_k$ for which
+%$$
+%-\lg \left(\sum_{i=1}^j \sqrt{a_i} - \sum_{i=1}^k \sqrt{b_i}\right)
+% >  \sum_{i=1}^j \lg a_i + \sum_{i=1}^k \lg b_i + O(k)
+%$$
+%where the $O(k)$ term allows for roundoff error for small values?
+
+A slight variation on the problem is to ask 
+(e.g., for $k=2$), how close can
+$\sqrt{a} + \sqrt{b}$ be to an integer; 
+Dana Angluin and Sarah Eisenstat~\cite{ae-hc-04} proved
+a bound of $\Theta(1/n^{3/2})$ on this integrality gap.
+
+Also, \cite{b-csrpt-91} may be relevant.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{o-6369-81};
+Usenet newsgroup 
+\htmladdnormallinkfoot{sci.math}{http://www.ics.uci.edu/~eppstein/junkyard/small-dist.html}
+25 Dec 90.
+* Categories: numerical computations
+* Entry Revision History:
+E. Demaine, J. O'Rourke, 19 Nov. 2001; J. O'Rourke, 3 Dec. 2001; 13 Aug. 2003;
+18 Aug. 2003; 30 Aug. 2003; 7 Dec. 2003; E. Demaine, 9 Feb. 2004
+(thanks to Raimund Seidel); J. O'Rourke, 10 Mar. 2004; J. Mitchell, 30 Sep. 2004; J. Mitchell, 1 Oct. 2004; J. Mitchell, 27 Oct. 2005;
+J. O'Rourke, 30 Dec. 2005 (thanks to Marc Glisse);
+J. O'Rourke, 16 May 2006; E. Demaine, 9 Sep. 2009.
+---------------------------------------------------------

@@ -1,0 +1,23 @@
+* Number: 77
+* Problem: Zipper Unfoldings of Convex Polyhedra
+* Statement:
+Does every convex polyhedron $P$ have a zipper unfolding?
+A \emph{zipper unfolding} cuts open $P$ via a single
+path, necessarily a Hamiltonian path (to span all vertices), 
+and unfolds the surface to a non-overlapping polygon in the plane.
+The segments of the path need not lie along edges of $P$.
+* Origin: Posed as Open Problem 2 in~\cite{lddss-zupc-10}, which
+introduced the term "zipper unfolding."
+* Status/Conjectures: Open.
+* Partial and Related Results:
+With the restriction that the cuts follow edges,
+any $P$ without a Hamiltonian path in its 1-skeleton
+has no zipper edge-unfolding, e.g., a rhombic dodecahedron.
+(Such polyhedra have been studied, e.g., in~\cite{b-spcp-61}.)
+* Related Open Problems: Problem~\ref{Problem.9}.
+* Reward: <none>
+* Appearances: <none>
+* Categories: polyhedra
+* Entry Revision History:
+J. O'Rourke, 7 Feb. 2012.
+---------------------------------------------------------

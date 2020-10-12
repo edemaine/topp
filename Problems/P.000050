@@ -1,0 +1,27 @@
+* Number: 50
+* Problem: Pointed Spanning Trees in Triangulations
+* Statement: Does every triangulation of a set of points in
+the plane (in general position) contain a pointed spanning
+tree as a subgraph? A vertex is pointed if one of its incident
+faces has an angle larger than $\pi$ at this vertex. A spanning
+tree is pointed if all of its vertices are pointed.
+* Origin: Oswin Aichholzer, January 2003.
+* Status/Conjectures: Settled negatively, January 2004.
+* Partial and Related Results:
+Obviously true if a triangulation contains a Hamiltonian path
+or a pointed pseudotriangulation as a subgraph. For both
+structures there exist triangulations not containing them.
+(See, e.g., \cite{o-cgc43-02} for a discussion of pseudotriangulations.)
+Settled negatively by Aichholzer et al.~\cite{ahk-twpst-04} with a
+$124$-point counterexample.  A consequence is that there are
+triangulations that require $\Omega(n)$ edge-flips to contain
+a pointed spanning tree, or to become Hamiltonian.
+* Related Open Problems: Problem~\ref{Problem.40}.
+* Reward: <none>
+* Appearances:
+Posed by Oswin Aichholzer at the CCCG 2003 open-problem session, August 2003.
+Also posed by Bettina Speckmann as Problem~10 at
+the First Gremo Workshop on Open Problems in Stels, Switzerland, July 2003.
+* Categories: triangulations; planar graphs
+* Entry Revision History: O. Aichholzer, 13 Aug. 2003; JOR, 15 Jan. 2004.
+---------------------------------------------------------

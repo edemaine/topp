@@ -1,0 +1,72 @@
+* Number: 67
+* Problem: Fair Partitioning of Convex Polygons
+* Statement: 
+Define a \emph{fair partitioning} of a polygon as a partition of it into a
+finite number of pieces so that every piece has both the same area and the
+same perimeter.
+If all the resulting pieces are convex, 
+call it a \emph{fair convex partitioning}.
+Given any positive integer $n$, can any convex polygon 
+be convex fair partitioned into $n$ pieces?
+
+If the answer is ``Not always,'' 
+how does one decide the possibility of such a partitioning 
+for a given polygon and a given $n$? 
+And if a fair convex partition exists for a specific polygon,
+how does one find a fair partitioning
+that minimizes the total length of the cut segments,
+or minimizes the sum of the perimeters of the pieces?
+
+And finally, what could one say about higher 
+dimensional analogs of this question?
+
+* Origin: Posed by R. Nandakumar and N. Ramana Rao, June 2007.
+
+* Status/Conjectures: Open. 
+The originators tend to believe every convex polygon allows a
+fair convex partition into $n$ pieces for any $n$.
+There have been recent advances in 2010: 
+Aronov and Hubard
+% http://arxiv.org/abs/1010.4611
+\cite{ah-cevsa-10},
+and independently Karasev
+% http://arxiv.org/abs/1011.4762v2
+\cite{k-esm-10},
+have established the conjecture for any prime power, $n=p^k$.
+% http://arxiv.org/abs/1002.0122
+% http://arxiv.org/abs/1012.3106
+% http://arxiv.org/abs/0812.2241v2
+% http://arxiv.org/abs/0812.2241v6
+
+* Partial and Related Results:
+
+See~\cite{nr-fppi-08} for an introduction and survey and
+proof that the conjecture holds for $n=2$, and
+a proof for $n=4$.
+This survey cites a new result of Barany, 
+Blagojevic, and Szucs [forthcoming] that establishes
+the conjecture for $n=3$.  The cited survey also sketches
+a (different) argument for $n=3$.
+
+There is work on partitioning convex polygons into equal area convex pieces 
+so that every piece equally shares the boundary of the given target polygon:
+\cite{arnu-pdc-98}
+\cite{akknrtu-rppcs-98}.
+
+%1. J. Akiyama, E. Rivera-Campo, G. Nakamura, and J. Urrutia - Perfect
+%divisions of a cake. Manuscript, Tokai University, 1998.
+
+%2.  Akiyama, Kaneko, Kano, Nakamura, Rivera-Campo, Tokunaga and Urrutia. 'Radial Perfect Partitions Of Convex Sets in a Plane' – draft available online at http://gorogoro.cis.ibaraki.ac.jp/web/papers/kano2000-a.pdf
+
+A proof
+of a weaker result---that any polygon allows fair partitioning for any $n$
+(where the pieces need not be convex) is proposed at
+\url{http://nandacumar.blogspot.com/2006/10/cutting-shapes-ii.html}.
+
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:<none>
+* Categories: polygons, partitioning
+* Entry Revision History:
+R. Nandakumar and N. Ramana Rao, 14 Jul 2007, 17 Sep 2007; J. O'Rourke, 1 Jan 2009; 23 Jan. 2009; 30 Dec. 2010.
+---------------------------------------------------------

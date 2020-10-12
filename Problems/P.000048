@@ -1,0 +1,44 @@
+* Number: 48
+* Problem: Bounded-Degree Minimum Euclidean Spanning Tree
+* Statement:
+What is the complexity of finding a bounded-degree spanning tree 
+for a planar point set, such that the total Euclidean 
+length $\tau_k$ is as small as possible, subject to the constraint that 
+no node has more than $k=4$ edges incident to it?
+* Origin: 
+Papadimitriou and Vazirani~\cite{pv-tgprt-84}
+conjectured the problem to be NP-hard for $k=4$.
+* Status/Conjectures: Solved: Proved NP-hard in~\cite{fh-ed4ms-09}.
+* Motivation: Natural generalization of finding a shortest
+geometric Hamiltonian path; arises in network optimization
+* Partial and Related Results:
+\cite{pv-tgprt-84} proved the problem to be NP-hard for $k=3$.
+For $k\geq 5$, the problem is polynomially solvable, as
+there always is a minimum spanning tree with no point having degree
+more than 5.
+* Related Open Problems: 
+Various worst-case ratios of minimum weight bounded-degree spanning
+trees for different degree bounds are still open, in particular
+comparing $\tau_k$ to the weight $\tau$ of a minimum spanning tree.
+\cite{fkkry-nftflwbdt-97} conjecture
+$\tau_3/\tau \leq 1.103...$,
+$\tau_4/\tau \leq 1.035...$ for Euclidean distances in the plane,
+and $\tau_4/\tau \leq 1.25$ for Manhattan distances in the plane,
+and give matching lower bounds.
+
+\cite{kry-ldsts-96} show that for Euclidean distances,
+$\tau_4/\tau \leq 1.25$ and $\tau_3/\tau \leq 1.5$ in the plane, 
+and $\tau_3/\tau \leq 1.66...$ in arbitrary dimensions.
+
+The first two of these bounds were improved to 
+$\tau_4/\tau \leq 1.143$ and $\tau_3/\tau \leq 1.402$
+by \cite{c-ebdstr-03}.
+
+Now settled by NP-hard proof in~\cite{fh-ed4ms-09}.
+* Reward: <none>
+* Appearances: <none>
+* Categories:
+minimum spanning tree; optimization; point sets
+* Entry Revision History:
+S. P. Fekete, 30 July 2003; J. O'Rourke, 29 Mar 2010 (thanks to Michael Hoffmann).
+---------------------------------------------------------

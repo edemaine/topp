@@ -1,0 +1,56 @@
+* Number: 12
+* Problem: Dynamic Planar Convex Hull
+* Statement:
+Can a planar convex hull be maintained to support
+both dynamic updates and queries in logarithmic time?
+More precisely, is there a data structure supporting insertions and deletions
+of points and supporting various queries about the convex hull of the current
+set of $n$ points, all in $O(\log n)$ time per operation?
+An \emph{extreme-point query} asks to find the vertex of the convex hull
+that is extreme in a given direction.
+A \emph{tangent query} asks to determine whether a given point is interior to
+the convex hull, and if not, to find the two tangent lines of the convex hull
+that passes through the given point.
+A \emph{gift-wrapping query} asks to find the two vertices of the convex hull
+adjacent to a given vertex of the convex hull.
+A \emph{line-stabbing query} asks to find the two edges of the convex hull
+(if any) that intersect a given line.
+(Note that two extreme-point queries suffice to determine whether a line
+ intersects the convex hull, while a line-stabbing query determines where
+ exactly the line intersects the convex hull if it does.)
+* Origin: Uncertain, pending investigation.
+* Status/Conjectures:
+Solved (in a certain sense)
+by Gerth Brodal and Riko Jacob in a FOCS 2002 paper \cite{bj-dpch-02}.
+See also Jacob's PhD thesis \cite{j-dpch-02} for further details.
+Their data structure supports
+insertions and deletions in $O(\log n)$ amortized time
+and supports extreme-point, tangent, and gift-wrapping queries
+in $O(\log n)$ worst-case query bounds.
+It remains open whether a logarithmic bound can be achieved in the worst case,
+and whether logarithmic bounds can be achieved (amortized or worst case)
+for line-stabbing queries.
+* Partial and Related Results:
+For 17 years, the authority on this problem was Overmars and van Leeuwen's
+paper \cite{ol-mcp-81} which describes a data structure supporting insertions
+and deletions in $O(\log^2 n)$ worst-case time and
+all types of queries described above in $O(\log n)$ worst-case time.
+Various structures achieve faster update times when either insertions or
+deletions are not supported \cite{p-ortap-79, hs-asdch-92}.  But the
+$O(\log^2 n)$ barrier remained until Chan's FOCS 1999 paper \cite{c-dpcho-99},
+which improved the insertion and deletion time to $O(\log^{1+\epsilon} n)$
+amortized for any $\epsilon > 0$.  The update time was further improved to
+$O(\log n \log \log n)$ amortized by Brodal and Jacob \cite{bj-dpcho-00}
+until the problem was finally solved in optimal $O(\log n)$ amortized time
+by the same authors \cite{bj-dpch-02,j-dpch-02}.
+Both the Chan and the Brodal and Jacob structures support
+extreme-point, tangent, and gift-wrapping queries.
+* Related Open Problems: Problem~\ref{Problem.63}.
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: convex hulls; data structures
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001; E. Demaine, 25 Nov. 2002; 22 Aug. 2005;
+24 Jan. 2006.
+---------------------------------------------------------

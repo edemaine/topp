@@ -1,0 +1,25 @@
+* Number: 4
+* Problem: Union of Fat Objects in 3D
+* Statement:
+What is the complexity of the union of ``fat'' objects
+in $\R^3$?
+* Origin: Uncertain, pending investigation.
+* Status/Conjectures: Open. 
+Conjectured to be nearly quadratic.
+* Partial and Related Results:
+The Minkowski sum of polyhedra of $n$ vertices
+with the (Euclidean) unit ball
+has complexity $O(n^{2+\e})$~\cite{as-pckum-99},
+as does
+the union of $n$ congruent cubes~\cite{pss-ucc3d-01}.
+It is widely believed the same should hold true
+for \emph{fat} objects, those with a bounded ratio of
+circumradius to inradius, as it does in $\R^2$~\cite{es-cufop-00}.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: combinatorial geometry
+* Entry Revision History:
+J. O'Rourke, 1 Aug. 2001; 1 Jan. 2003 (B. Aronov comment).
+---------------------------------------------------------

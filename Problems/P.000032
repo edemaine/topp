@@ -1,0 +1,72 @@
+* Number: 32
+* Problem: Bar-Magnet Polyhedra
+* Statement:
+Which polyhedra are bar-magnet polyhedra?
+For reasons detailed below, 
+the problem can be phrased as asking which 3-connected
+planar graphs may have their edges directed so that the
+directions ``alternate'' around each vertex.
+
+Let $P$ be a polyhedron with a set of edges $E$.
+For an edge $e \in E$, define a \emph{bar magnet}
+as a mapping of $e$ to either $(N,S)$ or $(S,N)$,
+which assigns the endpoints of $e$ opposite poles of
+a magnet (and corresponds to directing the edge).  
+Call a vertex $v$ of $P$ to be \emph{alternating}
+under mappings of its edges to bar magnets if
+the incident edges assigns alternating magnetic poles
+to $v$ in the cyclic order of those edges
+on the surface around $v$: $(N,S,N,S,...)$.  Thus if deg$(v)$ is even,
+the poles alternate, and if deg$(v)$ is odd, at most two
+like poles are adjacent in the circular sequence.
+Finally, call a polyhedron a \emph{bar-magnet polyhedron}
+if there is a bar-magnet assignment of each of its
+edges so that each of its vertices is alternating.
+* Origin: Joseph O'Rourke, 2001.
+This problem is inspired by the toy ``Roger's Connection,''
+which provides bar magnets and steel balls to construct
+polyhedra.  The structures are most stable when each
+vertex is alternating.
+* Status/Conjectures: Settled by Bojan Mohar, Apr. 2004.
+* Partial and Related Results:
+At the presentation of the problem, Therese Biedl proved
+that the polyhedron formed by gluing together two tetrahedra
+with congruent bases is not a bar-magnet polyhedron:
+alternation at the three degree-4 vertices of the common base
+forces some other edge to be directed both ways.
+Thus not all polyhedra are bar-magnet polyhedra.
+Erik Demaine proved that a polyhedron all of whose vertices
+have even degree is a bar-magnet polyhedron:
+the graph has a face 2-coloring, and the edges of the
+faces of color 1 can oriented counterclockwise,
+which then orients each face of color 2 clockwise.
+He also observed that if every vertex is of degree 3,
+Petersen's theorem yields a perfect matching
+that establishes such ``simple'' polyhedra are
+bar-magnet polyhedra.
+
+A clean characterization was provided by 
+Bojan Mohar, who proved~\cite{m-bmpns-04}:
+\newtheorem{theorem}{Theorem}
+\begin{theorem}
+Let $G$ be a planar graph embedded on the surface
+of a sphere.  Define a new graph $R$ whose nodes are the 
+vertices of odd degree in $G$, with two nodes of $R$ adjacent if they are 
+cofacial in $G$ (lie on a common facial walk). Then $G$ has an $NS$-orientation
+(i.e., is a bar-magnet polyhedral skeleton) 
+if and only if $R$ has a perfect matching.
+\end{theorem}
+A \emph{facial walk} is a 
+closed walk along the boundary of a face.
+%Contact the author at 
+%\htmladdnormallink{Bojan.Mohar@fmf.uni-lj.si}{mailto:Bojan.Mohar@fmf.uni-lj.si}
+%for details.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances: 
+Posed by J. O'Rourke at the CCCG 2001 open-problem session \cite{do-opc2001-02}.
+* Categories: polyhedra; planar graphs
+* Entry Revision History:
+J. O'Rourke, 29 Aug. 2001; 11 Oct. 2001; E. Demaine, 31 Aug. 2002;
+J. O'Rourke, 14 Aug. 2004; 20 Sep. 2004.
+---------------------------------------------------------

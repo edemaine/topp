@@ -1,0 +1,25 @@
+* Number: 24
+* Problem: Polygonal Curve Simplification
+* Statement:
+Can an $n$-vertex polygonal curve be simplified
+in time nearly linear in $n$?
+* Origin: Uncertain, pending investigation.
+* Status/Conjectures: Open.
+* Partial and Related Results:
+The goal is to compute a simplification
+that uses the fewest vertices of the original curve
+while approximating it according to some prescribed error criterion.
+Quadratic-time algorithms have been known for some time
+\cite{cc-apcmn-96} and a recent algorithm achieves time
+$O(n^{4/3+\e})$ for a certain error
+criterion~\cite{av-eaapc-00}.  In practice, the Douglas-Peucker
+algorithm is often used as a heuristic; it can be implemented to run in time
+$O(n\log n)$~\cite{hs-oidpa-94}.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: simplification
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001.
+---------------------------------------------------------

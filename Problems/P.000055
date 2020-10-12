@@ -1,0 +1,40 @@
+* Number: 55
+* Problem: Pallet Loading
+* Statement:
+What is the complexity of the pallet loading problem?
+Given two pairs of numbers, $(A,B)$ and $(a,b)$, and a number $n$, 
+decide whether $n$ small rectangles of size $a \times b$,
+in either axis-parallel orientation, 
+can be packed into a large rectangle of size $A \times B$.
+    
+This problem is not even known to be in NP, because of the compact
+input description, and the possibly complicated structure
+of a packing, if there is one.
+
+* Origin: Uncertain, pending investigation.
+* Status/Conjectures: Open.
+* Motivation: Natural packing problem; first-rate example of the relevance
+of coding input and output.
+* Partial and Related Results:
+Tarnowsky~\cite{t-epasc-92} showed that the problem can 
+be solved in time polynomial in the size of the input
+if we are restricted to ``guillotine''
+patterns, i.e., arrangements of items that can be obtained
+by a recursive sequence of edge-to-edge cuts. This result uses
+some nontrivial algebraic methods.
+
+* Related Open Problems: 
+What is the complexity of packing a maximal number of unit
+squares in a simple polygon? (Problem \ref{Problem.54})
+
+* Reward: <none>
+* Appearances:
+\cite{d-eaplp-87} claims the problem to be NP-hard;
+\cite{e-hpbp-88} claims the problem to be in NP; but both claims are
+erroneous. The precise nature of the difficulty is stated in
+\cite{n-naplp-93}.
+* Categories:
+packing; optimization
+* Entry Revision History:
+S. P. Fekete, 17 Jan. 2004.
+---------------------------------------------------------

@@ -1,0 +1,23 @@
+* Number: 72
+* Problem: Polyhedron with Regular Pentagon Faces
+* Statement:
+Let $M$ be a closed polyhedral 
+surface homeomorphic to $S^2$ 
+which is entirely composed of equal regular pentagons. 
+If $M$ is immersed in 3-space, 
+is it necessarily the boundary of a union of solid 
+dodecahedra that are glued together at common facets?
+* Origin: Richard Kenyon, first posed in 2006.
+* Status/Conjectures: Open.
+* Partial and Related Results:
+The corresponding question for equal squares has a positive answer.
+The question for surfaces embedded in 3-space is also interesting
+and open.
+The Kepler-Poinsot great dodecahedron has regular pentagon
+faces, and is immersed, but is not
+homeomorphic to $S^2$ ($V-E+F=-6$).
+* Appearances: Re-posed at Oberwolfach Workshop, Jan. 2009.
+* Categories: polyhedra
+* Entry Revision History:
+J. O'Rourke, 23 Jan. 2009.
+---------------------------------------------------------

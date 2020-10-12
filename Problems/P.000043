@@ -1,0 +1,44 @@
+* Number: 43
+* Problem: General Unfoldings of Nonconvex Polyhedra
+* Statement:
+Can every closed polyhedron 
+%without boundary (every edge is incident to exactly two facets) 
+be cut along its surface and unfolded into one piece in the plane
+without overlap?
+Such an unfolding is called a \emph{general unfolding}
+to distinguish from \emph{edge-unfoldings} (see Problem~\ref{Problem.9}) and
+\emph{vertex-unfoldings} (see Problem~\ref{Problem.42}).
+* Origin: Perhaps~\cite{bdekms-upcf-03}.
+* Status/Conjectures: Open.
+* Motivation: <none>
+* Partial and Related Results:
+It is known that every convex polyhedron has a general unfolding.
+In fact, there are three general methods for unfolding convex polyhedra:
+the star unfolding~\cite{ao-nsu-91,aaos-supa-97},
+the source unfolding~\cite{mmp-dgp-87},
+and unfolding via quasigeodesics~\cite{iov-ucpq-07}.
+
+On the nonconvex side, 
+Bern et al.~\cite{bdekms-upcf-03} show a general unfolding for a 
+nonconvex simplicial
+polyhedron (whose faces are all triangles) that has no edge unfolding,
+establishing that general unfoldings are more powerful than edge unfoldings.
+(This was known earlier~\cite{bddloorw-uscop-98} but with an example
+using nonconvex faces.)
+
+It is now known that all orthogonal polyhedra 
+(those with all edges
+parallel to coordinate axes)
+have a general unfolding~\cite{dfo-euop-07},
+although the resulting single piece can be exponentially thin
+and long.
+See~\cite{o-uop-08} for a survey of progress on orthogonal polyhedra.
+* Related Open Problems:
+Problem~\ref{Problem.9}: Edge-Unfolding Convex Polyhedra. \\
+Problem~\ref{Problem.42}: Vertex-Unfolding Polyhedra.
+* Reward: <none>
+* Appearances: \cite{bdekms-upcf-03}, \cite[Open Prob.~22.3]{do-gfalop-07}.
+* Categories: folding and unfolding; polyhedra
+* Entry Revision History:
+E. Demaine, 7 Aug. 2002; J. O'Rourke, 24 Jul 2008.
+---------------------------------------------------------

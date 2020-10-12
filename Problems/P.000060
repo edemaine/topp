@@ -1,0 +1,39 @@
+* Number: 60
+* Problem: Transforming Polygons via Vertex-Centroid Moves
+* Statement: 
+Given an arbitrary polygon, transform it by a finite sequence of
+``vertex-centroid'' moves to a regular polygon.
+A \emph{vertex-centroid move} is a translation of
+a vertex $v$ along the line $vm$, where $m$ is the
+centroid of the vertices of the polygon, i.e.,
+$1/n$-th of the sum of the vertex coordinates.
+Vertices may move only one at a time, but in any
+order and any number of times.
+* Origin: Steve Gray, 2003.
+* Status/Conjectures: Open.
+* Partial and Related Results:
+Let $v(t)$ and $m(t)$ be the positions of
+the moving vertex and centroid as a function of time $t$,
+where $t$ runs from $0$ to $1$ during the vertex translation.
+Let $L$ be the line containing $v(0) m(0)$.
+As $v(t)$ moves on $L$, $m(t)$ remains on $L$.
+
+For $n=3$, a triangle can be made equilateral in two moves.
+Already for $n=4$ the situation is less clear.
+
+One could set many other transformational goals besides
+achieving regularity:  scale the polygon by $s > 0$,
+rotate the polygon, etc.
+The notion generalizes to arbitrary dimensions.
+
+A more difficult variant would be to use the area centroid
+rather than the vertex centroid, in which case $m(t)$ does
+not remain on $L$, so that a vertex move would have the flavor
+of pursuit of a moving target.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+* Categories: polygons
+* Entry Revision History:
+J. O'Rourke, 1 Aug. 2005; S. Gray, 15 Aug. 2005.
+---------------------------------------------------------

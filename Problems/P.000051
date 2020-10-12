@@ -1,0 +1,30 @@
+* Number: 51
+* Problem: Linear-Volume 3D Grid Drawings of Planar Graphs
+* Statement:  Does every $n$-vertex planar graph have a 3D grid
+drawing with $O(n)$ volume? A \emph{3D grid drawing} of a graph
+is a placement of the vertices at distinct points with integer
+coordinates such that the straight line segments representing
+the edges are pairwise non-crossing. The volume is of the
+bounding box.
+* Origin: Felsner, Liotta, and Wismath \cite{flw-sdrg-02}.
+* Status/Conjectures: Open.
+* Partial and Related Results:
+\begin{enumerate}
+\item \cite{flw-sdrg-02}: Every $n$-vertex outerplanar graph has a 3D
+      grid drawing with $O(n)$ volume.
+\item \cite{dw-tpkt-03}: Every $n$-vertex graph with bounded treewidth
+      has a 3D grid drawing with $O(n)$ volume.
+\item \cite{dw-tdgd-03}: Every $n$-vertex planar graph has a 3D grid
+      drawing with $O(n^{3/2})$ volume.
+\item \cite{w-qltw-02}: Every $n$-vertex planar graph has an
+      $O(1) \times O(1) \times O(n)$ grid drawing
+      if and only if planar graphs have $O(1)$ queue-number.
+      (See Problem~\ref{Problem.52} for a definition of queue-number.)
+\end{enumerate}
+
+* Related Open Problems: Problem~\ref{Problem.52}.
+* Reward: <none>
+* Appearances: Above references.
+* Categories: graph drawing
+* Entry Revision History: D. Wood, 6 Dec. 2003; J. O'Rourke, 16 Mar. 2004.
+---------------------------------------------------------

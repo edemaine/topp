@@ -1,0 +1,41 @@
+* Number: 69
+* Problem: Isoceles Planar Graph Drawing
+* Statement:
+Given a planar graph that is interior triangulated (all
+interior faces are triangles), is there a staight-line
+drawing of the graph such that each face is an isoceles
+triangle (i.e., it has two equal-length sides)?
+
+The problem is worth studying both when the drawing must
+be planar (no crossings allowed) and when it is not.
+
+If such drawings exist, then it is also worth studying what
+grid-size is needed, and whether it can be done with integer
+coordinates at all.  If such drawings do not always exist,
+NP-hardness should be investigated.
+* Origin: Joe Malkevitch at Graph Drawing '99.
+* Status/Conjectures: Settled negatively in 2010: \cite{f-nipgd-10}.
+* Partial and Related Results:
+If the graph is a planar 3-tree (i.e., can be obtained
+by starting from a triangle and repeatedly adding a
+vertex of degree 3 inside a face, adjacent to all other
+vertices in the face), then such a drawing can easily be
+obtained by always placing the vertex at the centroid of
+the face.  However, this drawing will in general be non-planar.
+
+Of particular interest therefore, are planar graphs
+of treewidth~4 and higher.
+
+The problem was solved negatively in~\cite{f-nipgd-10}:
+\emph{Theorem}:
+"There exists an infinite class of maximal planar graphs 
+that admit no isosceles planar drawing."
+Frati raises the new question of whether or not every triangulation
+admits a possibly nonplanar isosceles drawing.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances: <none>
+* Categories: graph drawing, planar graphs
+* Entry Revision History:
+T. Biedl, 2 Dec. 2008; J. O'Rourke, 29 Dec. 2008; J. Malkevitch, 10 Jul 2011.
+---------------------------------------------------------

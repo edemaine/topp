@@ -1,0 +1,61 @@
+* Number: 23
+* Problem: Vertex $\pi$-Floodlights
+* Statement:
+How many $\pi$-floodlights
+are always sufficient
+to illuminate any polygon of $n$ vertices,
+with at most one floodlight placed at each vertex?
+An \emph{$\a$-floodlight} is a light of aperture $\a$.
+(We consider here "inward-facing" floodlights, whose
+defining halfspace lies inside the polygon, locally in the 
+neighborhood of the vertex.  Other models of the problem
+allow general orientations of floodlights or 
+restricted orientations (e.g., "edge-aligned").)
+* Origin: Jorge Urrutia, perhaps first published in~\cite{u-agip-00}.
+* Status/Conjectures: Open.  Now known that the fraction of
+$n$ that always suffices lies between $5/8$ and $2/3$.
+* Partial and Related Results:
+It was established in~\cite{eoux-ipvf-95} that
+for any $\a < \pi$, there is a polygon that cannot be
+illuminated with an $\a$-floodlight at each vertex.
+When $\a=\pi$, $n-2$ lights (trivially) suffice.
+So it is of interest
+(as noted in~\cite{u-agip-00})
+to learn whether a fraction of
+$n$ lights suffice for $\pi$-floodlights.
+A (very) special case is that $\lceil n/2 \rceil-1$
+is a tight bound for "monotone mountains"~\cite{o-vplmm-97}.
+T{\'o}th established~\cite{t-ipvpl-01} 
+that (roughly)
+$(3/4)n$ suffice, in the case of general orientation
+floodlights (not necessarily inward-facing).
+A lower bound of 
+Santos,  that $\lfloor 3(n-1)/5\rfloor$ inward-facing floodlights 
+are necessary (or $\lfloor 2(n-2)/5\rfloor$ generally oriented floodlights),
+stood for several years, but
+just recently (Jan.~2002) Urrutia constructed examples,
+based on stitching together copies of Fig.~\ref{p5over8}, that show that
+$5(k+1)/(8k+9)$ (inward-facing) floodlights are necessary for each $k$,
+thus improving the lower bound factor from $0.6$ to $0.625$.
+Also, Speckmann and T{\'o}th~\cite{st-vpgsp-01}
+showed that $\lfloor n/2\rfloor$ vertex $\pi$-floodlights suffice
+for general orientations, while $\lfloor (2n-c)/3\rfloor$ suffice
+for inward-facing, edge-aligned orientations, 
+where $c$ is the number of convex vertices.
+In particular, this reduced the upper-bound fraction below $1$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Figure Begin
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.4\linewidth]{p5over8.eps}
+\caption{A polygon of 9 vertices that needs 5 vertex $\pi$-lights.}
+\label{p5over8}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Figure End
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: art galleries; visibility
+* Entry Revision History:
+J. Mitchell, 24 Jan 2001; J. O'Rourke, 2 Aug. 2001; 29 Aug. 2001; 23 Jan. 2002; 30 Sep. 2007.
+---------------------------------------------------------

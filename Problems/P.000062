@@ -1,0 +1,52 @@
+* Number: 62
+* Problem: Volume Maximizing Convex Shape
+* Statement:
+Let $C$ be a convex piece of paper; its
+boundary may be a smooth curve, or a polygon.
+A \emph{perimeter halving folding} is a folding of $C$ obtained by 
+identifying two points $x$ and $y$ on the boundary of $C$ that halve
+the perimeter, and then folding $C$ by ``gluing'' $xy$ to $yx$.
+This always results in a unique convex shape in 3D, a polyhedron if
+$C$ is a convex polygon~\cite{do-fucg-06}.
+What unit-area shape $C$ achieves the maximum volume 
+possible via a perimeter-halving
+folding?
+* Origin: Posed by
+Joseph Malkevitch in 2002, in a slightly different form:
+for polygons, and not restricting the folding to perimeter-halving.
+The modifications above were suggested at CCCG'05~\cite{do-op05-06}.
+The restriction to perimeter halving eliminates some more complex foldings
+possible for some convex polygons, and so in that sense simplifies
+the problem.
+The extension to smooth shapes is a natural generalization.
+Smooth shapes only admit perimeter-halving foldings.
+* Status/Conjectures: Open.
+* Motivation: <none>
+* Partial and Related Results:
+Even fixing the shape and finding the maximum volume perimeter
+halving for that shape is difficult.
+For a circular disk, all perimeter halvings lead to a flat doubly-covered
+half disk, all of volume zero.
+The only other shape for which
+the answer is known, and then only empirically,
+is the case of $C$ a square~\cite{ado-cpfs-03}. 
+The resulting polyhedron of $6$ vertices and $8$ faces, shown in
+Fig.~\ref{max.vol},
+achieves about 60\% of the volume of
+a unit-area sphere.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Figure Begin
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.7\linewidth]{max.vol.eps}
+\caption{The maximum volume convex polyhedron foldable from a square.}
+\label{max.vol}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Figure End
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances: \cite{do-op05-06}.
+* Categories:
+folding and unfolding
+* Entry Revision History:
+J. O'Rourke, 26 Aug. 2005.
+---------------------------------------------------------

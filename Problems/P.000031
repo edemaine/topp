@@ -1,0 +1,48 @@
+* Number: 31
+* Problem: Trapping Light Rays with Segment Mirrors
+* Statement:
+Is it possible to trap all the light from one point source
+by a finite collection of two-sided disjoint segment mirrors?
+A light ray is \emph{trapped} if it includes no point strictly
+exterior to the convex hull of the mirrors.
+The source point is disjoint from the mirrors.
+Although several versions of the problem are possible, it
+seems to make the most sense to treat the mirrors as open
+segments (i.e., not including their
+endpoints), but demand that they are disjoint as closed segments.
+* Origin: O'Rourke and Petrovici~\cite{op-nlrm-01}.
+The question seems natural enough to have been raised earlier, but no other
+source is known.
+* Status/Conjectures: Conjecture 9 from that paper: 
+``No collection of segment mirrors can trap all the light from one
+source.''
+* Partial and Related Results:
+In~\cite{op-nlrm-01} several other conjectures are formed that
+imply a resolution to the posed problem.
+The strongest---that no collection of mirrors as above can support
+even a single \emph{nonperiodic} ray, i.e.,
+one that reflects forever (so is trapped)
+but never rejoins its earlier path---was disproved by
+Ben Stephens in 2002, who designed
+a contruction of 8 mirrors that traps a ray reflecting 
+nonperiodically.
+A similar construction was discovered and described in~\cite{msz-tlram-09},
+which also established that any finite number of rays can be trapped
+nonperiodically.
+Milovich~\cite{m-tlm-04} proved that if the angles between the lines
+containing the mirrors are rational multiples of $\pi$,
+then all but a countable number of light rays escape.
+In his book on billiards, Tabachnikov says,
+``It is unknown whether one can construct a polygonal trap
+for a parallel beam of light''~\cite[p.~116]{t-gb-05}.
+This is in contrast to known nonpolygonal traps for such beams.
+* Related Open Problems: Pach's ``enchanted forest'' of circular mirrors.
+* Reward: <none>
+* Appearances: 
+Presented at the Open Problem session of the 
+\emph{13th Canad. Conf. Comput. Geom.},
+Waterloo, Ontario, Aug. 2001.  Also, Oberwolfach, Jan. 2009.
+* Categories: visibility
+* Entry Revision History:
+J. O'Rourke, 28 Aug. 2001; 24 Feb. 2003; 5 Oct. 2005; 7 Sep. 2009.
+---------------------------------------------------------

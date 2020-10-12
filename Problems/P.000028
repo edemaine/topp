@@ -1,0 +1,51 @@
+* Number: 28
+* Problem: Flip Graph Connectivity in 3D
+* Statement:
+Is the \emph{flip graph} connected for general-position points in $\R^3$?
+Given a set of $n$ points in $\R^3$,
+the flip graph has a node
+for each tetrahedralization of the set.
+Two nodes are connected by an arc if there is a 2-to-3 or 3-to-2
+``bistellar flip'' of tetrahedra between the two simplicial complexes.
+In the plane, the flips correspond to convex quadrilateral diagonal switches;
+in $\R^3$, a $5$-vertex convex polyhedron is ``flipped'' between two
+of its tetrahedralizations.
+* Origin: \cite{epw-tpstd-90,j-ctddt-91}
+* Status/Conjectures: Open.
+* Partial and Related Results:
+In $\R^2$ the flip graph is connected, providing a
+basis for algorithms to iterate toward the Delaunay triangulation.
+A decade ago, several~\cite{epw-tpstd-90,j-ctddt-91} asked whether the
+same holds in $\R^3$ (when no four points
+are coplanar), but the question remains unresolved.
+It is not even known whether the flip graph might contain an
+isolated node.
+Settled in the negative for points in $\R^5$ 
+by Santos~\cite{s-pcstd-00},
+by constructing polytopes with a space of triangulations 
+not connected via bistellar flips.
+Settled in the negative for topological tetrahedralizations in 3D,
+but the constructed tetrahedralization cannot be realized geometrically
+\cite{dfm-utc-04}.
+% Proof that there may be only sqrt n flips: \cite{s-tvfgb-00}.
+
+Settled in the positive for flip graphs of \emph{regular triangulations}
+in any dimension in~\cite{pl-cpfgr-07},
+based on earlier work of Gelfand, Kapranov and Zelevinsky.
+The result in~\cite{pl-cpfgr-07} connects by flips that neither remove
+nor add vertices (i.e., 2-to-3 or 3-to-2 flips in 3D),
+whereas the earlier work by Gelfand et al. permits all flips
+(e.g., 1-to-4 and 4-to-1 flips in 3D).
+* Related Open Problems: Problem~\ref{Problem.27}
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: triangulations; Delaunay triangulations
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001;
+7 Dec. 2001 (thanks to F. Santos);
+E. Demaine, 10 Dec. 2001;
+J. O'Rourke, 18 Feb. 2002 (thanks to D. Eppstein);
+E. Demaine, 2 Aug. 2004 (thanks to M. Murphy); J. O'Rourke, 20 Aug 2006.
+J. O'Rourke, 22 Dec 2008 (thanks to L. Pournin).
+---------------------------------------------------------

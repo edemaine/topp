@@ -1,0 +1,52 @@
+* Number: 11
+* Problem: 3SUM Hard Problems
+* Statement:
+Can the class of \emph{3SUM hard} problems
+be solved in subquadratic time?
+These problems can be reduced from the problem
+of determining whether,
+given three sets of integers, $A$, $B$, and $C$ with
+total size $n$, there are elements
+$a \in A$, $b \in B$, and $c \in C$ such that $a+b=c$.
+* Origin: \cite{go-copcg-95}.
+* Status/Conjectures: Open.
+
+* Motivation:
+Many fundamental geometric problems fall in this class,
+e.g., computing the area of the union of $n$ triangles.
+* Partial and Related Results:
+$\Omega(n^2)$ lower bounds are known for 3SUM and a few 3SUM-hard
+problems in restricted decision tree models of computation
+\cite{es-blbda-95, e-lblsp-99, e-nlbch-99}.
+
+3SUM and its obvious generalizations (4SUM, 5SUM, etc.) are examples
+of \emph{linear satisfiability} problems.  A generic linear
+satisfiability problem asks, given an array of $n$ integers, do any
+$r$ of them satisfy the equation $$\alpha_1 x_1 + \alpha_2 x_2 + \cdots
++ \alpha_r x_r = \alpha_0$$ where $\alpha_0, \alpha_1, \alpha_2, \dots,
+\alpha_r$ are fixed constants.  Erickson \cite{e-lblsp-99} proved an
+$\Omega(n^{\lceil r/2 \rceil})$ lower bound for any problem of this type,
+in the restricted linear decision tree model.  This lower bound is tight
+except for a logarithmic factor when $r$ is even.
+Ailon and Chazelle generalized Erickson's bound and
+improve it for large $r$ or for more than $r$ variables~\cite{ac-lbldt-05}.
+
+Baran et al.~\cite{bdp-sa3-05} show that subquadratic algorithms for 3SUM
+are possible in common models of computation that allow more direct
+manipulation of the numbers instead of just real arithmetic,
+such as the word RAM.  The improvement they obtain is roughly quadratic
+in the parallelism offered by the model; for example, with $\lg n$-bit words,
+they obtain an $O(n^2 \left(\frac{\lg \lg n}{\lg n}\right)^2)$-time
+algorithm.  With this word size, the 3SUM problem becomes whether any
+improvement beyond polylogarithmic factors (or indeed, beyond
+$\Theta(lg^2 n)$) is possible.
+
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: lower bounds
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001; Jeff Erickson, 20 June 2002; E. Demaine, 7 July 2005;
+Raphael Clifford, 7 July 2011.
+---------------------------------------------------------

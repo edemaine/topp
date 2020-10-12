@@ -1,0 +1,24 @@
+* Number: 9
+* Problem: Edge-Unfolding Convex Polyhedra
+* Statement:
+Can every convex polyhedron be cut along its edges and unfolded
+flat to a single, nonoverlapping, simple polygon?
+* Origin: First stated in~\cite{s-cpcn-75}, but in
+spirit at least goes back to Albrecht D\"urer~\cite{d-pm-1525}.
+* Status/Conjectures: Open.
+It seems to be a widespead hunch that the answer is {\sc yes}.
+* Partial and Related Results:
+The answer is known to be {\sc no}
+for nonconvex polyhedra even with triangular faces~\cite{bdekms-upcf-03},
+but has been long open for convex polyhedra~\cite{s-cpcn-75,o-fucg-00}.
+* Related Open Problems:
+Problem~\ref{Problem.42}: Vertex-Unfolding Polyhedra. \\
+Problem~\ref{Problem.43}: General Unfolding of Nonconvex Polyhedra. \\
+Problem~\ref{Problem.64}: Edge-Unfolding Polyhedra Built from Cubes.
+* Reward: <none>
+* Appearances:
+\cite{s-cpcn-75,o-fucg-00,mo-cgc42-01}
+* Categories: folding and unfolding; polyhedra
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001.
+---------------------------------------------------------

@@ -1,0 +1,25 @@
+* Number: 21
+* Problem: Shortest Paths among Obstacles in 2D
+* Statement:
+Can shortest paths among $h$ obstacles in the plane,
+with a total of $n$ vertices, be found in
+optimal $O(n + h \log h)$ time using $O(n)$ space?
+* Origin: Uncertain, pending investigation.
+* Status/Conjectures: Open.
+* Partial and Related Results:
+The only algorithm that is linear in $n$ in time and space is
+quadratic in $h$~\cite{kmm-eaesp-97};
+$O(n\log n)$ time, using $O(n\log n)$ space,
+is known~\cite{hs-oaesp-99}.
+In three dimensions, the Euclidean shortest path problem among general
+obstacles is NP-hard, but its complexity remains open
+for some special cases, such as when the obstacles are disjoint unit
+spheres or axis-aligned boxes; see \cite{m-gspno-00} for a survey.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: shortest paths
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001.
+---------------------------------------------------------

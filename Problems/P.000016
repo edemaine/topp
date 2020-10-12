@@ -1,0 +1,31 @@
+* Number: 16
+* Problem: Simple Polygonalizations
+* Statement:
+Can the number of simple polygonalizations of
+a set of $n$ points in the plane be computed in polynomial time?
+A \emph{simple polygonalization} is a
+simple polygon whose vertices are the points.
+* Origin: Uncertain, pending investigation.
+* Status/Conjectures: Open.
+* Partial and Related Results:
+Certain special cases are known (e.g., for
+computing the number of
+monotone simple polygonalizations~\cite{zssm-grpgv-96}),
+but the general
+problem remains open.  The problem is closely related to
+that of generating a ``random'' instance of a simple polygon
+on a given set of vertices, with each instance
+being generated with probability $1/k$, where $k$ is the total number of
+simple polygonalizations.
+Heuristic methods are known and implemented~\cite{ah-hgrp-96}.
+
+See~\cite{chuz-peps-01} and~\cite{hmosuv-peps2-09} for related topics
+and references to relevant papers.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: polygons; point sets
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001; 1 Jan. 2003.
+---------------------------------------------------------

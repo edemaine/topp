@@ -1,0 +1,30 @@
+* Number: 36
+* Problem: Inplace Convex Hull of a Simple Polygonal Chain
+* Statement:
+How much extra space is required to compute the convex hull of a simple
+polygonal chain or simple polygon in linear time?
+
+More precisely, given the $n$ points in order along the chain in an array $A$,
+the alogorithm must re-arrange the points inplace in the array and output a
+number $h$ so that the first $h$ elements in the resulting array are the points
+on the convex hull in order.  The goal is to minimize the extra storage past
+the array $A$, say to $O(\log n)$ or ideally $O(1)$.
+* Origin: \cite{bikmm-oipcha-01}
+* Status/Conjectures: Solved~\cite{bc-sacch-04}.
+* Partial and Related Results:
+From the abstract of \cite{bc-sacch-04}:
+``we present a simple self-contained solution that uses $O(\log n)$ space, and indicate how to improve it to $O(1)$ space with the same techniques used for stable partition.''
+%For computing the convex hull of a set of points,
+%Br{\"o}nnimann et al. \cite{bikmm-oipcha-01} gave inplace alogorithms using
+%$O(1)$ extra space with running time $O(n \log h)$ for $h$ points on the
+%convex hull, and running time $O(n)$ if the points have been presorted
+%according to one coordinate.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances: Posed in \cite{bikmm-oipcha-01}, and
+by Herv{\'e} Br{\"o}nnimann during the open problem session at
+the Fall Workshop on Computational Geometry, Brooklyn, NY, Nov. 2--3, 2001.
+* Categories: convex hulls
+* Entry Revision History:
+E. Demaine, 21 Nov. 2001; J. O'Rourke, 10 Mar. 2004 (thanks to Ryan Coleman).
+---------------------------------------------------------

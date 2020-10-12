@@ -1,0 +1,63 @@
+* Number: 46
+* Problem: 3D Minimum-Bend Orthogonal Graph Drawings
+* Statement:
+Does every simple graph with maximum vertex degree $\Delta \leq 6$
+have a 3D orthogonal point-drawing with no more than two bends per edge?
+A \emph{3D orthogonal point-drawing} of a graph maps each vertex to a unique
+point of the 3D cubic lattice, and maps each edge to a lattice path between
+the endpoints; these paths can only intersect at common endpoints.
+In this problem, each path must have at most two bends, that is,
+consist of at most three orthogonal line segments (links).
+* Origin: Likely \cite{esw-tatdo-00}.
+* Status/Conjectures: Open.
+* Motivation: <none>
+* Partial and Related Results:
+Two bends would be best possible, because any drawing of $K_5$ uses
+at least two bends on at least one edge.
+If $\Delta \leq 5$, two bends per edge suffice \cite{w-3dogd-03}.
+% above is also in \cite{w-a3dogd-98}
+Two bends also suffice for the complete multipartite 6-regular graphs
+$K_7$, $K_{2,2,2,2}$, $K_{3,3,3}$, and $K_{6,6}$
+\cite{w-3dogd-00}.
+In general, there is a drawing with an average number of bends per edge
+of at most $2+\frac{2}{7}$ \cite{w-3dogd-03}.
+% above has weaker result in \cite{w-a3dogd-98}
+Additionally, three bends per edge always suffice,
+even for multigraphs \cite{esw-tatdo-00, pt-aiogd-99, w-mnbv3d-01}.
+
+% References and information thanks to
+% ``Orthogonal Drawings With Few Layers'' by Biedl, Johansen, Shermer, Wood
+% (GD'01)
+% http://citeseer.nj.nec.com/biedl02orthogonal.html
+% And from David Wood when he posed the CCCG problem.
+
+Two-dimensional versions of this problem have also been studied.
+A \emph{2D orthogonal point-drawing} of a graph maps each vertex
+to a unique point of the 2D square lattice, and maps each edge to a lattice
+path between the endpoints; the paths are allowed to intersect at common
+endpoints and at proper crossings (points at which two paths meet but do
+not bend), but must be edge-disjoint.
+Every graph with maximum vertex degree $\Delta \leq 4$ has
+a 2D orthogonal point-drawing with at most two bends per edge,
+and furthermore within a $2 n \times 2 n$ rectangle of the grid
+\cite{s-dgrg-95}.
+On the other hand, as in 3D, any drawing of $K_5$ uses at least two bends
+on at least one edge \cite{s-dgrg-95}, so two bends is again best possible.
+For planar graphs, we can ask for 2D orthogonal point-drawings that
+have no (proper) crossings.
+In this case, again there are drawings with at most two bends per edge,
+unless the graph has a connected component isomorphic to the icosohedron,
+in which case three bends per edge is the best possible
+\cite{bk-bhogd-98,lms-la2ep-98}.
+% xxx Are two bends necessary for planar graphs other than the octahedron?
+%     I assume so... -Erik
+
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{esw-tatdo-00}.
+Posed by David Wood at the CCCG 2002 open-problem session~\cite{do-opc2002-03}.
+* Categories: graph drawing
+* Entry Revision History:
+E. Demaine, 21 Dec. 2002; 17 July 2005.
+---------------------------------------------------------

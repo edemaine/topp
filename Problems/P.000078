@@ -1,0 +1,36 @@
+* Number: 78
+
+* Problem: Rectangling a Rectangle
+
+* Statement: 
+Do there exist rectangles that may be partitioned into a finite number $n$ of rectangular pieces of equal area but with all perimeters different?
+ 
+* Origin: 
+Posed by R. Nandakumar, Feb. 2012:
+\url{http://nandacumar.blogspot.in/2012/02/packing-rectangles.html}. 
+The phrase ``rectangling a rectangle'' was introduced by Michael
+Brand at
+\url{http://brand.site.co.il/riddles/201203q.html}.
+
+* Status: 
+A partial solution for rectangular pieces with real edge lengths
+is known---a spiral layout of 7 rectangular pieces forming 
+a larger rectangle.  See Brand's web site.
+The question remains open for tiling rectangles with rational edge lengths. 
+
+* Conjecture: If all edge lengths of the pieces are required to be
+rational, no such partition is possible
+(R. Nandakumar and N. Ramana Rao).
+
+* Further questions: 
+
+The question may be extended to higher dimensions $d$ in the obvious way.
+The posers believe there is no solution in $\mathbb{R}^d$
+for $d \ge 3$.
+
+* Reward: <none>
+* Appearances: <none>
+* Categories: packing, partitioning.
+* Entry Revision History:
+R. Nandakumar and N. Ramana Rao, Mar. 14, 2012; J. O'Rourke, 15 Mar. 2012; 25 Mar. 2012.
+---------------------------------------------------------

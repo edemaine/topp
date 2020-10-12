@@ -1,0 +1,21 @@
+* Number: 17
+* Problem: Visibility Graph Recognition
+* Statement:
+Given a visibility graph $G$ and a Hamiltonian circuit $C$,
+determine in polynomial time whether there is a simple polygon whose
+vertex visibility graph is $G$, and whose boundary corresponds to $C$.
+* Origin: ElGindy(?)
+* Status/Conjectures: Open.
+* Partial and Related Results:
+The problem is not even known to be in NP~\cite{o-cgc18-93},
+although it is
+for ``pseudo-polygon'' visibility
+graphs~\cite{os-vepvgcr-97}.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: visibility
+* Entry Revision History:
+J. O'Rourke, 2 Aug. 2001.
+---------------------------------------------------------

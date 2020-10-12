@@ -1,0 +1,25 @@
+* Number: 8
+* Problem: Linear Programming: Strongly Polynomial?
+* Statement:
+Is linear programming strongly polynomial?
+* Origin: Nimrod Megiddo~\cite{m-ibeap-82}\cite{m-tgpal-83}.
+* Status/Conjectures: Open.
+* Partial and Related Results:
+It is known to be weakly polynomial, that is, polynomial in
+the bit complexity of the input data~\cite{k-palp-80,k-nptal-84a}.
+Subexponential time is achievable
+via a randomized algorithm~\cite{msw-sblp-96}.
+In any fixed dimension, linear programming can be solved
+in strongly polynomial linear time
+(linear in the input size),
+established in dimensions 2 and 3 in~\cite{d-ltatt-84}
+and for all dimensions in~\cite{m-lpltw-84}.
+* Related Open Problems: <none>
+* Reward: <none>
+* Appearances:
+\cite{mo-cgc42-01}
+* Categories: linear programming
+* Entry Revision History:
+J. O'Rourke, 2 Aug 2001, 16 Jul 2007;
+E. Demaine, 12 Mar 2010.
+---------------------------------------------------------
