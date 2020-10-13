@@ -3,6 +3,7 @@
 
 from __future__ import nested_scopes
 import fileinput, glob, os, re, shutil, string, sys, time, warnings
+import distutils.spawn
 from UserDict import UserDict
 from UserList import UserList
 import remove_url_spaces
@@ -14,6 +15,12 @@ warning_file = open ("warnings", "w+")
 #latex2html = "/Users/edemaine/Packages/bin/latex2html"
 #if not os.path.exists (latex2html): latex2html = "latex2html"
 pandoc = 'pandoc'
+#latex = 'latex'
+latex = 'pdflatex'
+bibtex = 'bibtex'
+if os.environ.get('DEPLOY_URL'): # Netlify
+  latex = './netlify-latex.sh'
+  bibtex = './netlify-latex.sh bibtex'
 
 ##############################################################################
 
@@ -25,15 +32,15 @@ def main ():
   make_numerical_problem_list (problems, "tex/problems_by_number.tex")
   make_categorized_problem_list (problems, "tex/categorized_problem_list.tex")
   make_category_list (problems, "tex/category_list.tex")
-  os.system ("pdflatex master")
+  os.system ("%s master" % latex)
   find_cites (problems, "master.aux")
-  run ("bibtex master",
+  run ("%s master" % bibtex,
        "Warning", "Error", "couldn't open", "Repeated", "^ : ", "^I", "You're")
   remove_url_spaces.replace_file ("master.bbl")
   bibitems = grab_bibitems ("master.bbl")
   make_problems_latex (problems, "tex/problems.tex", "tex", bibitems)
-  os.system ("pdflatex master")
-  run ("pdflatex master", "(Citation|Reference).*undefined")
+  os.system ("%s master" % latex)
+  run ("%s master" % latex, "(Citation|Reference).*undefined")
   #os.system ("dvips -o master.ps master.dvi")
   #os.system ("ps2pdf -dMaxSubsetPct=100 -dCompatibilityLevel=1.2 -dSubsetFonts=true -dEmbedAllFonts=true master.ps")
   #run ("cp master.tex Welcome.tex")
