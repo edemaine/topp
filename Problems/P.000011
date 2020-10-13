@@ -39,7 +39,7 @@ in the parallelism offered by the model; for example, with $\lg n$-bit words,
 they obtain an $O(n^2 \left(\frac{\lg \lg n}{\lg n}\right)^2)$-time
 algorithm.  With this word size, the 3SUM problem becomes whether any
 improvement beyond polylogarithmic factors (or indeed, beyond
-$\Theta(lg^2 n)$) is possible.
+$\Theta(\lg^2 n)$) is possible.
 
 * Related Open Problems: <none>
 * Reward: <none>
