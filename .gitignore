@@ -1,0 +1,15 @@
+*.aux
+*.bbl*
+*.blg
+*.dvi
+*.log
+*.ps
+
+master.pdf
+Welcome.tex
+auto*
+warnings
+
+*.pyc
+
+Old
