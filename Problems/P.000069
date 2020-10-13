@@ -28,8 +28,8 @@ of treewidth~4 and higher.
 
 The problem was solved negatively in~\cite{f-nipgd-10}:
 \emph{Theorem}:
-"There exists an infinite class of maximal planar graphs 
-that admit no isosceles planar drawing."
+``There exists an infinite class of maximal planar graphs 
+that admit no isosceles planar drawing.''
 Frati raises the new question of whether or not every triangulation
 admits a possibly nonplanar isosceles drawing.
 * Related Open Problems: <none>

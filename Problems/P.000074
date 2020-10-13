@@ -18,7 +18,7 @@ Werner and Lenz,
 who established a quadratic upper bound, $O(m^2)$,
 in~\cite{wl-pbrsn-10}.
 They also uncovered a long history of the problem under
-other names, e.g., "$d$-separated interval piercing."
+other names, e.g., ``$d$-separated interval piercing.''
 In fact, the result was already established by Tardos and Karolyi
 earlier.  See the cited paper for more details.
 

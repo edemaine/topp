@@ -7,7 +7,7 @@ path, necessarily a Hamiltonian path (to span all vertices),
 and unfolds the surface to a non-overlapping polygon in the plane.
 The segments of the path need not lie along edges of $P$.
 * Origin: Posed as Open Problem 2 in~\cite{lddss-zupc-10}, which
-introduced the term "zipper unfolding."
+introduced the term ``zipper unfolding.''
 * Status/Conjectures: Open.
 * Partial and Related Results:
 With the restriction that the cuts follow edges,

@@ -26,7 +26,7 @@ that the number of fixed $n$-ominoes (factoring out just translations),
 denoted $t(n)$, satisfies
 $$\lim_{n \to \infty} [t(n)]^{1/n} = \lambda$$
 (roughly, $t(n)$ is around $n^\lambda$)
-for ``Klarner's constant" $\lambda$,
+for ``Klarner's constant'' $\lambda$,
 with $4.0025 < \lambda < 4.5685$,
 but the precise value of $\lambda$ remains open.
 The lower bound of $>4$ is established in~\cite{brs-lambda4-15},

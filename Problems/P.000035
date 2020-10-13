@@ -26,13 +26,13 @@ is NP-hard in the
 Euclidean (or $L_1$) plane.  (They show it to be NP-complete in
 star metrics.)
 * Motivation:
-What is the most efficient way to "turn on" a large swarm of
+What is the most efficient way to ``turn on'' a large swarm of
 robots or to distribute to them a secret or a token that 
 requires close proximity in order to pass from one to another?
 * Partial and Related Results:
 There are a variety of related results
 given in \cite{abfms-ftphwusr-01}.  They show that the problem is NP-hard
-for "star metrics" (each asleep robot is at a leaf of a star graph whose
+for ``star metrics'' (each asleep robot is at a leaf of a star graph whose
 spokes have various lengths).  
 For geometric instances ($L_p$ metrics) in fixed dimension,
 they give an efficient PTAS.  For general metric spaces,

@@ -12,7 +12,7 @@ It was known that a topological hexahedral mesh
 exists~\cite{m-cqmsw-96,e-lchmg-96},
 with, in general, curved boundaries, but despite the availability of software
 that extends quadrilateral surface meshes to hexahedral volume meshes,
-it is not known if a "geometric" hexahedral mesh can
+it is not known if a ``geometric'' hexahedral mesh can
 be achieved, with all cells having planar faces.
 
 A new result~\cite{cs-cachm-06} settles the practical aspects
