@@ -5,26 +5,26 @@ How many $\pi$-floodlights
 are always sufficient
 to illuminate any polygon of $n$ vertices,
 with at most one floodlight placed at each vertex?
-An \emph{$\a$-floodlight} is a light of aperture $\a$.
-(We consider here "inward-facing" floodlights, whose
+An \emph{$\alpha$-floodlight} is a light of aperture $\alpha$.
+(We consider here ``inward-facing'' floodlights, whose
 defining halfspace lies inside the polygon, locally in the 
 neighborhood of the vertex.  Other models of the problem
 allow general orientations of floodlights or 
-restricted orientations (e.g., "edge-aligned").)
+restricted orientations (e.g., ``edge-aligned'').)
 * Origin: Jorge Urrutia, perhaps first published in~\cite{u-agip-00}.
 * Status/Conjectures: Open.  Now known that the fraction of
 $n$ that always suffices lies between $5/8$ and $2/3$.
 * Partial and Related Results:
 It was established in~\cite{eoux-ipvf-95} that
-for any $\a < \pi$, there is a polygon that cannot be
-illuminated with an $\a$-floodlight at each vertex.
-When $\a=\pi$, $n-2$ lights (trivially) suffice.
+for any $\alpha < \pi$, there is a polygon that cannot be
+illuminated with an $\alpha$-floodlight at each vertex.
+When $\alpha=\pi$, $n-2$ lights (trivially) suffice.
 So it is of interest
 (as noted in~\cite{u-agip-00})
 to learn whether a fraction of
 $n$ lights suffice for $\pi$-floodlights.
 A (very) special case is that $\lceil n/2 \rceil-1$
-is a tight bound for "monotone mountains"~\cite{o-vplmm-97}.
+is a tight bound for ``monotone mountains''~\cite{o-vplmm-97}.
 T{\'o}th established~\cite{t-ipvpl-01} 
 that (roughly)
 $(3/4)n$ suffice, in the case of general orientation
