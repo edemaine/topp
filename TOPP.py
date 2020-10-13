@@ -1,4 +1,5 @@
 #!/usr/bin/python2
+# -*- coding: utf8 -*-
 
 from __future__ import nested_scopes
 import fileinput, glob, os, re, shutil, string, sys, time, warnings
@@ -556,6 +557,9 @@ def run_pandoc(infile, outfile, title, prefix = ''):
   tex = re.sub(r'\\end\s*{thebibliography}', r'\\end{description}', tex)
   tex = re.sub(r'\\newblock\b', r'', tex)
   tex = re.sub(r'{\\etalchar{\+}}', r'+', tex)
+  tex = re.sub(r"{\\'o}", r'ó', tex)
+  tex = re.sub(r'{\\"o}', r'ö', tex)
+  tex = re.sub(r'{\\"u}', r'ü', tex)
   cites = {}
   def bibitem(match):
     cites[match.group(2)] = match.group(1)
