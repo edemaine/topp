@@ -7,7 +7,7 @@ A \emph{perimeter halving folding} is a folding of $C$ obtained by
 identifying two points $x$ and $y$ on the boundary of $C$ that halve
 the perimeter, and then folding $C$ by ``gluing'' $xy$ to $yx$.
 This always results in a unique convex shape in 3D, a polyhedron if
-$C$ is a convex polygon~\cite{do-fucg-06}.
+$C$ is a convex polygon~\cite{do-gfalop-07}.
 What unit-area shape $C$ achieves the maximum volume 
 possible via a perimeter-halving
 folding?
