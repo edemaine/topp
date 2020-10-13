@@ -18,9 +18,12 @@ pandoc = 'pandoc'
 #latex = 'latex'
 latex = 'pdflatex'
 bibtex = 'bibtex'
-if os.environ.get('DEPLOY_URL'): # Netlify
+
+## Netlify
+if os.environ.get('DEPLOY_URL'):
   latex = './netlify-latex.sh'
   bibtex = './netlify-latex.sh bibtex'
+  pandoc = './netlify-pandoc.sh'
 
 ##############################################################################
 
