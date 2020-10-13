@@ -27,7 +27,7 @@ in Figure~\ref{stainedglass}.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Figure Begin
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.5\linewidth]{stainedglass.eps}
+\includegraphics[width=0.5\linewidth]{stainedglass}
 \caption{$92$-piece partition achieving $1.29950$}
 \label{stainedglass}
 \end{figure}

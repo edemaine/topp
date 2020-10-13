@@ -46,7 +46,7 @@ In particular, this reduced the upper-bound fraction below $1$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Figure Begin
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.4\linewidth]{p5over8.eps}
+\includegraphics[width=0.4\linewidth]{p5over8}
 \caption{A polygon of 9 vertices that needs 5 vertex $\pi$-lights.}
 \label{p5over8}
 \end{figure}

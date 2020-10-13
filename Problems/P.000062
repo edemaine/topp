@@ -37,7 +37,7 @@ a unit-area sphere.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Figure Begin
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.7\linewidth]{max.vol.eps}
+\includegraphics[width=0.7\linewidth]{max-vol}
 \caption{The maximum volume convex polyhedron foldable from a square.}
 \label{max.vol}
 \end{figure}

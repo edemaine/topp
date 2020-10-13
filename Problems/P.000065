@@ -19,7 +19,7 @@ projective equivalents.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Figure Begin
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.6\linewidth]{7-pt.config.eps}
+\includegraphics[width=0.6\linewidth]{7-pt-config}
 %\fbox{7-pt.config.eps}
 \caption{Edge midpoints have weight $2$, while all other
 points have weight $1$. All nine lines have sum $4$.}
