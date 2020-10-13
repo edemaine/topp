@@ -557,9 +557,11 @@ def run_pandoc(infile, outfile, title, prefix = ''):
   tex = re.sub(r'\\end\s*{thebibliography}', r'\\end{description}', tex)
   tex = re.sub(r'\\newblock\b', r'', tex)
   tex = re.sub(r'{\\etalchar{\+}}', r'+', tex)
+  tex = re.sub(r"{\\'e}", r'é', tex)
   tex = re.sub(r"{\\'o}", r'ó', tex)
   tex = re.sub(r'{\\"o}', r'ö', tex)
   tex = re.sub(r'{\\"u}', r'ü', tex)
+  tex = re.sub(r'{Her}', r'Her', tex)
   cites = {}
   def bibitem(match):
     cites[match.group(2)] = match.group(1)
@@ -568,6 +570,7 @@ def run_pandoc(infile, outfile, title, prefix = ''):
   def cite(match):
     out = []
     for part in match.group(2).split(','):
+      part = part.strip()
       if part in cites: part = cites[part]
       out.append('\\ref{%s}' % part)
     if match.group(1): out.append(match.group(1))
