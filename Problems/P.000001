@@ -1,7 +1,7 @@
 * Number: 1
 * Problem: Minimum Weight Triangulation
 * Statement: 
-Can a mininimum weight triangulation of a planar point set
+Can a minimum weight triangulation of a planar point set
 be found in polynomial time?
 The \emph{weight} of a triangulation is its total edge length.
 * Origin: Perhaps E. L. Lloyd, 1977: \cite{l-tspp-77},
