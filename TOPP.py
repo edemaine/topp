@@ -72,7 +72,7 @@ def main ():
   indexbib.write(bibitems['mo-cgc42-01'])
   indexbib.write(bibitems['_end'])
   indexbib.close()
-  run ("cat author.tex intro.tex tex/categorized_problem_list.tex tex/index_bib.tex >tex/index.tex")
+  run ("cat author.tex intro.tex tex/categorized_problem_list.tex tex/index_bib.tex acknowledgments.tex >tex/index.tex")
   run_pandoc('tex/index.tex', 'html/index.html',
     'TOPP: The Open Problems Project', '\\section*{The Open Problems Project}')
   # + '''
@@ -82,7 +82,7 @@ def main ():
   #run ("cp master.ps master.pdf Welcome/")
   run ("cp master.pdf html/")
   run ("cp Problems/problem.template html/")
-  run ("ln -f -s index.html html/Welcome.html")
+  run ("ln -f -s index.html html/Welcome.html") # backward compatibility
   run ("chmod -R a+rX html")
   #run ("chgrp -R topp Welcome && chmod -R g+rwX Welcome")
 
