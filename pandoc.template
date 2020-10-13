@@ -20,8 +20,10 @@ $endif$
     dt { font-weight: bold; }
     h1#bibliography + dl > dt { float: left; clear: left; width: 6em; }
     h1#bibliography + dl > dd { margin: 0; margin-left: 6.5em; }
-    ul > li > p:first-child { margin-top: 0 }
-    ul > li > p:last-child { margin-bottom: 0 }
+    ul > li > p:first-child { margin-top: 0; }
+    ul > li > p:last-child { margin-bottom: 0; }
+    figure { text-align: center; }
+    figcaption { text-align: left; }
   </style>
 $for(css)$
   <link rel="stylesheet" href="$css$">

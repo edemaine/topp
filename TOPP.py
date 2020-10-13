@@ -576,6 +576,11 @@ def run_pandoc(infile, outfile, title, prefix = ''):
     if match.group(1): out.append(match.group(1))
     return ', '.join(out)
   tex = re.sub(r'\\cite\s*(?:\[([^][]*)\]\s*)?{([^{}]*)}', cite, tex)
+  def includegraphics(match):
+    #run ("convert figs/%s.pdf html/%s.png" % (match.group(2), match.group(2)))
+    run ("cp figs/%s.png html/%s.png" % (match.group(2), match.group(2)))
+    return match.group(0)[:-1] + '.png}'
+  tex = re.sub(r'\\includegraphics\s*(?:\[([^][]*)\]\s*)?{([^{}]*)}', includegraphics, tex)
   #print tex
   temp = open(tempfile, 'w')
   temp.write(tex)
