@@ -585,7 +585,7 @@ def run_pandoc(infile, outfile, title, prefix = ''):
   temp = open(tempfile, 'w')
   temp.write(tex)
   temp.close()
-  os.system ("%s -d pandoc.defaults -i %s -o %s -M title=\"%s\"" % (pandoc, tempfile, outfile, title))
+  os.system ("%s -d pandoc.defaults -i %s -o %s -M title=%s" % (pandoc, tempfile, outfile, repr(title)))
   os.remove(tempfile)
 
 ##############################################################################
