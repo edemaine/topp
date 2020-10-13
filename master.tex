@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{html}
+\usepackage{hyperref}
 \usepackage{graphicx}
 \graphicspath{{figs/}}
 %begin{latexonly}
@@ -31,29 +32,26 @@
 
 
 \title{The Open Problems Project}
-\author{edited by~
-\htmladdnormallink{Erik~D.~Demaine}{http://theory.csail.mit.edu/~edemaine/}\and 
-\htmladdnormallink{Joseph~S.~B.~Mitchell}{http://www.ams.sunysb.edu/~jsbm/}\and
-\htmladdnormallink{Joseph~O'Rourke}{http://cs.smith.edu/~orourke/}}
+\input{author.tex}
  
 \bibliographystyle{alphahtml}
 \begin{document}
 \maketitle
 
-\input intro.tex
+\input{intro.tex}
         % Introductory manifesto
 
-\input auto_category_list.tex
+\input{tex/category_list.tex}
         % Auto-generated categories list
 
-\input auto_categorized_problem_list.tex
+\input{tex/categorized_problem_list.tex}
         % Auto-generated problem list by category
 
-\input auto_numerical_problem_list.tex
+\input{tex/problems_by_number.tex}
         % Auto-generated problem list by number
 
-\input auto_problems.tex % Auto-generated problem list
-                         % with or without bibliography added
+\input{tex/problems.tex}
+        % Auto-generated problem list with or without bibliography added
 
 %begin{latexonly}
 \ifonebigbib

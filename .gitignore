@@ -4,11 +4,13 @@
 *.dvi
 *.log
 *.ps
+*.out
 
 master.pdf
-Welcome.tex
-auto*
 warnings
+
+tex
+html
 
 *.pyc
 

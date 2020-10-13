@@ -10,43 +10,75 @@ home_url = "http://cs.smith.edu/~orourke/TOPP/"
 public_html = "/Users/orourke/public_html/TOPP/"
 front_page_links_to_problems = 1
 warning_file = open ("warnings", "w+")
-latex2html = "/Users/edemaine/Packages/bin/latex2html"
-if not os.path.exists (latex2html): latex2html = "latex2html"
+#latex2html = "/Users/edemaine/Packages/bin/latex2html"
+#if not os.path.exists (latex2html): latex2html = "latex2html"
+pandoc = 'pandoc'
 
 ##############################################################################
 
 def main ():
   problems = read_problems (glob.glob ("Problems/P.[0-9][0-9][0-9][0-9][0-9][0-9]"))
   process_categories (problems)
-  make_problems_latex (problems, "auto_problems.tex")
-  make_numerical_problem_list (problems, "auto_numerical_problem_list.tex")
-  make_categorized_problem_list (problems, "auto_categorized_problem_list.tex")
-  make_category_list (problems, "auto_category_list.tex")
-  os.system ("latex master")
+  if not os.path.isdir('tex'): os.mkdir('tex')
+  make_problems_latex (problems, "tex/problems.tex")
+  make_numerical_problem_list (problems, "tex/problems_by_number.tex")
+  make_categorized_problem_list (problems, "tex/categorized_problem_list.tex")
+  make_category_list (problems, "tex/category_list.tex")
+  os.system ("pdflatex master")
   find_cites (problems, "master.aux")
   run ("bibtex master",
        "Warning", "Error", "couldn't open", "Repeated", "^ : ", "^I", "You're")
   remove_url_spaces.replace_file ("master.bbl")
   bibitems = grab_bibitems ("master.bbl")
-  make_problems_latex (problems, "auto_problems.tex", bibitems)
-  os.system ("latex master")
-  run ("latex master", "(Citation|Reference).*undefined")
-  os.system ("dvips -Ppdf -o master.ps master.dvi")
-  os.system ("ps2pdf -dMaxSubsetPct=100 -dCompatibilityLevel=1.2 -dSubsetFonts=true -dEmbedAllFonts=true master.ps")
-  run ("cp master.tex Welcome.tex")
-  run ("cp master.aux Welcome.aux")
-  footer = "The Open Problems Project - %s" % time.strftime ("%B %d, %Y")
-  os.system ("%s -noreuse -split 4 -toc_depth 3 -link 0 -image_type gif -no_math -html_version 3.2,math,latin1,unicode -local_icons -accent_images=normalsize -nofootnode -address '%s' -init_file dot_latex2html-init -custom_titles Welcome.tex" % (latex2html, footer))
+  make_problems_latex (problems, "tex/problems.tex", "tex", bibitems)
+  os.system ("pdflatex master")
+  run ("pdflatex master", "(Citation|Reference).*undefined")
+  #os.system ("dvips -o master.ps master.dvi")
+  #os.system ("ps2pdf -dMaxSubsetPct=100 -dCompatibilityLevel=1.2 -dSubsetFonts=true -dEmbedAllFonts=true master.ps")
+  #run ("cp master.tex Welcome.tex")
+  #run ("cp master.aux Welcome.aux")
+
+  header = '\\section*{\\href{./}{The Open Problems Project}}\n\n'
+  #footer = "The Open Problems Project - %s" % time.strftime ("%B %d, %Y")
+  #os.system ("%s -noreuse -split 4 -toc_depth 3 -link 0 -image_type gif -no_math -html_version 3.2,math,latin1,unicode -local_icons -accent_images=normalsize -nofootnode -address '%s' -init_file dot_latex2html-init -custom_titles Welcome.tex" % (latex2html, footer))
         ## -no_navigation
-  run ("cp master.ps master.pdf Welcome/")
-  run ("cp problem.template Welcome/")
-  run ("chmod -R a+rX Welcome")
-  run ("chgrp -R topp Welcome && chmod -R g+rwX Welcome")
+  if not os.path.isdir('html'): os.mkdir('html')
+  for probnum in problems.problem_numbers ():
+    problem = problems[probnum]
+    prefix = header
+    if probnum+1 in problems:
+      prefix += '\\textbf{Next:} \\href{P%d.html}{%s}\n\n' % (probnum+1, problems[probnum+1].text_with_number_focus())
+    if probnum-1 in problems:
+      prefix += '\\textbf{Previous:} \\href{P%d.html}{%s}\n\n' % (probnum-1, problems[probnum-1].text_with_number_focus())
+    run_pandoc('tex/P%s.tex' % probnum, 'html/P%s.html' % probnum,
+      'TOPP: ' + problem.text_with_number_focus(), prefix)
+
+  run_pandoc('tex/problems_by_number.tex', 'html/problems_by_number.html',
+    'TOPP: Numerical List of All Problems', header)
+
+  indexbib = open('tex/index_bib.tex', 'w')
+  indexbib.write(bibitems['_begin'])
+  indexbib.write(bibitems['mo-cgc42-01'])
+  indexbib.write(bibitems['_end'])
+  indexbib.close()
+  run ("cat author.tex intro.tex tex/categorized_problem_list.tex tex/index_bib.tex >tex/index.tex")
+  run_pandoc('tex/index.tex', 'html/index.html',
+    'TOPP: The Open Problems Project', '\\section*{The Open Problems Project}')
+  # + '''
+  #<h2>edited by <a href="http://erikdemaine.org/">Erik D. Demaine</a>, <a href="http://www.ams.sunysb.edu/~jsbm/">Joseph~S.~B.~Mitchell</a>, <a href="
+  #''')
+
+  #run ("cp master.ps master.pdf Welcome/")
+  run ("cp master.pdf html/")
+  run ("cp problem.template html/")
+  run ("ln -f -s index.html html/Welcome.html")
+  run ("chmod -R a+rX html")
+  #run ("chgrp -R topp Welcome && chmod -R g+rwX Welcome")
 
   if len (sys.argv) > 1:
     print "Copying files into public_html..."
     #run ("cp -d -p Welcome/* %s" % public_html)
-    copy_files ("Welcome/*", public_html)
+    copy_files ("html/*", public_html)
 
   if warning_file.tell () > 0:
     print "*** Warnings from TOPP.py are in the file 'warnings'.  Please inspect. ***"
@@ -270,7 +302,7 @@ def process_categories (problems):
 
 auto_disclaimer = "% DO NOT EDIT THIS FILE.  Auto-generated by TOPP.py.\n"
 
-def make_problems_latex (problems, outname, bibitems = None):
+def make_problems_latex (problems, outname, outdir = None, bibitems = None):
   """Converts set of problems into a LaTeX file."""
 
   outfile = open (outname, "w")
@@ -282,45 +314,43 @@ def make_problems_latex (problems, outname, bibitems = None):
     outfile.write (bibitems['_commands'])
 
   for probnum in problems.problem_numbers ():
+    if outdir: probfile = open (os.path.join(outdir, 'P%s.tex' % probnum), 'w')
+    def write(s):
+      outfile.write(s)
+      if outdir: probfile.write(s)
+
     problem = problems[probnum]
     text = problem.text_with_number_focus ()
 #\\section*{\\htmladdnormallink{The Open Problem Project:}{%s}\\\\
 #           \\label{Problem.%d}%s}
-    outfile.write ("""
+    write ("""
 
 \\problem{%d}
-%%begin{latexonly}
 \\section*{\\label{Problem.%d}%s}
-%%end{latexonly}
-\\begin{htmlonly}
-\\section*{\\label{Problem.%d}%s}
-\\end{htmlonly}
-\\refstepcounter{section}
 \\begin{description}
-""" % (probnum, probnum, text,
-       #home_url,
-       probnum, text))
+""" % (probnum, probnum, text))
 
     for field in problem.fields:
       if type (problem[field]) == type ([]):
-        outfile.write ("\\item[%s] %s" %
-                       (field, string.join (problem[field] + [""], "\n")))
+        write ("\\item[%s] %s" %
+               (field, string.join (problem[field] + [""], "\n")))
       else:
-        outfile.write ("\\item[%s] %s" % (field, str (problem[field])))
+        write ("\\item[%s] %s" % (field, str (problem[field])))
 
-    outfile.write ("""
+    write ("""
 \\end{description}
 """)
 
     if bibitems and problem.cites:
-      outfile.write (bibitems['_begin'])
+      write (bibitems['_begin'])
       for tag in problem.cites:
         if bibitems.has_key (tag):
-          outfile.write (bibitems[tag])
+          write (bibitems[tag])
         else:
           warnings.warn ("Problem %d cites unseen reference %s" % (probnum, tag), TOPPWarning)
-      outfile.write (bibitems['_end'])
+      write (bibitems['_end'])
 
+    if outdir: probfile.close()
   outfile.close ()
 
 ##############################################################################
@@ -330,7 +360,7 @@ def make_numerical_problem_list (problems, outname):
 
   outfile = open (outname, "w")
   outfile.write (auto_disclaimer + """
-\\section{\\label{numerical problem list}Numerical List of All Problems}
+\\section{\\label{problems by number}Numerical List of All Problems}
 %%\\refstepcounter{section}
 
 The following lists all problems sorted by number.
@@ -417,7 +447,7 @@ or
 \\hyperref{a list of all problems sorted numerically}
           {Section }
           { for a list of all problems sorted numerically}
-          {numerical problem list}.
+          {problems by number}.
 
 \\begin{itemize}
 """)
@@ -502,6 +532,49 @@ def find_cites (problems, auxfile):
     for i in range (len (problem.cites) - 1, 0, -1):
       if problem.cites[i] == problem.cites[i-1]:
         del problem.cites[i]
+
+##############################################################################
+
+tempfile = 'temp.tex'
+
+def run_pandoc(infile, outfile, title, prefix = ''):
+  print 'pandoc %s -> %s' % (infile, outfile)
+  tex = prefix + open(infile, 'r').read()
+  tex = re.sub(r'%begin{latexonly}(?:.|\n)*?%end{latexonly}', '', tex)
+  tex = re.sub(r'\\label\s*{((Problem|Category)\.(\d+)|problems by number|categorized problem list)}', '', tex)
+  tex = re.sub(r'\\author\s*{((?:[^{}]|{[^{}]*})*)}', r'\\subsubsection*{\1}', tex)
+  tex = re.sub(r'\\and\b', ', ', tex)
+  tex = re.sub(r'(Problem[\s~]*|)\\ref\s*{Problem\.(\d+)}', r'\\href{P\2.html}{\1\2}', tex)
+  tex = re.sub(r'\\htmlref\s*{([^{}]*)}\s*{Problem\.(\d+)}', r'\\href{P\2.html}{\1}', tex)
+  tex = re.sub(r'\\htmlref\s*{([^{}]*)}\s*{([^{}]*)}', (lambda match: '\\href{%s}{%s}' % (match.group(2).replace(' ','_').replace('Problem.','P')+'.html', match.group(1))), tex)
+  tex = re.sub(r'\\htmladdnormallink\s*{([^{}]*)}\s*{([^{}]*)}', r'\\href{\2}{\1}', tex)
+  tex = re.sub(r'\\hyperref\s*{([^{}]*)}\s*{([^{}]*)}\s*{([^{}]*)}\s*{([^{}]*)}', (lambda match: '\\href{%s}{%s}' % (match.group(4).replace(' ','_').replace('Problem.','P')+'.html', match.group(1))), tex)
+  tex = re.sub(r'\\begin\s*{thebibliography}\s*{[^{}]*}', r'''
+\\section*{Bibliography}
+\\begin{description}
+''', tex)
+  tex = re.sub(r'\\end\s*{thebibliography}', r'\\end{description}', tex)
+  tex = re.sub(r'\\newblock\b', r'', tex)
+  tex = re.sub(r'{\\etalchar{\+}}', r'+', tex)
+  cites = {}
+  def bibitem(match):
+    cites[match.group(2)] = match.group(1)
+    return '\item[\label{%s}]' % match.group(1)
+  tex = re.sub(r'\\bibitem\s*\[([^][]*)\]\s*{([^{}]*)}', bibitem, tex)
+  def cite(match):
+    out = []
+    for part in match.group(2).split(','):
+      if part in cites: part = cites[part]
+      out.append('\\ref{%s}' % part)
+    if match.group(1): out.append(match.group(1))
+    return ', '.join(out)
+  tex = re.sub(r'\\cite\s*(?:\[([^][]*)\]\s*)?{([^{}]*)}', cite, tex)
+  #print tex
+  temp = open(tempfile, 'w')
+  temp.write(tex)
+  temp.close()
+  os.system ("%s -d pandoc.defaults -i %s -o %s -M title=\"%s\"" % (pandoc, tempfile, outfile, title))
+  os.remove(tempfile)
 
 ##############################################################################
 

@@ -1,0 +1,21 @@
+from: latex
+to: html5
+template: pandoc.template
+#css:
+#- pandoc.css
+
+standalone: true
+metadata:
+  author:
+  - Erik D. Demaine
+  - Joseph S. B. Mitchell
+  - Joseph O'Rourke
+
+## TOPP.py deals with bibliography inlining
+#citeproc: true
+#bibliography:
+#- topp.bib
+#- geom.bib
+
+html-math-method:
+  method: katex
