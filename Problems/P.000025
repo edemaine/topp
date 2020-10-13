@@ -2,7 +2,7 @@
 * Problem: Polyhedral Surface Approximation
 * Statement:
 How efficiently can one compute a polyhedral surface
-that is an $\e$-approximation of a given triangulated surface in
+that is an $\epsilon$-approximation of a given triangulated surface in
 $\R^3$?
 * Origin: Mitchell [?]
 * Status/Conjectures: Open.

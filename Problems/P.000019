@@ -10,7 +10,7 @@ The lower bound of $\Omega(n^d)$ was nearly
 achieved up to $d=3$~\cite[p.~271]{as-dssga-00},
 but a gap remained for $d \ge 4$.
 A recent result~\cite{k-atubv-01}
-covers $d=4$ and achieves $O(n^{2d-4+\e})$ for general $d$,
+covers $d=4$ and achieves $O(n^{2d-4+\epsilon})$ for general $d$,
 leaving a gap for $d \ge 5$.
 * Related Open Problems: <none>
 * Reward: <none>

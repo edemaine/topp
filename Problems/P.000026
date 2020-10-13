@@ -2,7 +2,7 @@
 * Problem: Surface Reconstruction
 * Statement:
 Given a sufficiently dense sample of
-points on a surface (technically, an $\e$-sample),
+points on a surface (technically, an $\epsilon$-sample),
 reconstruct a surface homeomorphic to the original.
 * Origin: Amenta and Bern [?]
 * Status/Conjectures: Open.

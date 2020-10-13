@@ -9,7 +9,7 @@ Conjectured to be nearly quadratic.
 * Partial and Related Results:
 The Minkowski sum of polyhedra of $n$ vertices
 with the (Euclidean) unit ball
-has complexity $O(n^{2+\e})$~\cite{as-pckum-99},
+has complexity $O(n^{2+\epsilon})$~\cite{as-pckum-99},
 as does
 the union of $n$ congruent cubes~\cite{pss-ucc3d-01}.
 It is widely believed the same should hold true

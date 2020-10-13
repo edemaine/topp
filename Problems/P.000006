@@ -11,17 +11,17 @@ of the edges in the matching.
 An algorithm that achieves the minimum and runs
 in nearly $O(n^{2.5})$ time has long been available~\cite{v-ghm-89}.
 This was improved to $O(n^{1.5} \log^5 n)$ in~\cite{v-dcamc-98}.
-Recently Arora showed how to achieve a $(1+\e)$-approximation
-in $n (\log n)^{O(1/\e)}$ time~\cite{a-ptase-98},
+Recently Arora showed how to achieve a $(1+\epsilon)$-approximation
+in $n (\log n)^{O(1/\epsilon)}$ time~\cite{a-ptase-98},
 and this has been improved to 
-$O((n/\e^3) \log^6 n)$ time~\cite{va-aabnb-99}.
+$O((n/\epsilon^3) \log^6 n)$ time~\cite{va-aabnb-99}.
 
 A special case of considerable interest is bipartite matching,
 in which the points are red or blue and the matching connects
 points of different color.
-Here $O(n^{2+\e})$ has been achieved~\cite{aes-vdsl3-99},
-and a $(1+\e)$-approximation can be found in
-$O((n/\e)^{1.5} \log^5 n)$ time~\cite{va-aabnb-99}.
+Here $O(n^{2+\epsilon})$ has been achieved~\cite{aes-vdsl3-99},
+and a $(1+\epsilon)$-approximation can be found in
+$O((n/\epsilon)^{1.5} \log^5 n)$ time~\cite{va-aabnb-99}.
 * Related Open Problems: <none>
 * Reward: <none>
 * Appearances:
