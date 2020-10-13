@@ -81,7 +81,7 @@ def main ():
 
   #run ("cp master.ps master.pdf Welcome/")
   run ("cp master.pdf html/")
-  run ("cp problem.template html/")
+  run ("cp Problems/problem.template html/")
   run ("ln -f -s index.html html/Welcome.html")
   run ("chmod -R a+rX html")
   #run ("chgrp -R topp Welcome && chmod -R g+rwX Welcome")
