@@ -8,9 +8,10 @@ $\R^3$?
 * Status/Conjectures: Open.
 * Partial and Related Results:
 It is NP-hard to obtain the minimum-facet surface
-separating two nested convex polytopes~\cite{dg-ocop3-97a},
-but
-polynomial-time approximation algorithms are known
+separating two nested convex polytopes~\cite{dg-ocop3-97a}, if they are allowed to have distinct structures; 
+it is unknown if it is hard when one polytope is an offset of the other, e.g., if they arise as offsets of an underlying convex polytope
+that we seek to approximate.
+Polynomial-time approximation algorithms are known
 (\cite{bg-aoscf-95,ms-sapo-95,as-sagp-98})
 for this case, and for separating two terrain surfaces,
 achieving factors within $O(1)$ or $O(\log n)$ of optimal.
