@@ -41,11 +41,8 @@ TEXMFCONFIG \$TEXMFSYSCONFIG
 TEXMFHOME \$TEXMFLOCAL
 TEXMFVAR \$TEXMFSYSVAR
 binary_x86_64-linux 1
-
 collection-basic 1
-#collection-binextra 1
-#collection-latex 1
-
+collection-latex 1
 instopt_adjustpath 1
 instopt_adjustrepo 1
 instopt_letter 0
@@ -78,8 +75,7 @@ if [ ! -e "$INSTALL_TL_SUCCESS" ]; then
   echo "$TEXLIVE_PROFILE" > texlive.profile
   INSTALL_TL_VERSION="$(tar tf "$INSTALL_TL" | grep -om1 '^install-tl-[0-9]*')"
   "$INSTALL_TL_VERSION"/install-tl --profile=texlive.profile
-  #$TEXLIVE_BIN/tlmgr install bibtex texliveonfly latex latex-bin latex-fonts
-  $TEXLIVE_BIN/tlmgr install bibtex texliveonfly latex latex-bin
+  $TEXLIVE_BIN/tlmgr install texliveonfly
   echo "[$0] Installed TeX Live."
 
   touch "$INSTALL_TL_SUCCESS"
