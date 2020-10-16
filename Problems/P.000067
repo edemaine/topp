@@ -43,10 +43,7 @@ have established the conjecture for any prime power, $n=p^k$.
 See~\cite{nr-fppi-08} for an introduction and survey and
 proof that the conjecture holds for $n=2$, and
 a proof for $n=4$.
-This survey cites a new result of Barany, 
-Blagojevic, and Szucs [forthcoming] that establishes
-the conjecture for $n=3$.  The cited survey also sketches
-a (different) argument for $n=3$.
+The conjecture has been established for $n=3$ in~\cite{bbs-ec3-10}.
 
 There is work on partitioning convex polygons into equal area convex pieces 
 so that every piece equally shares the boundary of the given target polygon:
@@ -68,5 +65,5 @@ of a weaker result---that any polygon allows fair partitioning for any $n$
 * Appearances:<none>
 * Categories: polygons, partitioning
 * Entry Revision History:
-R. Nandakumar and N. Ramana Rao, 14 Jul 2007, 17 Sep 2007; J. O'Rourke, 1 Jan 2009; 23 Jan. 2009; 30 Dec. 2010.
+R. Nandakumar and N. Ramana Rao, 14Jul2007, 17Sep2007; J. O'Rourke, 1Jan2009; 23Jan2009; 30Dec2010, 16Oct2020.
 ---------------------------------------------------------
