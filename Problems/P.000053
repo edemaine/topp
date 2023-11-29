@@ -10,13 +10,13 @@ pair of vertices at unit distance.
 * Origin: Aggarwal et al.~\cite{ackms-amtsp-97} show that the
 more general problem of finding a cycle cover for a planar
 set of points that minimizes total turn angle is NP-hard.
-Arkin et al.~\cite{abdfms-octtc-01} consider the problem
+Arkin et al.~\cite{abdfms-octtc-01,abdfms-octtc-05} consider the problem
 in grid graphs, but are only able to give approximations.
 * Status/Conjectures: Solved: proved NP-hard by Fekete and Krupke~\cite{fk-ctcctc-19}
 * Motivation: Minimizing turns is a natural geometric measure;
 understanding its algorithmic behavior is of general interest.
 * Partial and Related Results:
-\cite{abdfms-octtc-05} show that the problem is polynomially solvable
+\cite{abdfms-octtc-01,abdfms-octtc-05} show that the problem is polynomially solvable
 when restricted to \emph{thin} grid graphs, i.e., grid graphs that do not
 contain an induced $2 \times 2$ square.
 For this special case, the problem behaves somewhat similarly to a
@@ -38,7 +38,7 @@ What is the complexity of finding a minimum-length tour for a
 given planar grid graph without holes? (Problem~\ref{Problem.54})
 
 * Reward: <none>
-* Appearances: \cite{abdfms-octtc-01}.
+* Appearances: \cite{abdfms-octtc-01,abdfms-octtc-05}.
 * Categories:
 traveling salesman; optimization; point sets; graphs
 * Entry Revision History:
