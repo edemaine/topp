@@ -12,7 +12,7 @@ more general problem of finding a cycle cover for a planar
 set of points that minimizes total turn angle is NP-hard.
 Arkin et al.~\cite{abdfms-octtc-01} consider the problem
 in grid graphs, but are only able to give approximations.
-* Status/Conjectures: Open.
+* Status/Conjectures: Solved by Fekete and Krupke~\cite{fekete2019covering}
 * Motivation: Minimizing turns is a natural geometric measure;
 understanding its algorithmic behavior is of general interest.
 * Partial and Related Results:
@@ -23,9 +23,12 @@ For this special case, the problem behaves somewhat similarly to a
 Chinese Postman Problem.
 The problem of finding a minimum-turn tour is known to be NP-complete,
 even for this special case.
-
-More recent details and related problems can be found in the 
+More details and related problems can be found in the 
 version~\cite{abdfms-octtc-03}.
+
+In 2019, Fekete and Krupke~\cite{fekete2019covering} established that
+finding a minimum-turn cycle cover in a planar grid graph is NP-hard,
+thereby providing an answer to this problem.
 
 * Related Open Problems: 
 Minimum-turn cycle cover in a ``solid'' (genus-zero) grid graph:
@@ -42,4 +45,5 @@ given planar grid graph without holes? (Problem~\ref{Problem.54})
 traveling salesman; optimization; point sets; graphs
 * Entry Revision History:
 S. P. Fekete, 12 Dec. 2003.
+D. Krupke, 29 Nov. 2023
 ---------------------------------------------------------
