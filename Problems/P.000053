@@ -16,15 +16,13 @@ in grid graphs, but are only able to give approximations.
 * Motivation: Minimizing turns is a natural geometric measure;
 understanding its algorithmic behavior is of general interest.
 * Partial and Related Results:
-\cite{abdfms-octtc-01} show that the problem is polynomially solvable
+\cite{abdfms-octtc-05} show that the problem is polynomially solvable
 when restricted to \emph{thin} grid graphs, i.e., grid graphs that do not
 contain an induced $2 \times 2$ square.
 For this special case, the problem behaves somewhat similarly to a
 Chinese Postman Problem.
-The problem of finding a minimum-turn tour is known to be NP-complete,
+The problem of finding a minimum-turn tour is shown to be NP-complete,
 even for this special case.
-More details and related problems can be found in the 
-version~\cite{abdfms-octtc-03}.
 
 In 2019, Fekete and Krupke~\cite{fk-ctcctc-19} established that
 finding a minimum-turn cycle cover in a planar grid graph is NP-hard,
