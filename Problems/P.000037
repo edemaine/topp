@@ -29,7 +29,7 @@ $$\lim_{n \to \infty} [t(n)]^{1/n} = \lambda$$
 for ``Klarner's constant'' $\lambda$,
 with $4.0025 < \lambda < 4.5685$,
 but the precise value of $\lambda$ remains open.
-The lower bound of $>4$ is established in~\cite{brs-lambda4-15},
+The lower bound of $>4$ is established in~\cite{brs-lambda4-16},
 and the upper bound in~\cite{bb-ubp-15}.
 
 The exact counts have been computed for small $n$.

@@ -5,7 +5,7 @@ Is it possible to construct a \emph{binary space partition} (BSP)
 for $n$ disjoint line segments in the plane of size
 less than $\Theta(n \log n)$?  
 * Origin: Paterson and Yao~\cite{py-ebsph-90}.
-* Status/Conjectures: Solved by Csaba T\'{o}th~\cite{t-bppdl-09}.
+* Status/Conjectures: Solved by Csaba T\'{o}th~\cite{t-bppdl-09,t-bppdl-11}.
 * Partial and Related Results:
 The upper bound of $O(n\log n)$
 was established by Paterson and Yao~\cite{py-ebsph-90}.
@@ -13,7 +13,7 @@ T\'{o}th~\cite{t-nbpp-01} improved the
 trivial $\Omega(n)$
 lower bound to
 $\Omega(n\log n/\log\log n)$.  
-Then in 2009 he established a matching upper bound~\cite{t-bppdl-09}.
+Then in 2009 he established a matching upper bound~\cite{t-bppdl-09,t-bppdl-11}.
 His proof is constructive and leads to a deterministic algorithm
 that runs in $O(n \; \mathrm{polylog} \; n)$ time.
 As his algorithm produces BSP trees whose height might be

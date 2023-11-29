@@ -17,7 +17,7 @@ $\lfloor n/4 \rfloor \le \rho(n)  \le \lceil n/2 \rceil$
 and conjecture that $\rho(n) = \lfloor n/4 \rfloor$.
 The upper bound was recently improved
 to $\frac{5}{12} n + O(1) \approx 0.4167 n$
-in~\cite{aak-iubrp-08}.
+in~\cite{aak-iubrp-09}.
 * Related Open Problems: 
 Problem~\ref{Problem.16}: Simple Polygonalizations.
 * Reward: <none>
