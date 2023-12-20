@@ -87,7 +87,8 @@ $\sqrt{a} + \sqrt{b}$ be to an integer;
 Dana Angluin and Sarah Eisenstat~\cite{ae-hc-04} proved
 a bound of $\Theta(1/n^{3/2})$ on this integrality gap.
 
-Also, \cite{b-csrpt-91} may be relevant.
+Related, \cite{b-csrpt-91} gives a polynomial-time Monte Carlo algorithm to
+decide whether a sum of radicals is zero.
 * Related Open Problems: <none>
 * Reward: <none>
 * Appearances:
