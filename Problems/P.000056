@@ -4,7 +4,7 @@
 What is the complexity of deciding whether a given number of
 axis-parallel unit squares can be packed into a simple polygon (without holes)?
 * Origin: Unknown.
-* Status/Conjectures: Open.
+* Status/Conjectures: Solved: proved NP-hard by Abrahamsen and Stade~\cite{as-hpcps-24}.
 * Motivation: Natural packing problem.
 * Partial and Related Results:
 The problem is known to be NP-hard for
@@ -20,6 +20,11 @@ There is a PTAS for packing the maximum number of squares of fixed
 size~\cite{hm-ascpp-85}.  Maximizing the size of squares such that a
 fixed number of squares can be packed has a lower bound on approximation
 of $14/13$, and there is a $3/2$-approximation~\cite{bf-agdp-01}.
+
+In 2024, Abrahamsen and Stade~\cite{as-hpcps-24} proved that the problem is NP-hard, even when
+the polygon is an orthogonal and orthogonally convex polygon with half-integer
+coordinates. 
+
 * Related Open Problems: 
 What is the complexity of pallet loading? (Problem~\ref{Problem.55})
 * Reward: <none>
@@ -28,5 +33,5 @@ be polynomially solvable.
 * Categories:
 packing; optimization
 * Entry Revision History:
-S. P. Fekete, 16 Jan. 2004; E. Demaine, 3 July 2009. 
+S. P. Fekete, 16 Jan. 2004; E. Demaine, 3 July 2009; J. Stade, 12 Dec. 2024.
 ---------------------------------------------------------
