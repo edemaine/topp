@@ -35,7 +35,7 @@ such that the Euclidean length of the shortest edge is maximized?
 Stated in~\cite{acmsy-mst-97}, shown NP-hard in dimensions $d\geq 3$
 in~\cite{f-shmtspgd-99}, open for $d=2$.
 Also, no bounds on approximation are known in a geometric context;
-the best known aproximation algorithm from \cite{acmsy-mst-97}
+the best known approximation algorithm from \cite{acmsy-mst-97}
 achieves an approximation factor of 2, but does not use geometry.
 
 * Reward: <none>

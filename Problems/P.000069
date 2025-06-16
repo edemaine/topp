@@ -2,7 +2,7 @@
 * Problem: Isoceles Planar Graph Drawing
 * Statement:
 Given a planar graph that is interior triangulated (all
-interior faces are triangles), is there a staight-line
+interior faces are triangles), is there a straight-line
 drawing of the graph such that each face is an isoceles
 triangle (i.e., it has two equal-length sides)?
 

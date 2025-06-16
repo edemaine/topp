@@ -6,7 +6,7 @@ flat to a single, nonoverlapping, simple polygon?
 * Origin: First stated in~\cite{s-cpcn-75}, but in
 spirit at least goes back to Albrecht D\"urer~\cite{d-pm-1525}.
 * Status/Conjectures: Open.
-It seems to be a widespead hunch that the answer is {\sc yes}.
+It seems to be a widespread hunch that the answer is {\sc yes}.
 * Partial and Related Results:
 The answer is known to be {\sc no}
 for nonconvex polyhedra even with triangular faces~\cite{bdekms-upcf-03},

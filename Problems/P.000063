@@ -20,16 +20,16 @@ subject to insertion, deletion, and predecessor and successor queries
 * Partial and Related Results:
 For 14 years, the authority on this problem was Agarwal and Matou\v{s}ek's
 FOCS'92 paper \cite{am-dhsrr-95} which describes two data structures:
-one suports updates in $O(n^\epsilon)$ amortized time and
+one supports updates in $O(n^\epsilon)$ amortized time and
 queries in $O(\log n)$ worst-case time,
-while the other suports updates in $O(\log^2 n)$ amortized time
+while the other supports updates in $O(\log^2 n)$ amortized time
 queries in $O(n^\epsilon)$ worst-case time,
 for any $\epsilon > 0$.
 The nearest-neighbor problem is a decomposable search problem,
 so when deletions are forbidden, the general techniques of Bentley and Saxe
 \cite{bs-dsp1s-80} yield an $O(\log^2 n)$ amortized bound for updates
 and queries.
-In 2006, Chan \cite{c-dds3c-06} obtained the first polylogarithimc data
+In 2006, Chan \cite{c-dds3c-06} obtained the first polylogarithmic data
 structure for 3D convex hulls and therefore 2D nearest neighbors.
 His data structure supports insertions in $O(\log^3 n)$ expected
 amortized time, deletions in $O(\log^6 n)$ expected amortized time,

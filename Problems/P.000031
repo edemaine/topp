@@ -24,9 +24,9 @@ even a single \emph{nonperiodic} ray, i.e.,
 one that reflects forever (so is trapped)
 but never rejoins its earlier path---was disproved by
 Ben Stephens in 2002, who designed
-a contruction of 8 mirrors that traps a ray reflecting 
+a construction of 8 mirrors that traps a ray reflecting 
 nonperiodically.
-A similar construction was discovered and described in~\cite{msz-tlram-09},
+A similar construction was discovered and described in~\cite{msz-tlram-12},
 which also established that any finite number of rays can be trapped
 nonperiodically.
 Milovich~\cite{m-tlm-04} proved that if the angles between the lines
