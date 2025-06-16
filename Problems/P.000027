@@ -24,7 +24,7 @@ edges.
 In a sense, these hexahedra are intermediate between the 
 topological and geometric meshes mentioned above.
 The faces are not necessarily planar, but this is not a
-crucial aspect in applications, such a fluid dynamics simulations.
+crucial aspect in applications, such as fluid dynamics simulations.
 
 The question of whether a hexahedral mesh with planar faces
 exists remains open.

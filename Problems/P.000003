@@ -5,7 +5,7 @@ What is the combinatorial complexity of the Voronoi diagram
 of a set of lines (or line segments) in three dimensions?
 * Origin: Uncertain, pending investigation.
 * Status/Conjectures: Open.
-Conjectured to be nearly quadradic.
+Conjectured to be nearly quadratic.
 * Partial and Related Results:
 There is a gap between
 a lower bound of $\Omega(n^2)$ and an upper bound that is

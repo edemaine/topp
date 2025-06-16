@@ -5,7 +5,7 @@ How much extra space is required to compute the convex hull of a simple
 polygonal chain or simple polygon in linear time?
 
 More precisely, given the $n$ points in order along the chain in an array $A$,
-the alogorithm must re-arrange the points inplace in the array and output a
+the algorithm must re-arrange the points inplace in the array and output a
 number $h$ so that the first $h$ elements in the resulting array are the points
 on the convex hull in order.  The goal is to minimize the extra storage past
 the array $A$, say to $O(\log n)$ or ideally $O(1)$.
@@ -15,7 +15,7 @@ the array $A$, say to $O(\log n)$ or ideally $O(1)$.
 From the abstract of \cite{bc-sacch-04}:
 ``we present a simple self-contained solution that uses $O(\log n)$ space, and indicate how to improve it to $O(1)$ space with the same techniques used for stable partition.''
 %For computing the convex hull of a set of points,
-%Br{\"o}nnimann et al. \cite{bikmm-oipcha-01} gave inplace alogorithms using
+%Br{\"o}nnimann et al. \cite{bikmm-oipcha-01} gave inplace algorithms using
 %$O(1)$ extra space with running time $O(n \log h)$ for $h$ points on the
 %convex hull, and running time $O(n)$ if the points have been presorted
 %according to one coordinate.
