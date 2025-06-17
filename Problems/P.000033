@@ -62,7 +62,7 @@ which improves on the above bound $O(2^{2k\lg n})$
 whenever $n \le c k \lg k$ for some $c$.
 
 At the other extreme,
-Qian and Wang \cite{qw-nubdb-04,qw-nubdb-05} show an upper bound on $r(n,k)$
+Qian and Wang \cite{qw-nubdb-05} show an upper bound on $r(n,k)$
 of $O(n^{-2k+\frac{3}{2}})$.
 %Marc Glisse corrects that it is NOT tight for k=2.
 %, and show that this is tight
