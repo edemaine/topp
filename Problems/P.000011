@@ -46,9 +46,9 @@ subquadratic deterministic algorithm in the standard
 real-RAM model that solves 3SUM in 
 $O\left(n^2 \left(\frac{\lg \lg n}{\lg n}\right)^{2/3}\right)$ time.
 Gold and Sharir~\cite{gs-ib3kl-17} improved this to 
-$O\left(n^2 \frac{\lg \lg n}{\lg n}\right)$, and then Chan~\cite{c-mlfs3-18} 
+$O\left(\frac{n^2 \lg \lg n}{\lg n}\right)$, and then Chan~\cite{c-mlfs3-18} 
 shaved off a logarithmic factor to obtain an 
-$O\left(n^2 \frac{\left(\lg \lg n\right)^{O(1)}}{\lg^2 n}\right)$-time algorithm.
+$O\left(\frac{n^2 \left(\lg \lg n\right)^{O(1)}}{\lg^2 n}\right)$-time algorithm.
 
 * Related Open Problems: <none>
 * Reward: <none>
