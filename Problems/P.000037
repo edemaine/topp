@@ -35,7 +35,8 @@ and the upper bound in~\cite{bb-ubp-15}.
 The exact counts have been computed for small $n$.
 See~\cite{s-oeis-A000105} for the number of fixed $n$-ominoes for $n \leq 28$
 and for related references. 
-The record was improved to $n=56$ by Jensen~\cite{j-cp-03} and most recently to $n=70$ by Barequet and Ben-Shachar~\cite{bb-cpr-24}. 
+The record was improved to $n=56$ by Jensen~\cite{j-cp-03} and most recently 
+to $n=70$ by Barequet and Ben-Shachar~\cite{bb-cpr-24}.
 See also~\cite{e-gj-poa} for related links.
 * Related Open Problems:
 There are many related problems involving 

@@ -10,7 +10,9 @@ total size $n$, there are elements
 $a \in A$, $b \in B$, and $c \in C$ such that $a+b=c$.
 * Origin: \cite{go-copcg-95}.
 * Status/Conjectures: Open.
-
+Subquadratic algorithms have been found (see~\cite{gp-tdlt-14, gs-ib3kl-17, c-mlfs3-18}), 
+but is conjectured that 3SUM is unsolvable in $O(n^{2-\epsilon})$ time, 
+even in expectation~\cite{kpp-hlb3c-16}.
 * Motivation:
 Many fundamental geometric problems fall in this class,
 e.g., computing the area of the union of $n$ triangles.
@@ -34,12 +36,19 @@ improve it for large $r$ or for more than $r$ variables~\cite{ac-lbldt-05}.
 Baran et al.~\cite{bdp-sa3-05} show that subquadratic algorithms for 3SUM
 are possible in common models of computation that allow more direct
 manipulation of the numbers instead of just real arithmetic,
-such as the word RAM.  The improvement they obtain is roughly quadratic
+such as the word-RAM.  The improvement they obtain is roughly quadratic
 in the parallelism offered by the model; for example, with $\lg n$-bit words,
-they obtain an $O(n^2 \left(\frac{\lg \lg n}{\lg n}\right)^2)$-time
-algorithm.  With this word size, the 3SUM problem becomes whether any
-improvement beyond polylogarithmic factors (or indeed, beyond
-$\Theta(\lg^2 n)$) is possible.
+they obtain an $O\left(n^2 \left(\frac{\lg \lg n}{\lg n}\right)^2\right)$-time
+algorithm.
+
+Gr{\o}nlund and Pettie~\cite{gp-tdlt-14} gave the first 
+subquadratic deterministic algorithm in the standard 
+real-RAM model that solves 3SUM in 
+$O\left(n^2 \left(\frac{\lg \lg n}{\lg n}\right)^{2/3}\right)$ time.
+Gold and Sharir~\cite{gs-ib3kl-17} improved this to 
+$O\left(n^2 \frac{\lg \lg n}{\lg n}\right)$, and then Chan~\cite{c-mlfs3-18} 
+shaved off a logarithmic factor to obtain an 
+$O\left(n^2 \frac{\left(\lg \lg n\right)^{O(1)}}{\lg^2 n}\right)$-time algorithm.
 
 * Related Open Problems: <none>
 * Reward: <none>
