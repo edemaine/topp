@@ -10,8 +10,8 @@ total size $n$, there are elements
 $a \in A$, $b \in B$, and $c \in C$ such that $a+b=c$.
 * Origin: \cite{go-copcg-95}.
 * Status/Conjectures: Open.
-Subquadratic algorithms have been found (see~\cite{gp-tdlt-14, gs-ib3kl-17, c-mlfs3-18}), 
-but is conjectured that 3SUM is unsolvable in $O(n^{2-\epsilon})$ time, 
+Subquadratic time algorithms have been found (see~\cite{gp-tdlt-14, gs-ib3kl-17, c-mlfs3-18}), 
+but it is conjectured that 3SUM is unsolvable in $O(n^{2-\epsilon})$ time, 
 even in expectation~\cite{kpp-hlb3c-16}.
 * Motivation:
 Many fundamental geometric problems fall in this class,

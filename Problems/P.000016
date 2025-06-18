@@ -15,7 +15,8 @@ $n^{(11 + o(1))\sqrt{n}}$.
 Since simple polygonalizations are exactly 
 non-crossing Hamilton cycles, this framework yields an $n^{O(\sqrt n)}$ 
 algorithm for counting them, improving on Alvarez and 
-Seidel's~\cite{ar-saact-13} $O(n^2 2^n)$ bound for counting triangulations.  
+Seidel's~\cite{ar-saact-13} $O(n^2 2^n)$ bound for counting triangulations.
+
 Certain special cases are known (e.g., for
 computing the number of
 monotone simple polygonalizations~\cite{zssm-grpgv-96}),
