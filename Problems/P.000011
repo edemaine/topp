@@ -36,7 +36,7 @@ improve it for large $r$ or for more than $r$ variables~\cite{ac-lbldt-05}.
 Baran et al.~\cite{bdp-sa3-05} show that subquadratic algorithms for 3SUM
 are possible in common models of computation that allow more direct
 manipulation of the numbers instead of just real arithmetic,
-such as the word-RAM.  The improvement they obtain is roughly quadratic
+such as the word RAM.  The improvement they obtain is roughly quadratic
 in the parallelism offered by the model; for example, with $\lg n$-bit words,
 they obtain an $O\left(n^2 \left(\frac{\lg \lg n}{\lg n}\right)^2\right)$-time
 algorithm.
@@ -47,7 +47,7 @@ real-RAM model that solves 3SUM in
 $O\left(n^2 \left(\frac{\lg \lg n}{\lg n}\right)^{2/3}\right)$ time.
 Gold and Sharir~\cite{gs-ib3kl-17} improved this to 
 $O\left(\frac{n^2 \lg \lg n}{\lg n}\right)$, and then Chan~\cite{c-mlfs3-18} 
-shaved off a logarithmic factor to obtain an 
+shaved off a nearly logarithmic factor to obtain an 
 $O\left(\frac{n^2 \left(\lg \lg n\right)^{O(1)}}{\lg^2 n}\right)$-time algorithm.
 
 * Related Open Problems: <none>
@@ -57,5 +57,5 @@ $O\left(\frac{n^2 \left(\lg \lg n\right)^{O(1)}}{\lg^2 n}\right)$-time algorithm
 * Categories: lower bounds
 * Entry Revision History:
 J. O'Rourke, 2 Aug. 2001; Jeff Erickson, 20 June 2002; E. Demaine, 7 July 2005;
-Raphael Clifford, 7 July 2011.
+Raphael Clifford, 7 July 2011; J. Mallen, 18 June 2025.
 ---------------------------------------------------------
