@@ -10,7 +10,9 @@ total size $n$, there are elements
 $a \in A$, $b \in B$, and $c \in C$ such that $a+b=c$.
 * Origin: \cite{go-copcg-95}.
 * Status/Conjectures: Open.
-
+Subquadratic time algorithms have been found (see~\cite{gp-tdlt-14, gs-ib3kl-17, c-mlfs3-18}), 
+but it is conjectured that 3SUM is unsolvable in $O(n^{2-\epsilon})$ time, 
+even in expectation~\cite{kpp-hlb3c-16}.
 * Motivation:
 Many fundamental geometric problems fall in this class,
 e.g., computing the area of the union of $n$ triangles.
@@ -36,10 +38,17 @@ are possible in common models of computation that allow more direct
 manipulation of the numbers instead of just real arithmetic,
 such as the word RAM.  The improvement they obtain is roughly quadratic
 in the parallelism offered by the model; for example, with $\lg n$-bit words,
-they obtain an $O(n^2 \left(\frac{\lg \lg n}{\lg n}\right)^2)$-time
-algorithm.  With this word size, the 3SUM problem becomes whether any
-improvement beyond polylogarithmic factors (or indeed, beyond
-$\Theta(\lg^2 n)$) is possible.
+they obtain an $O\left(n^2 \left(\frac{\lg \lg n}{\lg n}\right)^2\right)$-time
+algorithm.
+
+Gr{\o}nlund and Pettie~\cite{gp-tdlt-14} gave the first 
+subquadratic deterministic algorithm in the standard 
+real-RAM model that solves 3SUM in 
+$O\left(n^2 \left(\frac{\lg \lg n}{\lg n}\right)^{2/3}\right)$ time.
+Gold and Sharir~\cite{gs-ib3kl-17} improved this to 
+$O\left(\frac{n^2 \lg \lg n}{\lg n}\right)$, and then Chan~\cite{c-mlfs3-18} 
+shaved off a nearly logarithmic factor to obtain an 
+$O\left(\frac{n^2 \left(\lg \lg n\right)^{O(1)}}{\lg^2 n}\right)$-time algorithm.
 
 * Related Open Problems: <none>
 * Reward: <none>
@@ -48,5 +57,5 @@ $\Theta(\lg^2 n)$) is possible.
 * Categories: lower bounds
 * Entry Revision History:
 J. O'Rourke, 2 Aug. 2001; Jeff Erickson, 20 June 2002; E. Demaine, 7 July 2005;
-Raphael Clifford, 7 July 2011.
+Raphael Clifford, 7 July 2011; J. Mallen, 18 June 2025.
 ---------------------------------------------------------

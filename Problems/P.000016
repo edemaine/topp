@@ -8,6 +8,15 @@ simple polygon whose vertices are the points.
 * Origin: Uncertain, pending investigation.
 * Status/Conjectures: Open.
 * Partial and Related Results:
+Marx and Miltzow~\cite{mm-pnc-16} give a planar-separator-based 
+dynamic programming framework that, for any family of non-crossing 
+straight-line graphs on an $n$-point set, counts those graphs in time 
+$n^{(11 + o(1))\sqrt{n}}$.
+Since simple polygonalizations are exactly 
+non-crossing Hamilton cycles, this framework yields an $n^{O(\sqrt n)}$ 
+algorithm for counting them, improving on Alvarez and 
+Seidel's~\cite{ar-saact-13} $O(n^2 2^n)$ bound for counting triangulations.
+
 Certain special cases are known (e.g., for
 computing the number of
 monotone simple polygonalizations~\cite{zssm-grpgv-96}),
@@ -27,5 +36,5 @@ and references to relevant papers.
 \cite{mo-cgc42-01}
 * Categories: polygons; point sets
 * Entry Revision History:
-J. O'Rourke, 2 Aug. 2001; 1 Jan. 2003.
+J. O'Rourke, 2 Aug. 2001; 1 Jan. 2003; J. Mallen, 18 June 2025.
 ---------------------------------------------------------
