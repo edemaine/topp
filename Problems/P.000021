@@ -13,8 +13,8 @@ $h$~\cite{kmm-eaesp-97}, after which Hershberger and Suri~\cite{hs-oaesp-99}
 gave an $O(n\log n)$ time algorithm using $O(n\log n)$ space.
 Inkulu et al.~\cite{ikm-noafe-10} later found an $O(n + h\log h \log n)$ time 
 and $O(n)$ space algorithm.
-By modifying Hershberger and Suri's algorithm, Wang reduced the space to 
-$O(n)$~\cite{w-spaop-21} while the running time remained $O(n\log n)$.
+By modifying Hershberger and Suri's algorithm, Wang~\cite{w-spaop-21} 
+reduced the space to $O(n)$ while the running time remained $O(n\log n)$.
 Wang then closed the $\Omega(n + h \log h)$ lower bound by presenting the 
 first $O(n + h \log h)$ time and $O(n)$ space algorithm~\cite{w-naesp-23}.
 
