@@ -5,12 +5,19 @@ Can shortest paths among $h$ obstacles in the plane,
 with a total of $n$ vertices, be found in
 optimal $O(n + h \log h)$ time using $O(n)$ space?
 * Origin: Uncertain, pending investigation.
-* Status/Conjectures: Open.
+* Status/Conjectures: Solved by Haitao Wang~\cite{w-naesp-23}, 
+who gives an optimal $O(n + h \log h)$ time and $O(n)$ space algorithm.
 * Partial and Related Results:
-The only algorithm that is linear in $n$ in time and space is
-quadratic in $h$~\cite{kmm-eaesp-97};
-$O(n\log n)$ time, using $O(n\log n)$ space,
-is known~\cite{hs-oaesp-99}.
+The first algorithm linear in $n$ in time and space was quadratic in 
+$h$~\cite{kmm-eaesp-97}, after which Hershberger and Suri~\cite{hs-oaesp-99} 
+gave an $O(n\log n)$ time algorithm using $O(n\log n)$ space.
+Inkulu et al.~\cite{ikm-noafe-10} later found an $O(n + h\log h \log n)$ time 
+and $O(n)$ space algorithm.
+By modifying Hershberger and Suri's algorithm, Wang reduced the space to 
+$O(n)$~\cite{w-spaop-21} while the running time remained $O(n\log n)$.
+Wang then closed the $\Omega(n + h \log h)$ lower bound by presenting the 
+first $O(n + h \log h)$ time and $O(n)$ space algorithm~\cite{w-naesp-23}.
+
 In three dimensions, the Euclidean shortest path problem among general
 obstacles is NP-hard, but its complexity remains open
 for some special cases, such as when the obstacles are disjoint unit
@@ -21,5 +28,5 @@ spheres or axis-aligned boxes; see \cite{m-gspno-00} for a survey.
 \cite{mo-cgc42-01}
 * Categories: shortest paths
 * Entry Revision History:
-J. O'Rourke, 2 Aug. 2001.
+J. O'Rourke, 2 Aug. 2001; J. Mallen, 19 June 2025.
 ---------------------------------------------------------

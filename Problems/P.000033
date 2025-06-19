@@ -24,7 +24,7 @@ If this statement is false, however, there still may be a polynomial-time
 algorithm to compute the sign.
 
 To quote 
-\htmladdnormallink{David Eppstein}{http://www.ics.uci.edu/~{}eppstein/junkyard/open.html}:
+\htmladdnormallink{David Eppstein}{http://www.ics.uci.edu/~eppstein/junkyard/open.html}:
 ``A major bottleneck in proving NP-completeness 
 for geometric problems is a mismatch
 between the real-number and Turing machine models of computation:
